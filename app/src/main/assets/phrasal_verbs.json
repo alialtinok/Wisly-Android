@@ -1,0 +1,4003 @@
+[
+  {
+    "id": 1,
+    "verb": "back",
+    "particle": "down",
+    "turkish": "geri çekilmek, taviz vermek",
+    "example": "He backed down from his earlier position.",
+    "exampleTr": "Önceki tutumundan geri çekildi."
+  },
+  {
+    "id": 2,
+    "verb": "back",
+    "particle": "off",
+    "turkish": "çekilmek, vazgeçmek",
+    "example": "The bully backed off when challenged.",
+    "exampleTr": "Zorba karşı çıkılınca çekildi."
+  },
+  {
+    "id": 3,
+    "verb": "back",
+    "particle": "out",
+    "turkish": "anlaşmadan çıkmak, vazgeçmek",
+    "example": "She backed out of the deal at the last minute.",
+    "exampleTr": "Son dakikada anlaşmadan çekildi."
+  },
+  {
+    "id": 4,
+    "verb": "back",
+    "particle": "up",
+    "turkish": "desteklemek, yedeklemek",
+    "example": "Always back up your files on a hard drive.",
+    "exampleTr": "Dosyalarını her zaman hard diske yedekle."
+  },
+  {
+    "id": 5,
+    "verb": "bear",
+    "particle": "out",
+    "turkish": "doğrulamak, desteklemek",
+    "example": "The evidence bears out his claim.",
+    "exampleTr": "Kanıtlar iddiasını destekliyor."
+  },
+  {
+    "id": 6,
+    "verb": "bear",
+    "particle": "with",
+    "turkish": "sabretmek, katlanmak",
+    "example": "Please bear with me while I explain.",
+    "exampleTr": "Açıklarken lütfen sabredin."
+  },
+  {
+    "id": 7,
+    "verb": "blow",
+    "particle": "up",
+    "turkish": "patlamak, sinirini kaybetmek",
+    "example": "He blew up when he heard the news.",
+    "exampleTr": "Haberi duyunca sinirini kaybetti."
+  },
+  {
+    "id": 8,
+    "verb": "blow",
+    "particle": "out",
+    "turkish": "söndürmek, patlamak",
+    "example": "She blew out the candles on her cake.",
+    "exampleTr": "Pastasındaki mumları üfleyerek söndürdü."
+  },
+  {
+    "id": 9,
+    "verb": "break",
+    "particle": "down",
+    "turkish": "arızalanmak, çökmek",
+    "example": "The car broke down on the motorway.",
+    "exampleTr": "Araba otoyolda arızalandı."
+  },
+  {
+    "id": 10,
+    "verb": "break",
+    "particle": "in",
+    "turkish": "zorla girmek, alıştırmak",
+    "example": "Thieves broke in through the back window.",
+    "exampleTr": "Hırsızlar arka camdan zorla girdi."
+  },
+  {
+    "id": 11,
+    "verb": "break",
+    "particle": "into",
+    "turkish": "zorla girmek, başlamak",
+    "example": "She broke into a wide smile.",
+    "exampleTr": "Geniş bir gülümsemeyle güldü."
+  },
+  {
+    "id": 12,
+    "verb": "break",
+    "particle": "off",
+    "turkish": "kesmek, bitirmek",
+    "example": "They broke off their engagement.",
+    "exampleTr": "Nişanlarını bozdular."
+  },
+  {
+    "id": 13,
+    "verb": "break",
+    "particle": "out",
+    "turkish": "patlak vermek, çıkmak",
+    "example": "A fire broke out in the building.",
+    "exampleTr": "Binada yangın patlak verdi."
+  },
+  {
+    "id": 14,
+    "verb": "break",
+    "particle": "through",
+    "turkish": "aşmak, defalarca geçmek",
+    "example": "Scientists broke through the barrier.",
+    "exampleTr": "Bilim insanları engeli aştı."
+  },
+  {
+    "id": 15,
+    "verb": "break",
+    "particle": "up",
+    "turkish": "ayrılmak, dağılmak",
+    "example": "They broke up after three years together.",
+    "exampleTr": "Üç yıl birlikteliğin ardından ayrıldılar."
+  },
+  {
+    "id": 16,
+    "verb": "bring",
+    "particle": "about",
+    "turkish": "neden olmak, yol açmak",
+    "example": "The storm brought about significant damage.",
+    "exampleTr": "Fırtına ciddi hasara yol açtı."
+  },
+  {
+    "id": 17,
+    "verb": "bring",
+    "particle": "down",
+    "turkish": "devirmek, düşürmek",
+    "example": "The scandal brought down the government.",
+    "exampleTr": "Skandal hükümeti devirdi."
+  },
+  {
+    "id": 18,
+    "verb": "bring",
+    "particle": "forward",
+    "turkish": "öne almak, ileri sürmek",
+    "example": "The meeting was brought forward to Monday.",
+    "exampleTr": "Toplantı Pazartesi'ye alındı."
+  },
+  {
+    "id": 19,
+    "verb": "bring",
+    "particle": "out",
+    "turkish": "ortaya çıkarmak, piyasaya sürmek",
+    "example": "They brought out a new model last year.",
+    "exampleTr": "Geçen yıl yeni bir model piyasaya sürdüler."
+  },
+  {
+    "id": 20,
+    "verb": "bring",
+    "particle": "up",
+    "turkish": "yetiştirmek, gündeme getirmek",
+    "example": "She was brought up in a small town.",
+    "exampleTr": "Küçük bir kasabada büyütüldü."
+  },
+  {
+    "id": 21,
+    "verb": "call",
+    "particle": "back",
+    "turkish": "geri aramak",
+    "example": "I'll call you back in an hour.",
+    "exampleTr": "Bir saat içinde seni geri ararım."
+  },
+  {
+    "id": 22,
+    "verb": "call",
+    "particle": "off",
+    "turkish": "iptal etmek",
+    "example": "They called off the meeting due to snow.",
+    "exampleTr": "Kar nedeniyle toplantıyı iptal ettiler."
+  },
+  {
+    "id": 23,
+    "verb": "call",
+    "particle": "on",
+    "turkish": "ziyaret etmek, çağırmak",
+    "example": "The teacher called on her to answer.",
+    "exampleTr": "Öğretmen cevap vermesi için onu çağırdı."
+  },
+  {
+    "id": 24,
+    "verb": "call",
+    "particle": "out",
+    "turkish": "yüksek sesle söylemek, eleştirmek",
+    "example": "He was called out for his bad behavior.",
+    "exampleTr": "Kötü davranışı nedeniyle eleştirildi."
+  },
+  {
+    "id": 25,
+    "verb": "call",
+    "particle": "up",
+    "turkish": "telefon etmek, askere çağırmak",
+    "example": "Call me up when you arrive.",
+    "exampleTr": "Varınca beni ara."
+  },
+  {
+    "id": 26,
+    "verb": "calm",
+    "particle": "down",
+    "turkish": "sakinleşmek, yatışmak",
+    "example": "Calm down and take a deep breath.",
+    "exampleTr": "Sakin ol ve derin bir nefes al."
+  },
+  {
+    "id": 27,
+    "verb": "carry",
+    "particle": "on",
+    "turkish": "devam etmek",
+    "example": "Carry on with your work.",
+    "exampleTr": "İşine devam et."
+  },
+  {
+    "id": 28,
+    "verb": "carry",
+    "particle": "out",
+    "turkish": "gerçekleştirmek, uygulamak",
+    "example": "They carried out the experiment successfully.",
+    "exampleTr": "Deneyi başarıyla gerçekleştirdiler."
+  },
+  {
+    "id": 29,
+    "verb": "carry",
+    "particle": "over",
+    "turkish": "ertelemek, aktarmak",
+    "example": "The meeting was carried over to next week.",
+    "exampleTr": "Toplantı gelecek haftaya ertelendi."
+  },
+  {
+    "id": 30,
+    "verb": "catch",
+    "particle": "on",
+    "turkish": "moda olmak, kavramak",
+    "example": "The new trend caught on quickly.",
+    "exampleTr": "Yeni trend hızla moda oldu."
+  },
+  {
+    "id": 31,
+    "verb": "catch",
+    "particle": "up",
+    "turkish": "yetişmek, geç kaldığını kapatmak",
+    "example": "I need to catch up on my reading.",
+    "exampleTr": "Okumamda geç kaldığımı kapatmam gerekiyor."
+  },
+  {
+    "id": 32,
+    "verb": "check",
+    "particle": "in",
+    "turkish": "giriş yapmak, kontrol ettirmek",
+    "example": "We checked in at the hotel at noon.",
+    "exampleTr": "Öğlen otele giriş yaptık."
+  },
+  {
+    "id": 33,
+    "verb": "check",
+    "particle": "out",
+    "turkish": "çıkış yapmak, incelemek",
+    "example": "Check out this amazing view!",
+    "exampleTr": "Şu muhteşem manzaraya bak!"
+  },
+  {
+    "id": 34,
+    "verb": "check",
+    "particle": "up on",
+    "turkish": "kontrol etmek, araştırmak",
+    "example": "The doctor checked up on her patient.",
+    "exampleTr": "Doktor hastasını kontrol etti."
+  },
+  {
+    "id": 35,
+    "verb": "cheer",
+    "particle": "up",
+    "turkish": "neşelenmek, neşelendirmek",
+    "example": "I bought flowers to cheer her up.",
+    "exampleTr": "Onu neşelendirmek için çiçek aldım."
+  },
+  {
+    "id": 36,
+    "verb": "clean",
+    "particle": "up",
+    "turkish": "temizlemek, düzene sokmak",
+    "example": "Clean up your room before dinner.",
+    "exampleTr": "Akşam yemeğinden önce odanı temizle."
+  },
+  {
+    "id": 37,
+    "verb": "clear",
+    "particle": "out",
+    "turkish": "boşaltmak, temizlemek",
+    "example": "We need to clear out the garage.",
+    "exampleTr": "Garajı boşaltmamız gerekiyor."
+  },
+  {
+    "id": 38,
+    "verb": "clear",
+    "particle": "up",
+    "turkish": "açılmak, çözmek",
+    "example": "The weather cleared up in the afternoon.",
+    "exampleTr": "Hava öğleden sonra açıldı."
+  },
+  {
+    "id": 39,
+    "verb": "close",
+    "particle": "down",
+    "turkish": "kapanmak, faaliyetlere son vermek",
+    "example": "The factory closed down last year.",
+    "exampleTr": "Fabrika geçen yıl kapandı."
+  },
+  {
+    "id": 40,
+    "verb": "come",
+    "particle": "about",
+    "turkish": "olmak, meydana gelmek",
+    "example": "How did this situation come about?",
+    "exampleTr": "Bu durum nasıl meydana geldi?"
+  },
+  {
+    "id": 41,
+    "verb": "come",
+    "particle": "across",
+    "turkish": "karşılaşmak, rastlamak",
+    "example": "I came across an old photo album.",
+    "exampleTr": "Eski bir fotoğraf albümüne rastladım."
+  },
+  {
+    "id": 42,
+    "verb": "come",
+    "particle": "along",
+    "turkish": "gelmek, ilerleme kaydetmek",
+    "example": "How is your project coming along?",
+    "exampleTr": "Projen nasıl ilerliyor?"
+  },
+  {
+    "id": 43,
+    "verb": "come",
+    "particle": "apart",
+    "turkish": "dağılmak, parçalanmak",
+    "example": "The old book came apart in my hands.",
+    "exampleTr": "Eski kitap ellerimde dağıldı."
+  },
+  {
+    "id": 44,
+    "verb": "come",
+    "particle": "back",
+    "turkish": "geri gelmek, dönmek",
+    "example": "When will you come back home?",
+    "exampleTr": "Eve ne zaman döneceksin?"
+  },
+  {
+    "id": 45,
+    "verb": "come",
+    "particle": "down",
+    "turkish": "düşmek, inmek",
+    "example": "Prices have come down significantly.",
+    "exampleTr": "Fiyatlar önemli ölçüde düştü."
+  },
+  {
+    "id": 46,
+    "verb": "come",
+    "particle": "forward",
+    "turkish": "öne çıkmak, kendini göstermek",
+    "example": "No witnesses came forward.",
+    "exampleTr": "Hiçbir tanık öne çıkmadı."
+  },
+  {
+    "id": 47,
+    "verb": "come",
+    "particle": "in",
+    "turkish": "girmek, gelmek",
+    "example": "Come in and sit down.",
+    "exampleTr": "İçeri gir ve otur."
+  },
+  {
+    "id": 48,
+    "verb": "come",
+    "particle": "off",
+    "turkish": "çıkmak, başarılı olmak",
+    "example": "The paint came off the wall easily.",
+    "exampleTr": "Boya duvardan kolayca çıktı."
+  },
+  {
+    "id": 49,
+    "verb": "come",
+    "particle": "out",
+    "turkish": "çıkmak, ortaya çıkmak",
+    "example": "The sun came out after the rain.",
+    "exampleTr": "Yağmurdan sonra güneş çıktı."
+  },
+  {
+    "id": 50,
+    "verb": "come",
+    "particle": "over",
+    "turkish": "ziyarete gelmek, etkilemek",
+    "example": "Come over for dinner on Friday.",
+    "exampleTr": "Cuma akşamı yemeğe gel."
+  },
+  {
+    "id": 51,
+    "verb": "come",
+    "particle": "round",
+    "turkish": "uğramak, ikna olmak",
+    "example": "She came round to my way of thinking.",
+    "exampleTr": "Sonunda benim düşünceme katıldı."
+  },
+  {
+    "id": 52,
+    "verb": "come",
+    "particle": "through",
+    "turkish": "başarmak, atlatmak",
+    "example": "She came through the surgery well.",
+    "exampleTr": "Ameliyattan iyi atlatttı."
+  },
+  {
+    "id": 53,
+    "verb": "come",
+    "particle": "up",
+    "turkish": "çıkmak, gündeme gelmek",
+    "example": "Something came up at work.",
+    "exampleTr": "İşte bir şey çıktı."
+  },
+  {
+    "id": 54,
+    "verb": "come",
+    "particle": "up with",
+    "turkish": "bulmak, ortaya çıkarmak",
+    "example": "She came up with a brilliant idea.",
+    "exampleTr": "Harika bir fikir buldu."
+  },
+  {
+    "id": 55,
+    "verb": "count",
+    "particle": "on",
+    "turkish": "güvenmek, hesaba katmak",
+    "example": "You can always count on me.",
+    "exampleTr": "Her zaman bana güvenebilirsin."
+  },
+  {
+    "id": 56,
+    "verb": "count",
+    "particle": "out",
+    "turkish": "saymak, hesaba katmamak",
+    "example": "Count me out of this plan.",
+    "exampleTr": "Bu plandan beni çıkar."
+  },
+  {
+    "id": 57,
+    "verb": "cross",
+    "particle": "out",
+    "turkish": "çizmek, silmek",
+    "example": "Cross out the wrong answers.",
+    "exampleTr": "Yanlış cevapları çiz."
+  },
+  {
+    "id": 58,
+    "verb": "cut",
+    "particle": "back",
+    "turkish": "kısmak, azaltmak",
+    "example": "We need to cut back on spending.",
+    "exampleTr": "Harcamaları kısmamız gerekiyor."
+  },
+  {
+    "id": 59,
+    "verb": "cut",
+    "particle": "down",
+    "turkish": "kesmek, azaltmak",
+    "example": "He cut down on sugar for his health.",
+    "exampleTr": "Sağlığı için şekeri azalttı."
+  },
+  {
+    "id": 60,
+    "verb": "cut",
+    "particle": "in",
+    "turkish": "araya girmek, sıraya girmemek",
+    "example": "Don't cut in line!",
+    "exampleTr": "Sıraya gir!"
+  },
+  {
+    "id": 61,
+    "verb": "cut",
+    "particle": "off",
+    "turkish": "kesmek, bağlantıyı koparmak",
+    "example": "The storm cut off electricity to the town.",
+    "exampleTr": "Fırtına kasabanın elektriğini kesti."
+  },
+  {
+    "id": 62,
+    "verb": "cut",
+    "particle": "out",
+    "turkish": "kesmek, bırakmak",
+    "example": "Cut out the noise!",
+    "exampleTr": "Gürültüyü kes!"
+  },
+  {
+    "id": 63,
+    "verb": "deal",
+    "particle": "with",
+    "turkish": "başa çıkmak, ilgilenmek",
+    "example": "She deals with customer complaints daily.",
+    "exampleTr": "Her gün müşteri şikayetleriyle ilgileniyor."
+  },
+  {
+    "id": 64,
+    "verb": "die",
+    "particle": "down",
+    "turkish": "yavaşlamak, dinmek",
+    "example": "The wind finally died down.",
+    "exampleTr": "Rüzgar sonunda dindi."
+  },
+  {
+    "id": 65,
+    "verb": "die",
+    "particle": "out",
+    "turkish": "yok olmak, nesli tükenmek",
+    "example": "Many species are dying out.",
+    "exampleTr": "Birçok tür yok olmaktadır."
+  },
+  {
+    "id": 66,
+    "verb": "do",
+    "particle": "away with",
+    "turkish": "kaldırmak, ortadan kaldırmak",
+    "example": "They did away with the old rules.",
+    "exampleTr": "Eski kuralları kaldırdılar."
+  },
+  {
+    "id": 67,
+    "verb": "do",
+    "particle": "up",
+    "turkish": "düzenlemek, yenilemek",
+    "example": "They did up the old house beautifully.",
+    "exampleTr": "Eski evi güzelce yenilediler."
+  },
+  {
+    "id": 68,
+    "verb": "do",
+    "particle": "without",
+    "turkish": "idare etmek, vazgeçmek",
+    "example": "We can do without the extra expense.",
+    "exampleTr": "Fazladan masraf olmadan idare edebiliriz."
+  },
+  {
+    "id": 69,
+    "verb": "draw",
+    "particle": "back",
+    "turkish": "geri çekilmek, vazgeçmek",
+    "example": "She drew back from the edge.",
+    "exampleTr": "Kenardan geri çekildi."
+  },
+  {
+    "id": 70,
+    "verb": "draw",
+    "particle": "up",
+    "turkish": "hazırlamak, düzenlemek",
+    "example": "The lawyers drew up a contract.",
+    "exampleTr": "Avukatlar bir sözleşme hazırladı."
+  },
+  {
+    "id": 71,
+    "verb": "drop",
+    "particle": "by",
+    "turkish": "uğramak, kısa bir ziyaret yapmak",
+    "example": "Drop by anytime you're in the area.",
+    "exampleTr": "Bölgede olduğunda istediğin zaman uğra."
+  },
+  {
+    "id": 72,
+    "verb": "drop",
+    "particle": "in",
+    "turkish": "uğramak, beklenmedik ziyaret yapmak",
+    "example": "He dropped in on his way home.",
+    "exampleTr": "Eve giderken uğradı."
+  },
+  {
+    "id": 73,
+    "verb": "drop",
+    "particle": "off",
+    "turkish": "bırakmak, uyuyakalmak",
+    "example": "Can you drop me off at the station?",
+    "exampleTr": "Beni istasyona bırakabilir misin?"
+  },
+  {
+    "id": 74,
+    "verb": "drop",
+    "particle": "out",
+    "turkish": "bırakmak, ayrılmak",
+    "example": "He dropped out of college in his second year.",
+    "exampleTr": "İkinci yılında üniversiteyi bıraktı."
+  },
+  {
+    "id": 75,
+    "verb": "eat",
+    "particle": "out",
+    "turkish": "dışarıda yemek yemek",
+    "example": "Let's eat out tonight.",
+    "exampleTr": "Bu gece dışarıda yiyelim."
+  },
+  {
+    "id": 76,
+    "verb": "end",
+    "particle": "up",
+    "turkish": "sonunda olmak, nihayetinde",
+    "example": "We ended up staying for a week.",
+    "exampleTr": "Sonunda bir hafta kaldık."
+  },
+  {
+    "id": 77,
+    "verb": "fall",
+    "particle": "apart",
+    "turkish": "parçalanmak, dağılmak",
+    "example": "Their marriage fell apart.",
+    "exampleTr": "Evlilikleri dağıldı."
+  },
+  {
+    "id": 78,
+    "verb": "fall",
+    "particle": "back on",
+    "turkish": "başvurmak, dayanmak",
+    "example": "He fell back on his savings.",
+    "exampleTr": "Birikimlerine başvurdu."
+  },
+  {
+    "id": 79,
+    "verb": "fall",
+    "particle": "behind",
+    "turkish": "geri kalmak, gecikmek",
+    "example": "Don't fall behind with your studies.",
+    "exampleTr": "Derslerinde geri kalma."
+  },
+  {
+    "id": 80,
+    "verb": "fall",
+    "particle": "for",
+    "turkish": "aşık olmak, aldanmak",
+    "example": "She fell for his charm immediately.",
+    "exampleTr": "Hemen çekiciliğine kapıldı."
+  },
+  {
+    "id": 81,
+    "verb": "fall",
+    "particle": "out",
+    "turkish": "kavga etmek, arası açılmak",
+    "example": "They fell out over money.",
+    "exampleTr": "Para yüzünden araları açıldı."
+  },
+  {
+    "id": 82,
+    "verb": "fall",
+    "particle": "through",
+    "turkish": "sonuçsuz kalmak, olmamak",
+    "example": "The deal fell through at the last moment.",
+    "exampleTr": "Anlaşma son anda olmadı."
+  },
+  {
+    "id": 83,
+    "verb": "feel",
+    "particle": "up to",
+    "turkish": "hissetmek, yapabilecek durumda olmak",
+    "example": "Do you feel up to going out tonight?",
+    "exampleTr": "Bu gece dışarı çıkabilecek hissediyor musun?"
+  },
+  {
+    "id": 84,
+    "verb": "figure",
+    "particle": "out",
+    "turkish": "anlamak, çözmek",
+    "example": "I can't figure out this math problem.",
+    "exampleTr": "Bu matematik problemini çözemiyorum."
+  },
+  {
+    "id": 85,
+    "verb": "fill",
+    "particle": "in",
+    "turkish": "doldurmak, yerine geçmek",
+    "example": "Please fill in this form.",
+    "exampleTr": "Lütfen bu formu doldurun."
+  },
+  {
+    "id": 86,
+    "verb": "fill",
+    "particle": "out",
+    "turkish": "doldurmak, formları doldurmak",
+    "example": "Fill out the application form carefully.",
+    "exampleTr": "Başvuru formunu dikkatlice doldurun."
+  },
+  {
+    "id": 87,
+    "verb": "fill",
+    "particle": "up",
+    "turkish": "doldurmak, dolmak",
+    "example": "Fill up the tank before the trip.",
+    "exampleTr": "Yolculuktan önce tankı doldur."
+  },
+  {
+    "id": 88,
+    "verb": "find",
+    "particle": "out",
+    "turkish": "öğrenmek, keşfetmek",
+    "example": "I found out she had been lying.",
+    "exampleTr": "Yalan söylediğini öğrendim."
+  },
+  {
+    "id": 89,
+    "verb": "fit",
+    "particle": "in",
+    "turkish": "uyum sağlamak, sığmak",
+    "example": "He never really fit in at school.",
+    "exampleTr": "Okulda hiçbir zaman gerçekten uyum sağlayamadı."
+  },
+  {
+    "id": 90,
+    "verb": "fix",
+    "particle": "up",
+    "turkish": "tamir etmek, ayarlamak",
+    "example": "He fixed up the old bicycle.",
+    "exampleTr": "Eski bisikleti tamir etti."
+  },
+  {
+    "id": 91,
+    "verb": "get",
+    "particle": "across",
+    "turkish": "anlatmak, iletmek",
+    "example": "It's hard to get this idea across.",
+    "exampleTr": "Bu fikri anlatmak zor."
+  },
+  {
+    "id": 92,
+    "verb": "get",
+    "particle": "along",
+    "turkish": "geçinmek, iyi anlaşmak",
+    "example": "Do you get along with your neighbors?",
+    "exampleTr": "Komşularınla iyi geçiniyor musun?"
+  },
+  {
+    "id": 93,
+    "verb": "get",
+    "particle": "around",
+    "turkish": "dolaşmak, aşmak",
+    "example": "There's no getting around this problem.",
+    "exampleTr": "Bu sorunu atlatmanın yolu yok."
+  },
+  {
+    "id": 94,
+    "verb": "get",
+    "particle": "away",
+    "turkish": "kaçmak, tatile gitmek",
+    "example": "We need to get away for a few days.",
+    "exampleTr": "Birkaç günlüğüne uzaklaşmamız gerekiyor."
+  },
+  {
+    "id": 95,
+    "verb": "get",
+    "particle": "back",
+    "turkish": "geri gelmek, almak",
+    "example": "When did you get back from holiday?",
+    "exampleTr": "Tatilden ne zaman döndün?"
+  },
+  {
+    "id": 96,
+    "verb": "get",
+    "particle": "by",
+    "turkish": "idare etmek, geçinmek",
+    "example": "We'll get by on a small budget.",
+    "exampleTr": "Küçük bir bütçeyle idare ederiz."
+  },
+  {
+    "id": 97,
+    "verb": "get",
+    "particle": "down to",
+    "turkish": "başlamak, işe koyulmak",
+    "example": "Let's get down to business.",
+    "exampleTr": "İşe koyulalım."
+  },
+  {
+    "id": 98,
+    "verb": "get",
+    "particle": "in",
+    "turkish": "girmek, gelmek",
+    "example": "What time did you get in last night?",
+    "exampleTr": "Dün gece saat kaçta geldin?"
+  },
+  {
+    "id": 99,
+    "verb": "get",
+    "particle": "off",
+    "turkish": "inmek, kurtulmak",
+    "example": "Get off the bus at the next stop.",
+    "exampleTr": "Bir sonraki durakta otobüsten in."
+  },
+  {
+    "id": 100,
+    "verb": "get",
+    "particle": "on",
+    "turkish": "binmek, geçinmek, ilerlemek",
+    "example": "How are you getting on at your new job?",
+    "exampleTr": "Yeni işinde nasıl ilerliyorsun?"
+  },
+  {
+    "id": 101,
+    "verb": "get",
+    "particle": "out",
+    "turkish": "çıkmak, kurtulmak",
+    "example": "Let's get out of here!",
+    "exampleTr": "Buradan çıkalım!"
+  },
+  {
+    "id": 102,
+    "verb": "get",
+    "particle": "over",
+    "turkish": "atlatmak, üstesinden gelmek",
+    "example": "It took months to get over the breakup.",
+    "exampleTr": "Ayrılığı atlatmak aylar aldı."
+  },
+  {
+    "id": 103,
+    "verb": "get",
+    "particle": "through",
+    "turkish": "bitmek, ulaşmak, geçmek",
+    "example": "I can't get through to him on the phone.",
+    "exampleTr": "Telefonda ona ulaşamıyorum."
+  },
+  {
+    "id": 104,
+    "verb": "get",
+    "particle": "together",
+    "turkish": "bir araya gelmek, toplanmak",
+    "example": "Let's get together for coffee sometime.",
+    "exampleTr": "Bir ara kahve için bir araya gelelim."
+  },
+  {
+    "id": 105,
+    "verb": "get",
+    "particle": "up",
+    "turkish": "kalkmak, uyanmak",
+    "example": "I get up at seven every morning.",
+    "exampleTr": "Her sabah yedide kalkıyorum."
+  },
+  {
+    "id": 106,
+    "verb": "give",
+    "particle": "away",
+    "turkish": "vermek, ele vermek",
+    "example": "He gave away all his old clothes.",
+    "exampleTr": "Tüm eski kıyafetlerini verdi."
+  },
+  {
+    "id": 107,
+    "verb": "give",
+    "particle": "back",
+    "turkish": "geri vermek, iade etmek",
+    "example": "Give back what you borrowed.",
+    "exampleTr": "Ödünç aldıklarını geri ver."
+  },
+  {
+    "id": 108,
+    "verb": "give",
+    "particle": "in",
+    "turkish": "teslim olmak, boyun eğmek",
+    "example": "Don't give in to pressure.",
+    "exampleTr": "Baskıya boyun eğme."
+  },
+  {
+    "id": 109,
+    "verb": "give",
+    "particle": "out",
+    "turkish": "dağıtmak, tükenmek",
+    "example": "She gave out leaflets in the street.",
+    "exampleTr": "Sokakta el ilanı dağıttı."
+  },
+  {
+    "id": 110,
+    "verb": "give",
+    "particle": "up",
+    "turkish": "vazgeçmek, bırakmak",
+    "example": "Never give up on your dreams.",
+    "exampleTr": "Hayallerinden asla vazgeçme."
+  },
+  {
+    "id": 111,
+    "verb": "go",
+    "particle": "ahead",
+    "turkish": "devam etmek, ilerlemek",
+    "example": "Go ahead with the plan.",
+    "exampleTr": "Planla devam et."
+  },
+  {
+    "id": 112,
+    "verb": "go",
+    "particle": "along with",
+    "turkish": "katılmak, desteklemek",
+    "example": "I'll go along with whatever you decide.",
+    "exampleTr": "Ne karar verirsen desteklerim."
+  },
+  {
+    "id": 113,
+    "verb": "go",
+    "particle": "back",
+    "turkish": "geri dönmek",
+    "example": "We should go back to the basics.",
+    "exampleTr": "Temellere dönmeliyiz."
+  },
+  {
+    "id": 114,
+    "verb": "go",
+    "particle": "by",
+    "turkish": "geçmek, göre hareket etmek",
+    "example": "Time goes by so fast.",
+    "exampleTr": "Zaman çok hızlı geçiyor."
+  },
+  {
+    "id": 115,
+    "verb": "go",
+    "particle": "down",
+    "turkish": "inmek, azalmak, batmak",
+    "example": "The sun goes down in the west.",
+    "exampleTr": "Güneş batıda batar."
+  },
+  {
+    "id": 116,
+    "verb": "go",
+    "particle": "for",
+    "turkish": "tercih etmek, saldırmak",
+    "example": "I'll go for the salad.",
+    "exampleTr": "Salatayı tercih edeceğim."
+  },
+  {
+    "id": 117,
+    "verb": "go",
+    "particle": "in for",
+    "turkish": "katılmak, ilgi duymak",
+    "example": "She goes in for photography.",
+    "exampleTr": "Fotoğrafçılıkla ilgileniyor."
+  },
+  {
+    "id": 118,
+    "verb": "go",
+    "particle": "into",
+    "turkish": "girmek, araştırmak",
+    "example": "Let's go into the details.",
+    "exampleTr": "Ayrıntılara girelim."
+  },
+  {
+    "id": 119,
+    "verb": "go",
+    "particle": "off",
+    "turkish": "gitmek, patlamak, bozulmak",
+    "example": "The alarm went off at six.",
+    "exampleTr": "Alarm altıda çaldı."
+  },
+  {
+    "id": 120,
+    "verb": "go",
+    "particle": "on",
+    "turkish": "devam etmek, olmak",
+    "example": "What's going on here?",
+    "exampleTr": "Burada ne oluyor?"
+  },
+  {
+    "id": 121,
+    "verb": "go",
+    "particle": "out",
+    "turkish": "çıkmak, söndürmek",
+    "example": "The lights went out suddenly.",
+    "exampleTr": "Işıklar aniden söndü."
+  },
+  {
+    "id": 122,
+    "verb": "go",
+    "particle": "over",
+    "turkish": "gözden geçirmek, tekrar etmek",
+    "example": "Let's go over the plan one more time.",
+    "exampleTr": "Planı bir kez daha gözden geçirelim."
+  },
+  {
+    "id": 123,
+    "verb": "go",
+    "particle": "through",
+    "turkish": "geçmek, yaşamak, incelemek",
+    "example": "She went through a difficult period.",
+    "exampleTr": "Zor bir dönemden geçti."
+  },
+  {
+    "id": 124,
+    "verb": "go",
+    "particle": "up",
+    "turkish": "yükselmek, artmak",
+    "example": "Prices keep going up.",
+    "exampleTr": "Fiyatlar sürekli artıyor."
+  },
+  {
+    "id": 125,
+    "verb": "go",
+    "particle": "with",
+    "turkish": "uymak, eşlik etmek",
+    "example": "This tie goes with your shirt.",
+    "exampleTr": "Bu kravat gömleğinle uyuyor."
+  },
+  {
+    "id": 126,
+    "verb": "grow",
+    "particle": "up",
+    "turkish": "büyümek, yetişkin olmak",
+    "example": "Where did you grow up?",
+    "exampleTr": "Nerede büyüdün?"
+  },
+  {
+    "id": 127,
+    "verb": "hand",
+    "particle": "in",
+    "turkish": "teslim etmek, vermek",
+    "example": "Hand in your homework by Friday.",
+    "exampleTr": "Ödevini Cuma'ya kadar teslim et."
+  },
+  {
+    "id": 128,
+    "verb": "hand",
+    "particle": "out",
+    "turkish": "dağıtmak",
+    "example": "The teacher handed out the test papers.",
+    "exampleTr": "Öğretmen sınav kağıtlarını dağıttı."
+  },
+  {
+    "id": 129,
+    "verb": "hand",
+    "particle": "over",
+    "turkish": "devretmek, teslim etmek",
+    "example": "Hand over the keys to the car.",
+    "exampleTr": "Arabanın anahtarlarını teslim et."
+  },
+  {
+    "id": 130,
+    "verb": "hang",
+    "particle": "around",
+    "turkish": "beklemek, takılmak",
+    "example": "Don't hang around — we need to leave.",
+    "exampleTr": "Oyalanma — gitmemiz gerekiyor."
+  },
+  {
+    "id": 131,
+    "verb": "hang",
+    "particle": "on",
+    "turkish": "beklemek, tutunmak",
+    "example": "Hang on a minute, I'll be right back.",
+    "exampleTr": "Bir dakika bekle, hemen geliyorum."
+  },
+  {
+    "id": 132,
+    "verb": "hang",
+    "particle": "out",
+    "turkish": "takılmak, vakit geçirmek",
+    "example": "We used to hang out at the mall.",
+    "exampleTr": "Alışveriş merkezinde takılırdık."
+  },
+  {
+    "id": 133,
+    "verb": "hang",
+    "particle": "up",
+    "turkish": "kapatmak, asmak",
+    "example": "She hung up the phone angrily.",
+    "exampleTr": "Telefonu sinirle kapattı."
+  },
+  {
+    "id": 134,
+    "verb": "hold",
+    "particle": "back",
+    "turkish": "geri tutmak, durdurmak",
+    "example": "Nothing will hold me back.",
+    "exampleTr": "Hiçbir şey beni durduramaz."
+  },
+  {
+    "id": 135,
+    "verb": "hold",
+    "particle": "on",
+    "turkish": "beklemek, tutunmak",
+    "example": "Hold on, I need to check something.",
+    "exampleTr": "Bekle, bir şeyi kontrol etmem gerekiyor."
+  },
+  {
+    "id": 136,
+    "verb": "hold",
+    "particle": "out",
+    "turkish": "dayanmak, sürdürmek",
+    "example": "How long can you hold out?",
+    "exampleTr": "Ne kadar dayanabilirsin?"
+  },
+  {
+    "id": 137,
+    "verb": "hold",
+    "particle": "up",
+    "turkish": "geciktirmek, soymak",
+    "example": "Traffic held us up for an hour.",
+    "exampleTr": "Trafik bizi bir saat geciktirdi."
+  },
+  {
+    "id": 138,
+    "verb": "hurry",
+    "particle": "up",
+    "turkish": "acele etmek",
+    "example": "Hurry up or we'll miss the train.",
+    "exampleTr": "Acele et yoksa treni kaçırırız."
+  },
+  {
+    "id": 139,
+    "verb": "keep",
+    "particle": "away",
+    "turkish": "uzak durmak, uzaklaştırmak",
+    "example": "Keep away from the edge.",
+    "exampleTr": "Kenardan uzak dur."
+  },
+  {
+    "id": 140,
+    "verb": "keep",
+    "particle": "on",
+    "turkish": "devam etmek",
+    "example": "Keep on trying and you'll succeed.",
+    "exampleTr": "Denemeye devam et ve başaracaksın."
+  },
+  {
+    "id": 141,
+    "verb": "keep",
+    "particle": "out",
+    "turkish": "dışarıda tutmak, girilmez",
+    "example": "Keep out of my room!",
+    "exampleTr": "Odama girme!"
+  },
+  {
+    "id": 142,
+    "verb": "keep",
+    "particle": "up",
+    "turkish": "ayak uydurmak, devam ettirmek",
+    "example": "Keep up the good work!",
+    "exampleTr": "İyi işe devam et!"
+  },
+  {
+    "id": 143,
+    "verb": "keep",
+    "particle": "up with",
+    "turkish": "ayak uydurmak, takip etmek",
+    "example": "It's hard to keep up with technology.",
+    "exampleTr": "Teknolojiye ayak uydurmak zor."
+  },
+  {
+    "id": 144,
+    "verb": "knock",
+    "particle": "down",
+    "turkish": "yıkmak, fiyat düşürmek",
+    "example": "The old building was knocked down.",
+    "exampleTr": "Eski bina yıkıldı."
+  },
+  {
+    "id": 145,
+    "verb": "knock",
+    "particle": "out",
+    "turkish": "nakavt etmek, bayıltmak",
+    "example": "The boxer knocked out his opponent.",
+    "exampleTr": "Boksör rakibini nakavt etti."
+  },
+  {
+    "id": 146,
+    "verb": "lay",
+    "particle": "off",
+    "turkish": "işten çıkarmak, bırakmak",
+    "example": "The company laid off fifty workers.",
+    "exampleTr": "Şirket elli işçiyi işten çıkardı."
+  },
+  {
+    "id": 147,
+    "verb": "lay",
+    "particle": "out",
+    "turkish": "planlamak, sıralamak",
+    "example": "She laid out the clothes on the bed.",
+    "exampleTr": "Kıyafetleri yatağa serdi."
+  },
+  {
+    "id": 148,
+    "verb": "leave",
+    "particle": "behind",
+    "turkish": "geride bırakmak, unutmak",
+    "example": "Don't leave anyone behind.",
+    "exampleTr": "Kimseyi geride bırakma."
+  },
+  {
+    "id": 149,
+    "verb": "leave",
+    "particle": "out",
+    "turkish": "çıkarmak, dahil etmemek",
+    "example": "You left out an important detail.",
+    "exampleTr": "Önemli bir ayrıntıyı çıkardın."
+  },
+  {
+    "id": 150,
+    "verb": "let",
+    "particle": "down",
+    "turkish": "hayal kırıklığına uğratmak",
+    "example": "Don't let me down.",
+    "exampleTr": "Beni hayal kırıklığına uğratma."
+  },
+  {
+    "id": 151,
+    "verb": "let",
+    "particle": "in",
+    "turkish": "içeri almak, girmesine izin vermek",
+    "example": "Let me in, it's cold outside!",
+    "exampleTr": "İçeri al, dışarısı soğuk!"
+  },
+  {
+    "id": 152,
+    "verb": "let",
+    "particle": "off",
+    "turkish": "serbest bırakmak, cezasız bırakmak",
+    "example": "The judge let him off with a warning.",
+    "exampleTr": "Yargıç onu uyarıyla serbest bıraktı."
+  },
+  {
+    "id": 153,
+    "verb": "let",
+    "particle": "out",
+    "turkish": "serbest bırakmak, dışarı çıkarmak",
+    "example": "Let the dog out for a walk.",
+    "exampleTr": "Köpeği yürüyüşe çıkar."
+  },
+  {
+    "id": 154,
+    "verb": "let",
+    "particle": "up",
+    "turkish": "azalmak, hafiflemek",
+    "example": "The rain finally let up.",
+    "exampleTr": "Yağmur sonunda hafifliyor."
+  },
+  {
+    "id": 155,
+    "verb": "light",
+    "particle": "up",
+    "turkish": "aydınlanmak, parlamak",
+    "example": "Her face lit up when she saw him.",
+    "exampleTr": "Onu görünce yüzü parladı."
+  },
+  {
+    "id": 156,
+    "verb": "look",
+    "particle": "after",
+    "turkish": "bakmak, ilgilenmek",
+    "example": "Can you look after my dog this weekend?",
+    "exampleTr": "Bu hafta sonu köpeğime bakabilir misin?"
+  },
+  {
+    "id": 157,
+    "verb": "look",
+    "particle": "back",
+    "turkish": "geriye bakmak, geçmişe dönmek",
+    "example": "Looking back, I made the right choice.",
+    "exampleTr": "Geriye baktığımda, doğru seçim yaptım."
+  },
+  {
+    "id": 158,
+    "verb": "look",
+    "particle": "down on",
+    "turkish": "küçümsemek, aşağılamak",
+    "example": "Don't look down on others.",
+    "exampleTr": "Başkalarını küçümseme."
+  },
+  {
+    "id": 159,
+    "verb": "look",
+    "particle": "for",
+    "turkish": "aramak",
+    "example": "What are you looking for?",
+    "exampleTr": "Ne arıyorsun?"
+  },
+  {
+    "id": 160,
+    "verb": "look",
+    "particle": "forward to",
+    "turkish": "dört gözle beklemek",
+    "example": "I look forward to seeing you.",
+    "exampleTr": "Seni görmek için sabırsızlanıyorum."
+  },
+  {
+    "id": 161,
+    "verb": "look",
+    "particle": "into",
+    "turkish": "araştırmak, incelemek",
+    "example": "Police are looking into the matter.",
+    "exampleTr": "Polis konuyu araştırıyor."
+  },
+  {
+    "id": 162,
+    "verb": "look",
+    "particle": "out",
+    "turkish": "dikkat etmek, gözetlemek",
+    "example": "Look out for cars when crossing.",
+    "exampleTr": "Karşıdan geçerken arabalara dikkat et."
+  },
+  {
+    "id": 163,
+    "verb": "look",
+    "particle": "over",
+    "turkish": "gözden geçirmek, incelemek",
+    "example": "Look over the contract before signing.",
+    "exampleTr": "İmzalamadan önce sözleşmeyi gözden geçir."
+  },
+  {
+    "id": 164,
+    "verb": "look",
+    "particle": "up",
+    "turkish": "aramak, yukarı bakmak",
+    "example": "Look up the word in the dictionary.",
+    "exampleTr": "Kelimeyi sözlükte ara."
+  },
+  {
+    "id": 165,
+    "verb": "look",
+    "particle": "up to",
+    "turkish": "saygı duymak, örnek almak",
+    "example": "She looks up to her older sister.",
+    "exampleTr": "Ablasına saygı duyuyor."
+  },
+  {
+    "id": 166,
+    "verb": "make",
+    "particle": "for",
+    "turkish": "doğru gitmek, katkıda bulunmak",
+    "example": "The heavy rain made for dangerous driving.",
+    "exampleTr": "Yoğun yağmur tehlikeli sürüşe yol açtı."
+  },
+  {
+    "id": 167,
+    "verb": "make",
+    "particle": "out",
+    "turkish": "anlamak, iddia etmek",
+    "example": "I can't make out what he's saying.",
+    "exampleTr": "Ne dediğini anlayamıyorum."
+  },
+  {
+    "id": 168,
+    "verb": "make",
+    "particle": "up",
+    "turkish": "uydurmak, barışmak, oluşturmak",
+    "example": "They made up after their argument.",
+    "exampleTr": "Tartışmalarının ardından barıştılar."
+  },
+  {
+    "id": 169,
+    "verb": "make",
+    "particle": "up for",
+    "turkish": "telafi etmek, karşılamak",
+    "example": "He worked hard to make up for lost time.",
+    "exampleTr": "Kaybettiği zamanı telafi etmek için çok çalıştı."
+  },
+  {
+    "id": 170,
+    "verb": "mix",
+    "particle": "up",
+    "turkish": "karıştırmak, şaşırmak",
+    "example": "I always mix up their names.",
+    "exampleTr": "İsimlerini hep karıştırıyorum."
+  },
+  {
+    "id": 171,
+    "verb": "move",
+    "particle": "in",
+    "turkish": "taşınmak",
+    "example": "They moved in to their new house.",
+    "exampleTr": "Yeni evlerine taşındılar."
+  },
+  {
+    "id": 172,
+    "verb": "move",
+    "particle": "on",
+    "turkish": "ilerlemek, geçmişi bırakmak",
+    "example": "It's time to move on.",
+    "exampleTr": "İlerleme zamanı."
+  },
+  {
+    "id": 173,
+    "verb": "move",
+    "particle": "out",
+    "turkish": "taşınmak, çıkmak",
+    "example": "She moved out of her parents' house.",
+    "exampleTr": "Ailesinin evinden taşındı."
+  },
+  {
+    "id": 174,
+    "verb": "own",
+    "particle": "up",
+    "turkish": "itiraf etmek, kabullenmek",
+    "example": "Own up to your mistakes.",
+    "exampleTr": "Hatalarını kabul et."
+  },
+  {
+    "id": 175,
+    "verb": "pass",
+    "particle": "away",
+    "turkish": "vefat etmek, ölmek",
+    "example": "His grandfather passed away last year.",
+    "exampleTr": "Dedesi geçen yıl vefat etti."
+  },
+  {
+    "id": 176,
+    "verb": "pass",
+    "particle": "out",
+    "turkish": "bayılmak, dağıtmak",
+    "example": "She passed out from the heat.",
+    "exampleTr": "Sıcaktan bayıldı."
+  },
+  {
+    "id": 177,
+    "verb": "pass",
+    "particle": "up",
+    "turkish": "fırsatı kaçırmak, reddetmek",
+    "example": "Don't pass up this opportunity.",
+    "exampleTr": "Bu fırsatı kaçırma."
+  },
+  {
+    "id": 178,
+    "verb": "pay",
+    "particle": "back",
+    "turkish": "geri ödemek, öc almak",
+    "example": "I'll pay you back next week.",
+    "exampleTr": "Gelecek hafta geri öderim."
+  },
+  {
+    "id": 179,
+    "verb": "pay",
+    "particle": "off",
+    "turkish": "karşılığını vermek, tamamını ödemek",
+    "example": "All the hard work paid off.",
+    "exampleTr": "Tüm sıkı çalışma karşılığını verdi."
+  },
+  {
+    "id": 180,
+    "verb": "pick",
+    "particle": "out",
+    "turkish": "seçmek, ayırt etmek",
+    "example": "Pick out the one you like best.",
+    "exampleTr": "En çok beğendiğini seç."
+  },
+  {
+    "id": 181,
+    "verb": "pick",
+    "particle": "up",
+    "turkish": "almak, kavramak, toparlamak",
+    "example": "Can you pick me up from the airport?",
+    "exampleTr": "Beni havalimanından alabilir misin?"
+  },
+  {
+    "id": 182,
+    "verb": "point",
+    "particle": "out",
+    "turkish": "belirtmek, işaret etmek",
+    "example": "She pointed out an error in the report.",
+    "exampleTr": "Rapordaki bir hatayı belirtti."
+  },
+  {
+    "id": 183,
+    "verb": "pull",
+    "particle": "off",
+    "turkish": "başarmak, gerçekleştirmek",
+    "example": "They pulled off an amazing performance.",
+    "exampleTr": "Muhteşem bir performans sergilediler."
+  },
+  {
+    "id": 184,
+    "verb": "pull",
+    "particle": "out",
+    "turkish": "çıkmak, geri çekilmek",
+    "example": "The company pulled out of the deal.",
+    "exampleTr": "Şirket anlaşmadan çekildi."
+  },
+  {
+    "id": 185,
+    "verb": "pull",
+    "particle": "through",
+    "turkish": "atlatmak, toparlanmak",
+    "example": "The doctors helped him pull through.",
+    "exampleTr": "Doktorlar iyileşmesine yardımcı oldu."
+  },
+  {
+    "id": 186,
+    "verb": "pull",
+    "particle": "together",
+    "turkish": "birlikte çalışmak, kendine gelmek",
+    "example": "Pull yourself together!",
+    "exampleTr": "Kendine gel!"
+  },
+  {
+    "id": 187,
+    "verb": "put",
+    "particle": "aside",
+    "turkish": "bir kenara bırakmak, biriktirmek",
+    "example": "Put your differences aside.",
+    "exampleTr": "Farklılıklarını bir kenara bırak."
+  },
+  {
+    "id": 188,
+    "verb": "put",
+    "particle": "away",
+    "turkish": "kaldırmak, yerleştirmek",
+    "example": "Put away your toys when you're done.",
+    "exampleTr": "İşin bitince oyuncaklarını kaldır."
+  },
+  {
+    "id": 189,
+    "verb": "put",
+    "particle": "back",
+    "turkish": "yerine koymak, ertelemek",
+    "example": "Put the book back on the shelf.",
+    "exampleTr": "Kitabı rafa geri koy."
+  },
+  {
+    "id": 190,
+    "verb": "put",
+    "particle": "down",
+    "turkish": "indirmek, küçümsemek, öldürmek",
+    "example": "Stop putting yourself down.",
+    "exampleTr": "Kendini küçümsemeyi bırak."
+  },
+  {
+    "id": 191,
+    "verb": "put",
+    "particle": "forward",
+    "turkish": "öne sürmek, teklif etmek",
+    "example": "She put forward a new proposal.",
+    "exampleTr": "Yeni bir öneri sundu."
+  },
+  {
+    "id": 192,
+    "verb": "put",
+    "particle": "off",
+    "turkish": "ertelemek, caydırmak",
+    "example": "Don't put off till tomorrow what you can do today.",
+    "exampleTr": "Bugün yapabildiğini yarına bırakma."
+  },
+  {
+    "id": 193,
+    "verb": "put",
+    "particle": "on",
+    "turkish": "giymek, takmak, sahneye koymak",
+    "example": "Put on your coat, it's cold outside.",
+    "exampleTr": "Montunu giy, dışarısı soğuk."
+  },
+  {
+    "id": 194,
+    "verb": "put",
+    "particle": "out",
+    "turkish": "söndürmek, rahatsız etmek",
+    "example": "Firefighters put out the blaze quickly.",
+    "exampleTr": "İtfaiyeciler yangını hızla söndürdü."
+  },
+  {
+    "id": 195,
+    "verb": "put",
+    "particle": "through",
+    "turkish": "bağlamak, geçirmek",
+    "example": "Can you put me through to the manager?",
+    "exampleTr": "Müdürle bağlantı kurabilir misin?"
+  },
+  {
+    "id": 196,
+    "verb": "put",
+    "particle": "up",
+    "turkish": "asmak, barındırmak, artırmak",
+    "example": "They put up a tent in the garden.",
+    "exampleTr": "Bahçeye çadır kurdu."
+  },
+  {
+    "id": 197,
+    "verb": "put",
+    "particle": "up with",
+    "turkish": "katlanmak, tahammül etmek",
+    "example": "I can't put up with this noise anymore.",
+    "exampleTr": "Bu gürültüye artık katlanamıyorum."
+  },
+  {
+    "id": 198,
+    "verb": "run",
+    "particle": "across",
+    "turkish": "rastlamak, tesadüfen bulmak",
+    "example": "I ran across an old friend yesterday.",
+    "exampleTr": "Dün eski bir arkadaşla karşılaştım."
+  },
+  {
+    "id": 199,
+    "verb": "run",
+    "particle": "away",
+    "turkish": "kaçmak, firar etmek",
+    "example": "Don't run away from your problems.",
+    "exampleTr": "Sorunlarından kaçma."
+  },
+  {
+    "id": 200,
+    "verb": "run",
+    "particle": "into",
+    "turkish": "çarpmak, tesadüfen karşılaşmak",
+    "example": "I ran into my old teacher at the market.",
+    "exampleTr": "Markette eski öğretmenimle karşılaştım."
+  },
+  {
+    "id": 201,
+    "verb": "run",
+    "particle": "out of",
+    "turkish": "tükenmek, bitmek",
+    "example": "We ran out of milk this morning.",
+    "exampleTr": "Bu sabah sütümüz bitti."
+  },
+  {
+    "id": 202,
+    "verb": "run",
+    "particle": "over",
+    "turkish": "üstünden geçmek, tekrar etmek",
+    "example": "Let's run over the key points.",
+    "exampleTr": "Temel noktaları tekrarlayalım."
+  },
+  {
+    "id": 203,
+    "verb": "run",
+    "particle": "through",
+    "turkish": "gözden geçirmek, tekrar etmek",
+    "example": "Run through the instructions one more time.",
+    "exampleTr": "Talimatları bir kez daha gözden geçir."
+  },
+  {
+    "id": 204,
+    "verb": "run",
+    "particle": "up",
+    "turkish": "artmak, biriktirmek",
+    "example": "He ran up a huge debt.",
+    "exampleTr": "Büyük borç biriktirdi."
+  },
+  {
+    "id": 205,
+    "verb": "set",
+    "particle": "aside",
+    "turkish": "bir kenara ayırmak, göz ardı etmek",
+    "example": "Set aside some time for exercise.",
+    "exampleTr": "Egzersiz için zaman ayır."
+  },
+  {
+    "id": 206,
+    "verb": "set",
+    "particle": "back",
+    "turkish": "geciktirmek, zarar vermek",
+    "example": "The delay set us back by two weeks.",
+    "exampleTr": "Gecikme bizi iki hafta geri attı."
+  },
+  {
+    "id": 207,
+    "verb": "set",
+    "particle": "off",
+    "turkish": "yola çıkmak, tetiklemek",
+    "example": "They set off early in the morning.",
+    "exampleTr": "Sabah erkenden yola çıktılar."
+  },
+  {
+    "id": 208,
+    "verb": "set",
+    "particle": "out",
+    "turkish": "yola çıkmak, ortaya koymak",
+    "example": "She set out to prove her theory.",
+    "exampleTr": "Teorisini kanıtlamak için yola koyuldu."
+  },
+  {
+    "id": 209,
+    "verb": "set",
+    "particle": "up",
+    "turkish": "kurmak, hazırlamak",
+    "example": "They set up a new business last year.",
+    "exampleTr": "Geçen yıl yeni bir iş kurdular."
+  },
+  {
+    "id": 210,
+    "verb": "settle",
+    "particle": "down",
+    "turkish": "yerleşmek, sakinleşmek",
+    "example": "It's time to settle down and start a family.",
+    "exampleTr": "Yerleşip aile kurma zamanı."
+  },
+  {
+    "id": 211,
+    "verb": "settle",
+    "particle": "for",
+    "turkish": "razı olmak, yetinmek",
+    "example": "Don't settle for less than you deserve.",
+    "exampleTr": "Hak ettiğinden azına razı olma."
+  },
+  {
+    "id": 212,
+    "verb": "show",
+    "particle": "off",
+    "turkish": "gösteriş yapmak, sergilemek",
+    "example": "He loves to show off his new car.",
+    "exampleTr": "Yeni arabasıyla gösteriş yapmayı seviyor."
+  },
+  {
+    "id": 213,
+    "verb": "show",
+    "particle": "up",
+    "turkish": "gelmek, görünmek, ortaya çıkmak",
+    "example": "She didn't show up to the meeting.",
+    "exampleTr": "Toplantıya gelmedi."
+  },
+  {
+    "id": 214,
+    "verb": "shut",
+    "particle": "down",
+    "turkish": "kapatmak, devre dışı bırakmak",
+    "example": "The factory was shut down last month.",
+    "exampleTr": "Fabrika geçen ay kapatıldı."
+  },
+  {
+    "id": 215,
+    "verb": "shut",
+    "particle": "up",
+    "turkish": "susmak, ağzını kapatmak",
+    "example": "Please shut up — I'm trying to concentrate.",
+    "exampleTr": "Lütfen sus — konsantre olmaya çalışıyorum."
+  },
+  {
+    "id": 216,
+    "verb": "sign",
+    "particle": "in",
+    "turkish": "imzayla giriş yapmak, kayıt olmak",
+    "example": "Sign in with your username and password.",
+    "exampleTr": "Kullanıcı adı ve şifrenle giriş yap."
+  },
+  {
+    "id": 217,
+    "verb": "sign",
+    "particle": "up",
+    "turkish": "kaydolmak, üye olmak",
+    "example": "Sign up for our newsletter.",
+    "exampleTr": "Bültenimize kaydol."
+  },
+  {
+    "id": 218,
+    "verb": "sort",
+    "particle": "out",
+    "turkish": "çözmek, düzenlemek",
+    "example": "Let me sort out this problem.",
+    "exampleTr": "Bu sorunu çözeyim."
+  },
+  {
+    "id": 219,
+    "verb": "speak",
+    "particle": "out",
+    "turkish": "açıkça konuşmak, sesini yükseltmek",
+    "example": "She spoke out against injustice.",
+    "exampleTr": "Adaletsizliğe karşı sesini yükseltti."
+  },
+  {
+    "id": 220,
+    "verb": "speak",
+    "particle": "up",
+    "turkish": "daha yüksek sesle konuşmak, açıkça konuşmak",
+    "example": "Speak up — I can't hear you.",
+    "exampleTr": "Daha yüksek sesle konuş — seni duyamıyorum."
+  },
+  {
+    "id": 221,
+    "verb": "stand",
+    "particle": "by",
+    "turkish": "yanında olmak, desteklemek",
+    "example": "I'll stand by you no matter what.",
+    "exampleTr": "Her ne olursa olsun yanında olacağım."
+  },
+  {
+    "id": 222,
+    "verb": "stand",
+    "particle": "for",
+    "turkish": "temsil etmek, tahammül etmek",
+    "example": "What does NATO stand for?",
+    "exampleTr": "NATO ne anlama geliyor?"
+  },
+  {
+    "id": 223,
+    "verb": "stand",
+    "particle": "out",
+    "turkish": "öne çıkmak, dikkat çekmek",
+    "example": "Her talent really stands out.",
+    "exampleTr": "Yeteneği gerçekten öne çıkıyor."
+  },
+  {
+    "id": 224,
+    "verb": "stand",
+    "particle": "up",
+    "turkish": "kalkmak, haklarını savunmak",
+    "example": "Stand up for what you believe in.",
+    "exampleTr": "İnandığın şeyler için haklarını savun."
+  },
+  {
+    "id": 225,
+    "verb": "stand",
+    "particle": "up for",
+    "turkish": "savunmak, korumak",
+    "example": "Always stand up for yourself.",
+    "exampleTr": "Her zaman kendini savun."
+  },
+  {
+    "id": 226,
+    "verb": "stay",
+    "particle": "in",
+    "turkish": "evde kalmak, içeride kalmak",
+    "example": "Let's stay in tonight and watch a movie.",
+    "exampleTr": "Bu gece evde kalıp film izleyelim."
+  },
+  {
+    "id": 227,
+    "verb": "stay",
+    "particle": "out",
+    "turkish": "geç saate kadar dışarıda kalmak",
+    "example": "Don't stay out too late.",
+    "exampleTr": "Çok geç saate kadar dışarıda kalma."
+  },
+  {
+    "id": 228,
+    "verb": "stay",
+    "particle": "up",
+    "turkish": "geç yatmak, uyanık kalmak",
+    "example": "I stayed up all night studying.",
+    "exampleTr": "Bütün gece çalışarak uyumadım."
+  },
+  {
+    "id": 229,
+    "verb": "step",
+    "particle": "down",
+    "turkish": "istifa etmek, çekilmek",
+    "example": "The CEO stepped down after the scandal.",
+    "exampleTr": "CEO skandalın ardından istifa etti."
+  },
+  {
+    "id": 230,
+    "verb": "step",
+    "particle": "up",
+    "turkish": "artırmak, üstlenmek",
+    "example": "We need to step up our efforts.",
+    "exampleTr": "Çabalarımızı artırmamız gerekiyor."
+  },
+  {
+    "id": 231,
+    "verb": "take",
+    "particle": "after",
+    "turkish": "benzemek, almak",
+    "example": "She takes after her mother.",
+    "exampleTr": "Annesine benziyor."
+  },
+  {
+    "id": 232,
+    "verb": "take",
+    "particle": "apart",
+    "turkish": "parçalara ayırmak, eleştirmek",
+    "example": "He took apart the old clock.",
+    "exampleTr": "Eski saati parçalarına ayırdı."
+  },
+  {
+    "id": 233,
+    "verb": "take",
+    "particle": "away",
+    "turkish": "götürmek, almak",
+    "example": "Take away the empty plates.",
+    "exampleTr": "Boş tabakları götür."
+  },
+  {
+    "id": 234,
+    "verb": "take",
+    "particle": "back",
+    "turkish": "geri almak, geri götürmek",
+    "example": "I take back what I said.",
+    "exampleTr": "Söylediklerimi geri alıyorum."
+  },
+  {
+    "id": 235,
+    "verb": "take",
+    "particle": "down",
+    "turkish": "kaldırmak, not almak",
+    "example": "Take down the decorations after the party.",
+    "exampleTr": "Partiden sonra süslemeleri kaldır."
+  },
+  {
+    "id": 236,
+    "verb": "take",
+    "particle": "in",
+    "turkish": "barındırmak, aldatmak, anlamak",
+    "example": "It's a lot to take in all at once.",
+    "exampleTr": "Hepsini bir anda kavramak çok fazla."
+  },
+  {
+    "id": 237,
+    "verb": "take",
+    "particle": "off",
+    "turkish": "kalkmak, çıkarmak, başarılı olmak",
+    "example": "The plane takes off at noon.",
+    "exampleTr": "Uçak öğleyin kalkıyor."
+  },
+  {
+    "id": 238,
+    "verb": "take",
+    "particle": "on",
+    "turkish": "üstlenmek, almak, rekabet etmek",
+    "example": "She took on too much work.",
+    "exampleTr": "Çok fazla iş üstlendi."
+  },
+  {
+    "id": 239,
+    "verb": "take",
+    "particle": "out",
+    "turkish": "çıkarmak, götürmek",
+    "example": "Take out the rubbish, please.",
+    "exampleTr": "Lütfen çöpleri çıkar."
+  },
+  {
+    "id": 240,
+    "verb": "take",
+    "particle": "over",
+    "turkish": "devralmak, ele geçirmek",
+    "example": "A new company took over the business.",
+    "exampleTr": "Yeni bir şirket işi devraldı."
+  },
+  {
+    "id": 241,
+    "verb": "take",
+    "particle": "up",
+    "turkish": "başlamak, yer kaplamak",
+    "example": "She took up yoga last year.",
+    "exampleTr": "Geçen yıl yogaya başladı."
+  },
+  {
+    "id": 242,
+    "verb": "talk",
+    "particle": "into",
+    "turkish": "ikna etmek, kandırmak",
+    "example": "She talked me into buying the dress.",
+    "exampleTr": "Elbiseyi almam için beni ikna etti."
+  },
+  {
+    "id": 243,
+    "verb": "talk",
+    "particle": "out of",
+    "turkish": "vazgeçirmek, caydırmak",
+    "example": "He talked her out of quitting.",
+    "exampleTr": "Onu bırakmaktan vazgeçirdi."
+  },
+  {
+    "id": 244,
+    "verb": "talk",
+    "particle": "over",
+    "turkish": "tartışmak, konuşmak",
+    "example": "Let's talk it over before deciding.",
+    "exampleTr": "Karar vermeden önce tartışalım."
+  },
+  {
+    "id": 245,
+    "verb": "think",
+    "particle": "over",
+    "turkish": "düşünmek, değerlendirmek",
+    "example": "Think it over before you commit.",
+    "exampleTr": "Taahhüt vermeden önce düşün."
+  },
+  {
+    "id": 246,
+    "verb": "think",
+    "particle": "through",
+    "turkish": "iyice düşünmek, enine boyuna düşünmek",
+    "example": "Think through the consequences.",
+    "exampleTr": "Sonuçları iyice düşün."
+  },
+  {
+    "id": 247,
+    "verb": "throw",
+    "particle": "away",
+    "turkish": "atmak, fırsatı kaçırmak",
+    "example": "Don't throw away this opportunity.",
+    "exampleTr": "Bu fırsatı heba etme."
+  },
+  {
+    "id": 248,
+    "verb": "throw",
+    "particle": "out",
+    "turkish": "atmak, kovmak",
+    "example": "He was thrown out of the club.",
+    "exampleTr": "Kulüpten kovuldu."
+  },
+  {
+    "id": 249,
+    "verb": "throw",
+    "particle": "up",
+    "turkish": "kusma, terk etmek",
+    "example": "The smell made her throw up.",
+    "exampleTr": "Koku onu kusturdu."
+  },
+  {
+    "id": 250,
+    "verb": "tidy",
+    "particle": "up",
+    "turkish": "toplamak, düzenlemek",
+    "example": "Tidy up before the guests arrive.",
+    "exampleTr": "Misafirler gelmeden önce topla."
+  },
+  {
+    "id": 251,
+    "verb": "tie",
+    "particle": "up",
+    "turkish": "bağlamak, meşgul etmek",
+    "example": "Sorry, I'm tied up right now.",
+    "exampleTr": "Üzgünüm, şu an meşgulüm."
+  },
+  {
+    "id": 252,
+    "verb": "touch",
+    "particle": "down",
+    "turkish": "inmek, yere değmek",
+    "example": "The plane touched down smoothly.",
+    "exampleTr": "Uçak sorunsuz indi."
+  },
+  {
+    "id": 253,
+    "verb": "touch",
+    "particle": "on",
+    "turkish": "değinmek, kısaca bahsetmek",
+    "example": "The report touches on several issues.",
+    "exampleTr": "Rapor çeşitli konulara değiniyor."
+  },
+  {
+    "id": 254,
+    "verb": "track",
+    "particle": "down",
+    "turkish": "bulup çıkarmak, izini sürmek",
+    "example": "The police tracked down the criminal.",
+    "exampleTr": "Polis suçlunun izini sürdü."
+  },
+  {
+    "id": 255,
+    "verb": "try",
+    "particle": "on",
+    "turkish": "denemek, giymek",
+    "example": "Try on the shoes before you buy them.",
+    "exampleTr": "Satın almadan önce ayakkabıları dene."
+  },
+  {
+    "id": 256,
+    "verb": "try",
+    "particle": "out",
+    "turkish": "denemek, sınamak",
+    "example": "Try out the new software.",
+    "exampleTr": "Yeni yazılımı dene."
+  },
+  {
+    "id": 257,
+    "verb": "turn",
+    "particle": "around",
+    "turkish": "dönmek, düzeltmek",
+    "example": "The company turned around its fortunes.",
+    "exampleTr": "Şirket durumunu düzeltti."
+  },
+  {
+    "id": 258,
+    "verb": "turn",
+    "particle": "back",
+    "turkish": "geri dönmek, geri göndermek",
+    "example": "There's no turning back now.",
+    "exampleTr": "Artık geri dönüş yok."
+  },
+  {
+    "id": 259,
+    "verb": "turn",
+    "particle": "down",
+    "turkish": "reddetmek, kısmak",
+    "example": "She turned down the job offer.",
+    "exampleTr": "İş teklifini reddetti."
+  },
+  {
+    "id": 260,
+    "verb": "turn",
+    "particle": "in",
+    "turkish": "teslim etmek, yatmak",
+    "example": "I turned in my assignment on time.",
+    "exampleTr": "Ödevimi zamanında teslim ettim."
+  },
+  {
+    "id": 261,
+    "verb": "turn",
+    "particle": "into",
+    "turkish": "dönüştürmek, dönüşmek",
+    "example": "The caterpillar turned into a butterfly.",
+    "exampleTr": "Tırtıl kelebeğe dönüştü."
+  },
+  {
+    "id": 262,
+    "verb": "turn",
+    "particle": "off",
+    "turkish": "kapatmak, ilgisini kaybetmek",
+    "example": "Turn off the lights when you leave.",
+    "exampleTr": "Çıkarken ışıkları kapat."
+  },
+  {
+    "id": 263,
+    "verb": "turn",
+    "particle": "on",
+    "turkish": "açmak, saldırmak",
+    "example": "Turn on the television.",
+    "exampleTr": "Televizyonu aç."
+  },
+  {
+    "id": 264,
+    "verb": "turn",
+    "particle": "out",
+    "turkish": "olmak, ortaya çıkmak",
+    "example": "Everything turned out fine.",
+    "exampleTr": "Her şey yolunda gitti."
+  },
+  {
+    "id": 265,
+    "verb": "turn",
+    "particle": "over",
+    "turkish": "devretmek, ters çevirmek",
+    "example": "Turn over the page.",
+    "exampleTr": "Sayfayı çevir."
+  },
+  {
+    "id": 266,
+    "verb": "turn",
+    "particle": "up",
+    "turkish": "gelmek, sesi açmak, ortaya çıkmak",
+    "example": "He turned up late to the party.",
+    "exampleTr": "Partiye geç geldi."
+  },
+  {
+    "id": 267,
+    "verb": "use",
+    "particle": "up",
+    "turkish": "tüketmek, bitirmek",
+    "example": "We've used up all the paper.",
+    "exampleTr": "Tüm kağıdı tükettik."
+  },
+  {
+    "id": 268,
+    "verb": "wake",
+    "particle": "up",
+    "turkish": "uyanmak, farkına varmak",
+    "example": "Wake up — you're going to be late!",
+    "exampleTr": "Uyan — geç kalacaksın!"
+  },
+  {
+    "id": 269,
+    "verb": "warm",
+    "particle": "up",
+    "turkish": "ısınmak, ısıtmak",
+    "example": "Warm up before exercising.",
+    "exampleTr": "Egzersizden önce ısın."
+  },
+  {
+    "id": 270,
+    "verb": "wear",
+    "particle": "off",
+    "turkish": "geçmek, etkisi azalmak",
+    "example": "The pain medication wore off.",
+    "exampleTr": "Ağrı kesicinin etkisi geçti."
+  },
+  {
+    "id": 271,
+    "verb": "wear",
+    "particle": "out",
+    "turkish": "yıpranmak, yormak",
+    "example": "The kids wore me out today.",
+    "exampleTr": "Çocuklar bugün beni bitirdi."
+  },
+  {
+    "id": 272,
+    "verb": "wind",
+    "particle": "down",
+    "turkish": "yavaşlamak, dinlenmek",
+    "example": "Wind down before going to bed.",
+    "exampleTr": "Yatmadan önce gevşe."
+  },
+  {
+    "id": 273,
+    "verb": "wind",
+    "particle": "up",
+    "turkish": "sonunda olmak, bitirmek",
+    "example": "We wound up staying for the whole week.",
+    "exampleTr": "Sonunda tüm hafta kaldık."
+  },
+  {
+    "id": 274,
+    "verb": "work",
+    "particle": "out",
+    "turkish": "çalışmak, çözmek, sonuçlanmak",
+    "example": "Everything will work out in the end.",
+    "exampleTr": "Sonunda her şey yoluna girecek."
+  },
+  {
+    "id": 275,
+    "verb": "work",
+    "particle": "up",
+    "turkish": "geliştirmek, heyecanlandırmak",
+    "example": "I can't work up any enthusiasm.",
+    "exampleTr": "Hiç heyecan duyamıyorum."
+  },
+  {
+    "id": 276,
+    "verb": "write",
+    "particle": "back",
+    "turkish": "geri yazmak, cevap göndermek",
+    "example": "Please write back when you can.",
+    "exampleTr": "Mümkün olduğunda cevap yaz."
+  },
+  {
+    "id": 277,
+    "verb": "write",
+    "particle": "down",
+    "turkish": "not almak, yazmak",
+    "example": "Write down the important details.",
+    "exampleTr": "Önemli ayrıntıları not al."
+  },
+  {
+    "id": 278,
+    "verb": "write",
+    "particle": "off",
+    "turkish": "silmek, değersiz saymak",
+    "example": "Don't write off your chances.",
+    "exampleTr": "Şansını silip atmayın."
+  },
+  {
+    "id": 279,
+    "verb": "write",
+    "particle": "up",
+    "turkish": "kaleme almak, rapor yazmak",
+    "example": "Write up your findings in a report.",
+    "exampleTr": "Bulgularını bir raporda kaleme al."
+  },
+  {
+    "id": 280,
+    "verb": "zoom",
+    "particle": "in",
+    "turkish": "yaklaştırmak, büyütmek",
+    "example": "Zoom in on the details.",
+    "exampleTr": "Ayrıntıları büyüt."
+  },
+  {
+    "id": 281,
+    "verb": "add",
+    "particle": "up",
+    "turkish": "toplamak, mantıklı olmak",
+    "example": "The numbers don't add up.",
+    "exampleTr": "Rakamlar tutmuyor."
+  },
+  {
+    "id": 282,
+    "verb": "ask",
+    "particle": "around",
+    "turkish": "etrafa sormak",
+    "example": "I'll ask around and see who knows.",
+    "exampleTr": "Etrafa sorar, kimin bildiğine bakarım."
+  },
+  {
+    "id": 283,
+    "verb": "ask",
+    "particle": "out",
+    "turkish": "randevuya davet etmek",
+    "example": "He finally asked her out.",
+    "exampleTr": "Sonunda onu randevuya davet etti."
+  },
+  {
+    "id": 284,
+    "verb": "boil",
+    "particle": "down to",
+    "turkish": "özetle olmak, neticesinde",
+    "example": "It all boils down to money.",
+    "exampleTr": "Hepsi sonunda paraya geliyor."
+  },
+  {
+    "id": 285,
+    "verb": "burn",
+    "particle": "out",
+    "turkish": "tükenmek, yanıp sönmek",
+    "example": "She burned out from overworking.",
+    "exampleTr": "Aşırı çalışmaktan tükendi."
+  },
+  {
+    "id": 286,
+    "verb": "cave",
+    "particle": "in",
+    "turkish": "çökmek, boyun eğmek",
+    "example": "The roof caved in under the weight.",
+    "exampleTr": "Çatı ağırlık altında çöktü."
+  },
+  {
+    "id": 287,
+    "verb": "chip",
+    "particle": "in",
+    "turkish": "katkıda bulunmak, ortak olmak",
+    "example": "Everyone chipped in for the gift.",
+    "exampleTr": "Herkes hediye için katkıda bulundu."
+  },
+  {
+    "id": 288,
+    "verb": "clam",
+    "particle": "up",
+    "turkish": "susmak, dilini tutmak",
+    "example": "He clammed up when asked about it.",
+    "exampleTr": "Bununla ilgili sorulunca sustu."
+  },
+  {
+    "id": 289,
+    "verb": "clock",
+    "particle": "in",
+    "turkish": "mesaiye başlamak",
+    "example": "What time do you clock in?",
+    "exampleTr": "Saat kaçta mesaiye başlıyorsun?"
+  },
+  {
+    "id": 290,
+    "verb": "close",
+    "particle": "in",
+    "turkish": "yaklaşmak, çevrelemek",
+    "example": "The fog closed in around us.",
+    "exampleTr": "Sis etrafımızı sardı."
+  },
+  {
+    "id": 291,
+    "verb": "dawn",
+    "particle": "on",
+    "turkish": "anlamak, farkına varmak",
+    "example": "It dawned on me that I was wrong.",
+    "exampleTr": "Yanıldığımı anladım."
+  },
+  {
+    "id": 292,
+    "verb": "draw",
+    "particle": "in",
+    "turkish": "çekmek, yaklaşmak",
+    "example": "The days are drawing in.",
+    "exampleTr": "Günler kısalmaya başlıyor."
+  },
+  {
+    "id": 293,
+    "verb": "drift",
+    "particle": "apart",
+    "turkish": "uzaklaşmak, birbirinden kopmak",
+    "example": "Over the years they drifted apart.",
+    "exampleTr": "Yıllar içinde birbirinden koptu."
+  },
+  {
+    "id": 294,
+    "verb": "dwell",
+    "particle": "on",
+    "turkish": "üstünde durmak, takılıp kalmak",
+    "example": "Don't dwell on the past.",
+    "exampleTr": "Geçmişte takılıp kalma."
+  },
+  {
+    "id": 295,
+    "verb": "ease",
+    "particle": "off",
+    "turkish": "azalmak, hafiflemek",
+    "example": "The pain eased off after the injection.",
+    "exampleTr": "Enjeksiyonun ardından ağrı hafifliyor."
+  },
+  {
+    "id": 296,
+    "verb": "egg",
+    "particle": "on",
+    "turkish": "kışkırtmak, tahrik etmek",
+    "example": "His friends egged him on.",
+    "exampleTr": "Arkadaşları onu kışkırttı."
+  },
+  {
+    "id": 297,
+    "verb": "face",
+    "particle": "up to",
+    "turkish": "kabullenmek, yüzleşmek",
+    "example": "Face up to your responsibilities.",
+    "exampleTr": "Sorumluluklarınla yüzleş."
+  },
+  {
+    "id": 298,
+    "verb": "fall",
+    "particle": "behind on",
+    "turkish": "geride kalmak, gecikmek",
+    "example": "He fell behind on his mortgage payments.",
+    "exampleTr": "İpotek ödemelerinde gecikti."
+  },
+  {
+    "id": 299,
+    "verb": "ferret",
+    "particle": "out",
+    "turkish": "araştırıp bulmak, ortaya çıkarmak",
+    "example": "She ferreted out the truth.",
+    "exampleTr": "Gerçeği araştırıp buldu."
+  },
+  {
+    "id": 300,
+    "verb": "fizzle",
+    "particle": "out",
+    "turkish": "söndürmek, hüsrana uğramak",
+    "example": "Their enthusiasm fizzled out quickly.",
+    "exampleTr": "Hevesleri çabucak söndü."
+  },
+  {
+    "id": 301,
+    "verb": "flip",
+    "particle": "through",
+    "turkish": "hızlıca sayfaları çevirmek",
+    "example": "She flipped through the magazine.",
+    "exampleTr": "Derginin sayfalarını hızlıca çevirdi."
+  },
+  {
+    "id": 302,
+    "verb": "flare",
+    "particle": "up",
+    "turkish": "alevlenmek, şiddetlenmek",
+    "example": "His temper flared up suddenly.",
+    "exampleTr": "Öfkesi aniden alevlendi."
+  },
+  {
+    "id": 303,
+    "verb": "flesh",
+    "particle": "out",
+    "turkish": "ayrıntılandırmak, geliştirmek",
+    "example": "Flesh out your argument with examples.",
+    "exampleTr": "Argümanını örneklerle ayrıntılandır."
+  },
+  {
+    "id": 304,
+    "verb": "flock",
+    "particle": "together",
+    "turkish": "bir araya gelmek, toplanmak",
+    "example": "People flock together in hard times.",
+    "exampleTr": "Zor zamanlarda insanlar bir araya gelir."
+  },
+  {
+    "id": 305,
+    "verb": "follow",
+    "particle": "through",
+    "turkish": "tamamlamak, sonuna kadar götürmek",
+    "example": "You must follow through on your promises.",
+    "exampleTr": "Sözlerini yerine getirmen gerekiyor."
+  },
+  {
+    "id": 306,
+    "verb": "follow",
+    "particle": "up",
+    "turkish": "takip etmek, sonrasında kontrol etmek",
+    "example": "Follow up the email with a phone call.",
+    "exampleTr": "E-postanın ardından bir telefon açarak takip et."
+  },
+  {
+    "id": 307,
+    "verb": "fool",
+    "particle": "around",
+    "turkish": "amaçsızca vakit geçirmek, şakalaşmak",
+    "example": "Stop fooling around and get to work.",
+    "exampleTr": "Boşa vakit harcamayı bırak ve işe koyul."
+  },
+  {
+    "id": 308,
+    "verb": "force",
+    "particle": "out",
+    "turkish": "zorla çıkarmak, istifaya zorlamak",
+    "example": "The CEO was forced out by the board.",
+    "exampleTr": "CEO yönetim kurulu tarafından istifaya zorlandı."
+  },
+  {
+    "id": 309,
+    "verb": "forge",
+    "particle": "ahead",
+    "turkish": "hızla ilerlemek, azimle devam etmek",
+    "example": "Despite setbacks, she forged ahead.",
+    "exampleTr": "Aksiliklerine rağmen azimle devam etti."
+  },
+  {
+    "id": 310,
+    "verb": "freeze",
+    "particle": "out",
+    "turkish": "dışlamak, soğuk davranmak",
+    "example": "He was frozen out of the group.",
+    "exampleTr": "Gruptan dışlandı."
+  },
+  {
+    "id": 311,
+    "verb": "fritter",
+    "particle": "away",
+    "turkish": "heba etmek, boşa harcamak",
+    "example": "Don't fritter away your talent.",
+    "exampleTr": "Yeteneğini boşa harcama."
+  },
+  {
+    "id": 312,
+    "verb": "gain",
+    "particle": "on",
+    "turkish": "yaklaşmak, fark açmak",
+    "example": "The chasing car was gaining on us.",
+    "exampleTr": "Takip eden araba bize yaklaşıyordu."
+  },
+  {
+    "id": 313,
+    "verb": "gang",
+    "particle": "up on",
+    "turkish": "birine karşı birleşmek",
+    "example": "They ganged up on the new student.",
+    "exampleTr": "Yeni öğrenciye karşı birleştiler."
+  },
+  {
+    "id": 314,
+    "verb": "gear",
+    "particle": "up",
+    "turkish": "hazırlanmak, organize olmak",
+    "example": "Gear up for the big presentation.",
+    "exampleTr": "Büyük sunum için hazırlan."
+  },
+  {
+    "id": 315,
+    "verb": "get",
+    "particle": "ahead",
+    "turkish": "ilerlemek, başarılı olmak",
+    "example": "Hard work helps you get ahead.",
+    "exampleTr": "Sıkı çalışmak ilerlemenizi sağlar."
+  },
+  {
+    "id": 316,
+    "verb": "get",
+    "particle": "at",
+    "turkish": "ima etmek, ulaşmak",
+    "example": "What are you getting at?",
+    "exampleTr": "Ne demek istiyorsun?"
+  },
+  {
+    "id": 317,
+    "verb": "get",
+    "particle": "down",
+    "turkish": "bunaltmak, not almak, inmek",
+    "example": "The cold weather is getting me down.",
+    "exampleTr": "Soğuk hava beni bunaltıyor."
+  },
+  {
+    "id": 318,
+    "verb": "get",
+    "particle": "even with",
+    "turkish": "öcünü almak, hakkını ödemek",
+    "example": "I'll get even with him one day.",
+    "exampleTr": "Bir gün ondan öcümü alacağım."
+  },
+  {
+    "id": 319,
+    "verb": "give",
+    "particle": "forth",
+    "turkish": "yaymak, ortaya koymak",
+    "example": "The flowers gave forth a sweet scent.",
+    "exampleTr": "Çiçekler tatlı bir koku yayıyordu."
+  },
+  {
+    "id": 320,
+    "verb": "gloss",
+    "particle": "over",
+    "turkish": "önemsememek, üstünü örtmek",
+    "example": "Don't gloss over the mistakes.",
+    "exampleTr": "Hataların üstünü örtme."
+  },
+  {
+    "id": 321,
+    "verb": "go",
+    "particle": "around",
+    "turkish": "dolaşmak, yetmek",
+    "example": "Is there enough food to go around?",
+    "exampleTr": "Yiyecek herkese yetecek kadar var mı?"
+  },
+  {
+    "id": 322,
+    "verb": "go",
+    "particle": "without",
+    "turkish": "onsuz yapmak, yoksun kalmak",
+    "example": "They went without food for two days.",
+    "exampleTr": "İki gün yemeksiz kaldılar."
+  },
+  {
+    "id": 323,
+    "verb": "goof",
+    "particle": "off",
+    "turkish": "aylaklık etmek, işi aksatmak",
+    "example": "Stop goofing off and finish your work.",
+    "exampleTr": "Aylaklık etmeyi bırak ve işini bitir."
+  },
+  {
+    "id": 324,
+    "verb": "grab",
+    "particle": "onto",
+    "turkish": "tutunmak, kavramak",
+    "example": "Grab onto the rope!",
+    "exampleTr": "İpe tutun!"
+  },
+  {
+    "id": 325,
+    "verb": "grind",
+    "particle": "down",
+    "turkish": "yıpratmak, yavaş yavaş yok etmek",
+    "example": "The constant stress ground him down.",
+    "exampleTr": "Sürekli stres onu yavaş yavaş yıprattı."
+  },
+  {
+    "id": 326,
+    "verb": "grow",
+    "particle": "apart",
+    "turkish": "uzaklaşmak, birbirinden kopmak",
+    "example": "Over time, the friends grew apart.",
+    "exampleTr": "Zaman içinde arkadaşlar birbirinden koptu."
+  },
+  {
+    "id": 327,
+    "verb": "grow",
+    "particle": "into",
+    "turkish": "büyüyüp olmak, alışmak",
+    "example": "He grew into a confident leader.",
+    "exampleTr": "Güvenli bir lider olarak büyüdü."
+  },
+  {
+    "id": 328,
+    "verb": "grow",
+    "particle": "out of",
+    "turkish": "büyüyüp aşmak, kaynaklanmak",
+    "example": "She grew out of her shyness.",
+    "exampleTr": "Çekingenliğini büyüyüp aştı."
+  },
+  {
+    "id": 329,
+    "verb": "hammer",
+    "particle": "out",
+    "turkish": "müzakereyle halletmek, çözmek",
+    "example": "They hammered out a deal after hours of talks.",
+    "exampleTr": "Saatlerce süren görüşmelerin ardından bir anlaşma yaptılar."
+  },
+  {
+    "id": 330,
+    "verb": "hand",
+    "particle": "down",
+    "turkish": "aktarmak, miras bırakmak",
+    "example": "This ring was handed down from my grandmother.",
+    "exampleTr": "Bu yüzük anneannemden kalma."
+  },
+  {
+    "id": 331,
+    "verb": "harp",
+    "particle": "on",
+    "turkish": "tekrar tekrar söylemek, üstünde durmak",
+    "example": "He keeps harping on the same issue.",
+    "exampleTr": "Aynı konuyu tekrar tekrar gündeme getiriyor."
+  },
+  {
+    "id": 332,
+    "verb": "head",
+    "particle": "off",
+    "turkish": "önüne geçmek, yolunu kesmek",
+    "example": "We need to head off this crisis.",
+    "exampleTr": "Bu krizin önüne geçmemiz gerekiyor."
+  },
+  {
+    "id": 333,
+    "verb": "head",
+    "particle": "out",
+    "turkish": "çıkmak, yola koyulmak",
+    "example": "We're heading out in ten minutes.",
+    "exampleTr": "On dakika içinde yola çıkıyoruz."
+  },
+  {
+    "id": 334,
+    "verb": "hit",
+    "particle": "back",
+    "turkish": "karşılık vermek, misilleme yapmak",
+    "example": "She hit back at her critics.",
+    "exampleTr": "Eleştirmenlerine karşılık verdi."
+  },
+  {
+    "id": 335,
+    "verb": "hit",
+    "particle": "on",
+    "turkish": "flört etmek, tesadüfen bulmak",
+    "example": "I hit on a great idea.",
+    "exampleTr": "Harika bir fikir buldum."
+  },
+  {
+    "id": 336,
+    "verb": "hit",
+    "particle": "upon",
+    "turkish": "tesadüfen bulmak, keşfetmek",
+    "example": "She hit upon the solution by accident.",
+    "exampleTr": "Çözümü tesadüfen buldu."
+  },
+  {
+    "id": 337,
+    "verb": "hold",
+    "particle": "down",
+    "turkish": "bastırmak, işte tutmak",
+    "example": "He can't hold down a steady job.",
+    "exampleTr": "Düzenli bir işte kalamıyor."
+  },
+  {
+    "id": 338,
+    "verb": "hold",
+    "particle": "off",
+    "turkish": "ertelemek, uzak tutmak",
+    "example": "Hold off making a decision for now.",
+    "exampleTr": "Şimdilik karar almayı ertele."
+  },
+  {
+    "id": 339,
+    "verb": "hold",
+    "particle": "onto",
+    "turkish": "tutunmak, elde tutmak",
+    "example": "Hold onto your ticket.",
+    "exampleTr": "Biletine tutun."
+  },
+  {
+    "id": 340,
+    "verb": "iron",
+    "particle": "out",
+    "turkish": "çözmek, gidermek",
+    "example": "We need to iron out the details.",
+    "exampleTr": "Ayrıntıları çözmemiz gerekiyor."
+  },
+  {
+    "id": 341,
+    "verb": "join",
+    "particle": "in",
+    "turkish": "katılmak, dahil olmak",
+    "example": "Feel free to join in the discussion.",
+    "exampleTr": "Tartışmaya katılmaktan çekinme."
+  },
+  {
+    "id": 342,
+    "verb": "join",
+    "particle": "up",
+    "turkish": "askere katılmak, birleşmek",
+    "example": "He joined up at the age of eighteen.",
+    "exampleTr": "On sekiz yaşında askere katıldı."
+  },
+  {
+    "id": 343,
+    "verb": "jot",
+    "particle": "down",
+    "turkish": "not almak, hızlıca yazmak",
+    "example": "Jot down the phone number.",
+    "exampleTr": "Telefon numarasını not al."
+  },
+  {
+    "id": 344,
+    "verb": "key",
+    "particle": "in",
+    "turkish": "girmek, yazmak (klavye)",
+    "example": "Key in your PIN number.",
+    "exampleTr": "PIN numaranızı girin."
+  },
+  {
+    "id": 345,
+    "verb": "kick",
+    "particle": "off",
+    "turkish": "başlamak, başlatmak",
+    "example": "The festival kicks off on Friday.",
+    "exampleTr": "Festival Cuma günü başlıyor."
+  },
+  {
+    "id": 346,
+    "verb": "kick",
+    "particle": "out",
+    "turkish": "kovmak, atmak",
+    "example": "He was kicked out of the club.",
+    "exampleTr": "Kulüpten kovuldu."
+  },
+  {
+    "id": 347,
+    "verb": "level",
+    "particle": "off",
+    "turkish": "dengelenmek, sabitlenmek",
+    "example": "Inflation has leveled off this year.",
+    "exampleTr": "Enflasyon bu yıl dengelendi."
+  },
+  {
+    "id": 348,
+    "verb": "level",
+    "particle": "up",
+    "turkish": "seviye atlamak, geliştirmek",
+    "example": "It's time to level up your skills.",
+    "exampleTr": "Becerilerini geliştirme zamanı."
+  },
+  {
+    "id": 349,
+    "verb": "linger",
+    "particle": "on",
+    "turkish": "devam etmek, gecikmek",
+    "example": "The smell lingered on for hours.",
+    "exampleTr": "Koku saatlerce devam etti."
+  },
+  {
+    "id": 350,
+    "verb": "listen",
+    "particle": "out for",
+    "turkish": "kulak vermek, beklemek",
+    "example": "Listen out for any strange noises.",
+    "exampleTr": "Garip seslere kulak ver."
+  },
+  {
+    "id": 351,
+    "verb": "live",
+    "particle": "down",
+    "turkish": "unutturmak, affettirmek",
+    "example": "He'll never live down that mistake.",
+    "exampleTr": "O hatayı asla unutturamayacak."
+  },
+  {
+    "id": 352,
+    "verb": "live",
+    "particle": "on",
+    "turkish": "devam etmek, geçimini sağlamak",
+    "example": "He lives on a very small salary.",
+    "exampleTr": "Çok küçük bir maaşla geçimini sağlıyor."
+  },
+  {
+    "id": 353,
+    "verb": "live",
+    "particle": "up to",
+    "turkish": "layık olmak, beklentileri karşılamak",
+    "example": "The film didn't live up to the hype.",
+    "exampleTr": "Film beklentileri karşılamadı."
+  },
+  {
+    "id": 354,
+    "verb": "lock",
+    "particle": "in",
+    "turkish": "kilitlemek, bağlamak",
+    "example": "They locked in a great price.",
+    "exampleTr": "Harika bir fiyatı kilitledi."
+  },
+  {
+    "id": 355,
+    "verb": "lock",
+    "particle": "out",
+    "turkish": "dışarıda bırakmak, girişi engellemek",
+    "example": "I locked myself out of the house.",
+    "exampleTr": "Kendimi evin dışında kilitledi."
+  },
+  {
+    "id": 356,
+    "verb": "log",
+    "particle": "in",
+    "turkish": "giriş yapmak",
+    "example": "Log in to your account.",
+    "exampleTr": "Hesabına giriş yap."
+  },
+  {
+    "id": 357,
+    "verb": "log",
+    "particle": "off",
+    "turkish": "çıkış yapmak",
+    "example": "Remember to log off when you're done.",
+    "exampleTr": "İşin bitince çıkış yapmayı unutma."
+  },
+  {
+    "id": 358,
+    "verb": "look",
+    "particle": "on",
+    "turkish": "seyretmek, izlemek",
+    "example": "We could only look on helplessly.",
+    "exampleTr": "Sadece çaresizce izleyebildik."
+  },
+  {
+    "id": 359,
+    "verb": "look",
+    "particle": "through",
+    "turkish": "gözden geçirmek, görmezden gelmek",
+    "example": "Look through these documents.",
+    "exampleTr": "Bu belgeleri gözden geçir."
+  },
+  {
+    "id": 360,
+    "verb": "loosen",
+    "particle": "up",
+    "turkish": "gevşemek, rahatlamak",
+    "example": "Loosen up and enjoy yourself.",
+    "exampleTr": "Gevşe ve keyfini çıkar."
+  },
+  {
+    "id": 361,
+    "verb": "make",
+    "particle": "off",
+    "turkish": "kaçmak, uzaklaşmak",
+    "example": "The thief made off with the jewels.",
+    "exampleTr": "Hırsız mücevherlerle kaçtı."
+  },
+  {
+    "id": 362,
+    "verb": "make",
+    "particle": "off with",
+    "turkish": "çalıp kaçmak",
+    "example": "Someone made off with my bag.",
+    "exampleTr": "Birisi çantamı çalıp kaçtı."
+  },
+  {
+    "id": 363,
+    "verb": "make",
+    "particle": "over",
+    "turkish": "devretmek, yenilemek",
+    "example": "She made over her wardrobe.",
+    "exampleTr": "Gardırobunu yeniledi."
+  },
+  {
+    "id": 364,
+    "verb": "mark",
+    "particle": "down",
+    "turkish": "düşürmek, not vermek",
+    "example": "The teacher marked him down for errors.",
+    "exampleTr": "Öğretmen hatalar nedeniyle düşük not verdi."
+  },
+  {
+    "id": 365,
+    "verb": "mess",
+    "particle": "around",
+    "turkish": "vakit kaybetmek, oyalanmak",
+    "example": "Stop messing around and focus.",
+    "exampleTr": "Oyalanmayı bırak ve odaklan."
+  },
+  {
+    "id": 366,
+    "verb": "mess",
+    "particle": "up",
+    "turkish": "mahvetmek, berbat etmek",
+    "example": "Don't mess up this opportunity.",
+    "exampleTr": "Bu fırsatı mahvetme."
+  },
+  {
+    "id": 367,
+    "verb": "narrow",
+    "particle": "down",
+    "turkish": "daraltmak, seçenekleri azaltmak",
+    "example": "Narrow down your choices to three.",
+    "exampleTr": "Seçeneklerini üçe indir."
+  },
+  {
+    "id": 368,
+    "verb": "nod",
+    "particle": "off",
+    "turkish": "uyuyakalmak",
+    "example": "He nodded off during the lecture.",
+    "exampleTr": "Ders sırasında uyuyakaldı."
+  },
+  {
+    "id": 369,
+    "verb": "open",
+    "particle": "up",
+    "turkish": "açılmak, kendini ifade etmek",
+    "example": "She finally opened up about her feelings.",
+    "exampleTr": "Sonunda duygularını paylaştı."
+  },
+  {
+    "id": 370,
+    "verb": "opt",
+    "particle": "in",
+    "turkish": "katılmayı seçmek, dahil olmak",
+    "example": "Opt in to receive our newsletter.",
+    "exampleTr": "Bültenimizi almak için kaydolun."
+  },
+  {
+    "id": 371,
+    "verb": "opt",
+    "particle": "out",
+    "turkish": "çıkmayı seçmek, vazgeçmek",
+    "example": "You can opt out at any time.",
+    "exampleTr": "İstediğin zaman çıkabilirsin."
+  },
+  {
+    "id": 372,
+    "verb": "pan",
+    "particle": "out",
+    "turkish": "sonuçlanmak, işe yaramak",
+    "example": "The plan didn't pan out as expected.",
+    "exampleTr": "Plan beklendiği gibi sonuçlanmadı."
+  },
+  {
+    "id": 373,
+    "verb": "patch",
+    "particle": "up",
+    "turkish": "tamir etmek, barıştırmak",
+    "example": "They patched up their friendship.",
+    "exampleTr": "Arkadaşlıklarını tamir ettiler."
+  },
+  {
+    "id": 374,
+    "verb": "pay",
+    "particle": "out",
+    "turkish": "ödemek, para vermek",
+    "example": "The insurance company paid out the claim.",
+    "exampleTr": "Sigorta şirketi tazminatı ödedi."
+  },
+  {
+    "id": 375,
+    "verb": "phase",
+    "particle": "out",
+    "turkish": "kademeli olarak kaldırmak",
+    "example": "Older models are being phased out.",
+    "exampleTr": "Eski modeller kademeli olarak kaldırılıyor."
+  },
+  {
+    "id": 376,
+    "verb": "pile",
+    "particle": "up",
+    "turkish": "birikmek, yığılmak",
+    "example": "The work is piling up.",
+    "exampleTr": "İşler birikmektedir."
+  },
+  {
+    "id": 377,
+    "verb": "pitch",
+    "particle": "in",
+    "turkish": "yardım etmek, katkıda bulunmak",
+    "example": "Everyone pitched in to clean up.",
+    "exampleTr": "Herkes temizliğe yardım etti."
+  },
+  {
+    "id": 378,
+    "verb": "plan",
+    "particle": "ahead",
+    "turkish": "önceden planlamak",
+    "example": "Always plan ahead for emergencies.",
+    "exampleTr": "Acil durumlar için her zaman önceden planla."
+  },
+  {
+    "id": 379,
+    "verb": "play",
+    "particle": "along",
+    "turkish": "uymak, oyuna gelmek",
+    "example": "Just play along for now.",
+    "exampleTr": "Şimdilik sadece uy."
+  },
+  {
+    "id": 380,
+    "verb": "play",
+    "particle": "down",
+    "turkish": "küçümsemek, önemsiz göstermek",
+    "example": "She played down her achievements.",
+    "exampleTr": "Başarılarını küçümsedi."
+  },
+  {
+    "id": 381,
+    "verb": "play",
+    "particle": "out",
+    "turkish": "gelişmek, oynanmak",
+    "example": "Let's see how this plays out.",
+    "exampleTr": "Bunun nasıl gelişeceğini görelim."
+  },
+  {
+    "id": 382,
+    "verb": "play",
+    "particle": "up",
+    "turkish": "sorun çıkarmak, abartmak",
+    "example": "My back is playing up again.",
+    "exampleTr": "Sırtım yine sorun çıkarıyor."
+  },
+  {
+    "id": 383,
+    "verb": "pop",
+    "particle": "in",
+    "turkish": "kısa bir ziyaret yapmak",
+    "example": "Pop in for a cup of tea.",
+    "exampleTr": "Bir fincan çay için uğra."
+  },
+  {
+    "id": 384,
+    "verb": "pop",
+    "particle": "up",
+    "turkish": "aniden çıkmak, belirmek",
+    "example": "New cafes keep popping up everywhere.",
+    "exampleTr": "Her yerde yeni kafeler beliriyor."
+  },
+  {
+    "id": 385,
+    "verb": "press",
+    "particle": "ahead",
+    "turkish": "azimle devam etmek",
+    "example": "Press ahead despite the difficulties.",
+    "exampleTr": "Zorluklara rağmen devam et."
+  },
+  {
+    "id": 386,
+    "verb": "press",
+    "particle": "on",
+    "turkish": "devam etmek, ilerlemek",
+    "example": "Despite setbacks, we pressed on.",
+    "exampleTr": "Aksiliklerine rağmen devam ettik."
+  },
+  {
+    "id": 387,
+    "verb": "prop",
+    "particle": "up",
+    "turkish": "desteklemek, ayakta tutmak",
+    "example": "The government propped up the failing bank.",
+    "exampleTr": "Hükümet batmakta olan bankayı ayakta tuttu."
+  },
+  {
+    "id": 388,
+    "verb": "pull",
+    "particle": "apart",
+    "turkish": "ayırmak, eleştirmek",
+    "example": "Critics pulled the film apart.",
+    "exampleTr": "Eleştirmenler filmi yerden yere vurdu."
+  },
+  {
+    "id": 389,
+    "verb": "push",
+    "particle": "ahead",
+    "turkish": "hızla ilerlemek, devam etmek",
+    "example": "Push ahead with the project.",
+    "exampleTr": "Projeyle devam et."
+  },
+  {
+    "id": 390,
+    "verb": "push",
+    "particle": "around",
+    "turkish": "zorbalık etmek, emirler yağdırmak",
+    "example": "Don't let them push you around.",
+    "exampleTr": "Sana zorbalık etmelerine izin verme."
+  },
+  {
+    "id": 391,
+    "verb": "push",
+    "particle": "through",
+    "turkish": "zorla geçirmek, elde etmek",
+    "example": "They pushed the law through parliament.",
+    "exampleTr": "Yasayı parlamentodan geçirdiler."
+  },
+  {
+    "id": 392,
+    "verb": "read",
+    "particle": "out",
+    "turkish": "yüksek sesle okumak",
+    "example": "Read out the names on the list.",
+    "exampleTr": "Listedeki isimleri yüksek sesle oku."
+  },
+  {
+    "id": 393,
+    "verb": "ring",
+    "particle": "back",
+    "turkish": "geri aramak",
+    "example": "I'll ring you back this evening.",
+    "exampleTr": "Bu akşam seni geri ararım."
+  },
+  {
+    "id": 394,
+    "verb": "ring",
+    "particle": "off",
+    "turkish": "telefonu kapatmak",
+    "example": "She rang off without saying goodbye.",
+    "exampleTr": "Vedalaşmadan telefonu kapattı."
+  },
+  {
+    "id": 395,
+    "verb": "roll",
+    "particle": "out",
+    "turkish": "başlatmak, piyasaya sürmek",
+    "example": "They rolled out the new product nationwide.",
+    "exampleTr": "Yeni ürünü tüm ülkeye sundular."
+  },
+  {
+    "id": 396,
+    "verb": "roll",
+    "particle": "up",
+    "turkish": "gelmek, sarmak",
+    "example": "Roll up your sleeves and get to work.",
+    "exampleTr": "Kolları sıva ve işe koyul."
+  },
+  {
+    "id": 397,
+    "verb": "round",
+    "particle": "off",
+    "turkish": "bitirmek, yuvarlamak",
+    "example": "Round off the evening with dessert.",
+    "exampleTr": "Geceyi tatlıyla bitir."
+  },
+  {
+    "id": 398,
+    "verb": "round",
+    "particle": "up",
+    "turkish": "toplamak, yukarıya yuvarlama",
+    "example": "Round up the volunteers.",
+    "exampleTr": "Gönüllüleri topla."
+  },
+  {
+    "id": 399,
+    "verb": "rub",
+    "particle": "off on",
+    "turkish": "geçmek, bulaşmak",
+    "example": "His enthusiasm rubbed off on us.",
+    "exampleTr": "Onun coşkusu bize bulaştı."
+  },
+  {
+    "id": 400,
+    "verb": "rule",
+    "particle": "out",
+    "turkish": "ihtimal dışı bırakmak, elemek",
+    "example": "Don't rule out any possibilities.",
+    "exampleTr": "Hiçbir olasılığı ihtimal dışı bırakma."
+  },
+  {
+    "id": 401,
+    "verb": "save",
+    "particle": "up",
+    "turkish": "biriktirmek, tasarruf etmek",
+    "example": "Save up for a rainy day.",
+    "exampleTr": "Kötü günler için biriktir."
+  },
+  {
+    "id": 402,
+    "verb": "scale",
+    "particle": "back",
+    "turkish": "küçültmek, azaltmak",
+    "example": "They scaled back their plans.",
+    "exampleTr": "Planlarını küçülttüler."
+  },
+  {
+    "id": 403,
+    "verb": "scale",
+    "particle": "up",
+    "turkish": "büyütmek, genişletmek",
+    "example": "It's time to scale up the business.",
+    "exampleTr": "İşi büyütme zamanı."
+  },
+  {
+    "id": 404,
+    "verb": "seize",
+    "particle": "on",
+    "turkish": "fırsatı değerlendirmek, tutunmak",
+    "example": "Seize on every opportunity.",
+    "exampleTr": "Her fırsatı değerlendir."
+  },
+  {
+    "id": 405,
+    "verb": "sell",
+    "particle": "off",
+    "turkish": "satmak, elden çıkarmak",
+    "example": "They sold off their old furniture.",
+    "exampleTr": "Eski mobilyalarını sattılar."
+  },
+  {
+    "id": 406,
+    "verb": "sell",
+    "particle": "out",
+    "turkish": "satmak, tükenmek, taviz vermek",
+    "example": "The concert sold out in minutes.",
+    "exampleTr": "Konser dakikalar içinde tükendi."
+  },
+  {
+    "id": 407,
+    "verb": "send",
+    "particle": "back",
+    "turkish": "geri göndermek, iade etmek",
+    "example": "Send back the faulty product.",
+    "exampleTr": "Hatalı ürünü geri gönder."
+  },
+  {
+    "id": 408,
+    "verb": "send",
+    "particle": "off",
+    "parameter": "for",
+    "turkish": "sipariş vermek, ısmarlamak",
+    "example": "Send off for the free sample.",
+    "exampleTr": "Ücretsiz örnek için sipariş ver."
+  },
+  {
+    "id": 409,
+    "verb": "send",
+    "particle": "out",
+    "turkish": "göndermek, yayımlamak",
+    "example": "Send out the invitations today.",
+    "exampleTr": "Davetleri bugün gönder."
+  },
+  {
+    "id": 410,
+    "verb": "set",
+    "particle": "in",
+    "turkish": "başlamak, yerleşmek",
+    "example": "Winter has set in early this year.",
+    "exampleTr": "Kış bu yıl erken bastırdı."
+  },
+  {
+    "id": 411,
+    "verb": "shake",
+    "particle": "off",
+    "turkish": "silkmek, kurtulmak",
+    "example": "She tried to shake off her cold.",
+    "exampleTr": "Soğuk algınlığından kurtulmaya çalıştı."
+  },
+  {
+    "id": 412,
+    "verb": "shake",
+    "particle": "up",
+    "turkish": "sarsmak, yeniden düzenlemek",
+    "example": "The scandal shook up the company.",
+    "exampleTr": "Skandal şirketi sarstı."
+  },
+  {
+    "id": 413,
+    "verb": "shoot",
+    "particle": "down",
+    "turkish": "reddetmek, yok etmek",
+    "example": "His idea was shot down immediately.",
+    "exampleTr": "Fikri hemen reddedildi."
+  },
+  {
+    "id": 414,
+    "verb": "show",
+    "particle": "around",
+    "turkish": "gezdirmek, tanıtmak",
+    "example": "Let me show you around the office.",
+    "exampleTr": "Seni ofiste gezdireyim."
+  },
+  {
+    "id": 415,
+    "verb": "shrink",
+    "particle": "back",
+    "turkish": "geri çekilmek, çekingen davranmak",
+    "example": "Don't shrink back from challenges.",
+    "exampleTr": "Zorluklardan çekinme."
+  },
+  {
+    "id": 416,
+    "verb": "simmer",
+    "particle": "down",
+    "turkish": "sakinleşmek, yatışmak",
+    "example": "Simmer down and let's talk.",
+    "exampleTr": "Sakin ol ve konuşalım."
+  },
+  {
+    "id": 417,
+    "verb": "single",
+    "particle": "out",
+    "turkish": "seçmek, hedef almak",
+    "example": "Why did they single me out?",
+    "exampleTr": "Neden beni hedef aldılar?"
+  },
+  {
+    "id": 418,
+    "verb": "slip",
+    "particle": "away",
+    "turkish": "sessizce ayrılmak, kaçmak",
+    "example": "She slipped away from the party early.",
+    "exampleTr": "Partiden erken ayrıldı."
+  },
+  {
+    "id": 419,
+    "verb": "slip",
+    "particle": "up",
+    "turkish": "hata yapmak, yanılmak",
+    "example": "I slipped up and forgot the meeting.",
+    "exampleTr": "Hata yaptım ve toplantıyı unuttum."
+  },
+  {
+    "id": 420,
+    "verb": "slow",
+    "particle": "down",
+    "turkish": "yavaşlamak, yavaşlatmak",
+    "example": "Slow down — you're driving too fast.",
+    "exampleTr": "Yavaşla — çok hızlı sürüyorsun."
+  },
+  {
+    "id": 421,
+    "verb": "snap",
+    "particle": "out of",
+    "turkish": "kendine gelmek, aşmak",
+    "example": "Snap out of it and get back to work.",
+    "exampleTr": "Kendine gel ve işe geri dön."
+  },
+  {
+    "id": 422,
+    "verb": "sneak",
+    "particle": "in",
+    "turkish": "gizlice girmek, sızmak",
+    "example": "He sneaked in through the back door.",
+    "exampleTr": "Arka kapıdan gizlice girdi."
+  },
+  {
+    "id": 423,
+    "verb": "soak",
+    "particle": "up",
+    "turkish": "emmek, özümsemek",
+    "example": "Soak up the sunshine while you can.",
+    "exampleTr": "Yapabildiğin kadar güneşin tadını çıkar."
+  },
+  {
+    "id": 424,
+    "verb": "soldier",
+    "particle": "on",
+    "turkish": "azimle devam etmek",
+    "example": "Despite exhaustion, she soldiered on.",
+    "exampleTr": "Yorgunluğuna rağmen azimle devam etti."
+  },
+  {
+    "id": 425,
+    "verb": "sort",
+    "particle": "through",
+    "turkish": "ayıklamak, incelemek",
+    "example": "Sort through the old files.",
+    "exampleTr": "Eski dosyaları ayıkla."
+  },
+  {
+    "id": 426,
+    "verb": "speak",
+    "particle": "to",
+    "turkish": "hitap etmek, konuşmak",
+    "example": "The poem speaks to everyone.",
+    "exampleTr": "Şiir herkese hitap ediyor."
+  },
+  {
+    "id": 427,
+    "verb": "spell",
+    "particle": "out",
+    "turkish": "tek tek açıklamak, harf harf söylemek",
+    "example": "Let me spell it out for you.",
+    "exampleTr": "Sana tek tek açıklayayım."
+  },
+  {
+    "id": 428,
+    "verb": "spring",
+    "particle": "up",
+    "turkish": "aniden ortaya çıkmak",
+    "example": "New businesses are springing up everywhere.",
+    "exampleTr": "Her yerde yeni işyerleri mantar gibi çıkıyor."
+  },
+  {
+    "id": 429,
+    "verb": "square",
+    "particle": "up",
+    "turkish": "hesaplaşmak, ödemek",
+    "example": "Let's square up the bill.",
+    "exampleTr": "Hesabı ödeyelim."
+  },
+  {
+    "id": 430,
+    "verb": "stand",
+    "particle": "aside",
+    "turkish": "kenara çekilmek, yol açmak",
+    "example": "Stand aside and let her through.",
+    "exampleTr": "Kenara çekil ve geçmesine izin ver."
+  },
+  {
+    "id": 431,
+    "verb": "stand",
+    "particle": "back",
+    "turkish": "geri çekilmek, mesafe koymak",
+    "example": "Stand back and look at the big picture.",
+    "exampleTr": "Geri çekil ve büyük resme bak."
+  },
+  {
+    "id": 432,
+    "verb": "stand",
+    "particle": "down",
+    "turkish": "geri çekilmek, görevden çekilmek",
+    "example": "The troops were told to stand down.",
+    "exampleTr": "Birliklere geri çekilmesi emredildi."
+  },
+  {
+    "id": 433,
+    "verb": "stand",
+    "particle": "in for",
+    "turkish": "vekâlet etmek, yerine geçmek",
+    "example": "Can you stand in for me tomorrow?",
+    "exampleTr": "Yarın benim yerime geçebilir misin?"
+  },
+  {
+    "id": 434,
+    "verb": "start",
+    "particle": "off",
+    "turkish": "başlamak, başlatmak",
+    "example": "Let's start off with some warm-up exercises.",
+    "exampleTr": "Isınma egzersizleriyle başlayalım."
+  },
+  {
+    "id": 435,
+    "verb": "start",
+    "particle": "out",
+    "turkish": "başlamak, işe koyulmak",
+    "example": "She started out as a junior designer.",
+    "exampleTr": "Junior tasarımcı olarak başladı."
+  },
+  {
+    "id": 436,
+    "verb": "start",
+    "particle": "over",
+    "turkish": "yeniden başlamak, sıfırlamak",
+    "example": "Sometimes you need to start over.",
+    "exampleTr": "Bazen yeniden başlamanız gerekir."
+  },
+  {
+    "id": 437,
+    "verb": "stick",
+    "particle": "around",
+    "turkish": "beklemek, kalmak",
+    "example": "Stick around — it gets interesting.",
+    "exampleTr": "Bekle — ilginçleşiyor."
+  },
+  {
+    "id": 438,
+    "verb": "stick",
+    "particle": "out",
+    "turkish": "öne çıkmak, çıkıntı yapmak",
+    "example": "Her talent really sticks out.",
+    "exampleTr": "Yeteneği gerçekten öne çıkıyor."
+  },
+  {
+    "id": 439,
+    "verb": "stick",
+    "particle": "to",
+    "turkish": "sadık kalmak, devam etmek",
+    "example": "Stick to your plan.",
+    "exampleTr": "Planına sadık kal."
+  },
+  {
+    "id": 440,
+    "verb": "stick",
+    "particle": "up for",
+    "turkish": "savunmak, desteklemek",
+    "example": "Stick up for your rights.",
+    "exampleTr": "Haklarını savun."
+  },
+  {
+    "id": 441,
+    "verb": "stir",
+    "particle": "up",
+    "turkish": "kışkırtmak, karıştırmak",
+    "example": "Don't stir up trouble.",
+    "exampleTr": "Belayı büyütme."
+  },
+  {
+    "id": 442,
+    "verb": "string",
+    "particle": "along",
+    "turkish": "oyalamak, kandırmak",
+    "example": "Stop stringing me along.",
+    "exampleTr": "Beni oyalamayı bırak."
+  },
+  {
+    "id": 443,
+    "verb": "stumble",
+    "particle": "across",
+    "turkish": "tesadüfen bulmak, rastlamak",
+    "example": "I stumbled across an old diary.",
+    "exampleTr": "Eski bir güncenin üstüne rastladım."
+  },
+  {
+    "id": 444,
+    "verb": "sum",
+    "particle": "up",
+    "turkish": "özetlemek, toplamak",
+    "example": "Sum up your argument in one sentence.",
+    "exampleTr": "Argümanını tek cümlede özetle."
+  },
+  {
+    "id": 445,
+    "verb": "switch",
+    "particle": "off",
+    "turkish": "kapatmak, dinlemeyi kesmek",
+    "example": "Switch off your phone during the film.",
+    "exampleTr": "Film sırasında telefonunu kapat."
+  },
+  {
+    "id": 446,
+    "verb": "switch",
+    "particle": "on",
+    "turkish": "açmak, harekete geçmek",
+    "example": "Switch on the heating.",
+    "exampleTr": "Isıtmayı aç."
+  },
+  {
+    "id": 447,
+    "verb": "switch",
+    "particle": "over",
+    "turkish": "değiştirmek, geçmek",
+    "example": "Switch over to channel four.",
+    "exampleTr": "Dört numaralı kanala geç."
+  },
+  {
+    "id": 448,
+    "verb": "take",
+    "particle": "aback",
+    "turkish": "şaşırtmak, şoke etmek",
+    "example": "I was taken aback by her response.",
+    "exampleTr": "Cevabı beni şaşırttı."
+  },
+  {
+    "id": 449,
+    "verb": "take",
+    "particle": "against",
+    "turkish": "hoşlanmamak, karşı çıkmak",
+    "example": "She took against him from the start.",
+    "exampleTr": "Baştan beri ondan hoşlanmadı."
+  },
+  {
+    "id": 450,
+    "verb": "talk",
+    "particle": "back",
+    "turkish": "karşılık vermek, saygısızca cevaplamak",
+    "example": "Don't talk back to your parents.",
+    "exampleTr": "Ebeveynlerine karşılık verme."
+  },
+  {
+    "id": 451,
+    "verb": "talk",
+    "particle": "through",
+    "turkish": "tartışmak, çözmek",
+    "example": "Talk through your problems.",
+    "exampleTr": "Sorunlarını konuşarak çöz."
+  },
+  {
+    "id": 452,
+    "verb": "tear",
+    "particle": "apart",
+    "turkish": "parçalamak, mahvetmek",
+    "example": "The divorce tore the family apart.",
+    "exampleTr": "Boşanma aileyi parçaladı."
+  },
+  {
+    "id": 453,
+    "verb": "tear",
+    "particle": "down",
+    "turkish": "yıkmak, yerden yere vurmak",
+    "example": "They tore down the old building.",
+    "exampleTr": "Eski binayı yıktılar."
+  },
+  {
+    "id": 454,
+    "verb": "tear",
+    "particle": "up",
+    "turkish": "yırtmak, parçalamak",
+    "example": "She tore up the letter in anger.",
+    "exampleTr": "Mektubu öfkeyle parçaladı."
+  },
+  {
+    "id": 455,
+    "verb": "think",
+    "particle": "ahead",
+    "turkish": "ileriye bakmak, planlamak",
+    "example": "Think ahead to avoid problems.",
+    "exampleTr": "Sorunları önlemek için ileriye bak."
+  },
+  {
+    "id": 456,
+    "verb": "tick",
+    "particle": "off",
+    "turkish": "işaretlemek, azarlamak",
+    "example": "Tick off each item on the list.",
+    "exampleTr": "Listedeki her maddeyi işaretle."
+  },
+  {
+    "id": 457,
+    "verb": "tie",
+    "particle": "down",
+    "turkish": "bağlamak, kısıtlamak",
+    "example": "I don't want to be tied down to one place.",
+    "exampleTr": "Bir yere bağlı kalmak istemiyorum."
+  },
+  {
+    "id": 458,
+    "verb": "top",
+    "particle": "off",
+    "turkish": "taçlandırmak, doldurarak tamamlamak",
+    "example": "Top off the evening with a dance.",
+    "exampleTr": "Geceyi bir dansla taçlandır."
+  },
+  {
+    "id": 459,
+    "verb": "touch",
+    "particle": "up",
+    "turkish": "rötuş yapmak, küçük düzeltmeler yapmak",
+    "example": "She touched up her makeup.",
+    "exampleTr": "Makyajına rötuş yaptı."
+  },
+  {
+    "id": 460,
+    "verb": "track",
+    "particle": "back",
+    "turkish": "geri dönmek, izini sürmek",
+    "example": "Track back to where you went wrong.",
+    "exampleTr": "Nerede hata yaptığına geri dön."
+  },
+  {
+    "id": 461,
+    "verb": "trade",
+    "particle": "in",
+    "turkish": "takas etmek, eski ürünü fiyatından düşmek",
+    "example": "Trade in your old phone for a new one.",
+    "exampleTr": "Eski telefonunu yenisiyle takas et."
+  },
+  {
+    "id": 462,
+    "verb": "tune",
+    "particle": "in",
+    "turkish": "ayarlamak, kanalı bulmak",
+    "example": "Tune in tomorrow for the finale.",
+    "exampleTr": "Final için yarın ayarla."
+  },
+  {
+    "id": 463,
+    "verb": "tune",
+    "particle": "out",
+    "turkish": "dikkati dağılmak, kulak vermemek",
+    "example": "He tends to tune out during meetings.",
+    "exampleTr": "Toplantılar sırasında dikkati dağılıyor."
+  },
+  {
+    "id": 464,
+    "verb": "turn",
+    "particle": "against",
+    "turkish": "karşı çevirmek, düşman etmek",
+    "example": "They turned the public against him.",
+    "exampleTr": "Kamuoyunu ona karşı çevirdiler."
+  },
+  {
+    "id": 465,
+    "verb": "turn",
+    "particle": "away",
+    "turkish": "çevirmek, reddetmek",
+    "example": "No one should be turned away.",
+    "exampleTr": "Kimse geri çevrilmemeli."
+  },
+  {
+    "id": 466,
+    "verb": "use",
+    "particle": "up",
+    "turkish": "bitirmek, tüketmek",
+    "example": "Don't use up all the hot water.",
+    "exampleTr": "Sıcak suyun hepsini tüketme."
+  },
+  {
+    "id": 467,
+    "verb": "wade",
+    "particle": "through",
+    "turkish": "güçlükle ilerlemek, didinerek okumak",
+    "example": "I had to wade through lots of paperwork.",
+    "exampleTr": "Çok fazla evrak işiyle boğuşmak zorunda kaldım."
+  },
+  {
+    "id": 468,
+    "verb": "wait",
+    "particle": "on",
+    "turkish": "hizmet etmek, beklemek",
+    "example": "The waiter waited on them all evening.",
+    "exampleTr": "Garson bütün akşam onlara servis yaptı."
+  },
+  {
+    "id": 469,
+    "verb": "wait",
+    "particle": "out",
+    "turkish": "sonunu beklemek, geçmesini beklemek",
+    "example": "Let's wait out the storm inside.",
+    "exampleTr": "Fırtınanın geçmesini içeride bekleyelim."
+  },
+  {
+    "id": 470,
+    "verb": "walk",
+    "particle": "away",
+    "turkish": "uzaklaşmak, vazgeçmek",
+    "example": "Sometimes it's best to walk away.",
+    "exampleTr": "Bazen uzaklaşmak en iyisidir."
+  },
+  {
+    "id": 471,
+    "verb": "walk",
+    "particle": "in on",
+    "turkish": "aniden girmek, baskın yapmak",
+    "example": "She walked in on them by accident.",
+    "exampleTr": "Yanlışlıkla içeri girdi."
+  },
+  {
+    "id": 472,
+    "verb": "walk",
+    "particle": "out",
+    "turkish": "çıkmak, grevde ayrılmak",
+    "example": "The workers walked out in protest.",
+    "exampleTr": "İşçiler protesto amacıyla işi bıraktı."
+  },
+  {
+    "id": 473,
+    "verb": "watch",
+    "particle": "out",
+    "turkish": "dikkat etmek, kendine bakmak",
+    "example": "Watch out for pickpockets.",
+    "exampleTr": "Yankesicilere dikkat et."
+  },
+  {
+    "id": 474,
+    "verb": "weigh",
+    "particle": "up",
+    "turkish": "tartmak, değerlendirmek",
+    "example": "Weigh up all the options first.",
+    "exampleTr": "Önce tüm seçenekleri tartarak değerlendir."
+  },
+  {
+    "id": 475,
+    "verb": "win",
+    "particle": "over",
+    "turkish": "ikna etmek, taraf kazanmak",
+    "example": "Her charm won over the audience.",
+    "exampleTr": "Çekiciliği seyirciyi kazandı."
+  },
+  {
+    "id": 476,
+    "verb": "wipe",
+    "particle": "out",
+    "turkish": "silip süpürmek, yok etmek",
+    "example": "The hurricane wiped out the village.",
+    "exampleTr": "Kasırga köyü yok etti."
+  },
+  {
+    "id": 477,
+    "verb": "word",
+    "particle": "out",
+    "turkish": "duyurmak, söylentisini yaymak",
+    "example": "Get the word out about the event.",
+    "exampleTr": "Etkinliği duyur."
+  },
+  {
+    "id": 478,
+    "verb": "wrap",
+    "particle": "up",
+    "turkish": "bitirmek, sarıp sarmalamak",
+    "example": "Let's wrap up the meeting.",
+    "exampleTr": "Toplantıyı bitirelim."
+  },
+  {
+    "id": 479,
+    "verb": "zero",
+    "particle": "in on",
+    "turkish": "odaklanmak, hedef almak",
+    "example": "Zero in on the key problem.",
+    "exampleTr": "Temel soruna odaklan."
+  },
+  {
+    "id": 480,
+    "verb": "abide",
+    "particle": "by",
+    "turkish": "uymak, kabullenmek",
+    "example": "You must abide by the rules.",
+    "exampleTr": "Kurallara uymanız gerekir."
+  },
+  {
+    "id": 481,
+    "verb": "account",
+    "particle": "for",
+    "turkish": "açıklamak, oluşturmak",
+    "example": "How do you account for this error?",
+    "exampleTr": "Bu hatayı nasıl açıklıyorsunuz?"
+  },
+  {
+    "id": 482,
+    "verb": "act",
+    "particle": "up",
+    "turkish": "sorun çıkarmak, uslanmamak",
+    "example": "The engine is acting up again.",
+    "exampleTr": "Motor yine sorun çıkarıyor."
+  },
+  {
+    "id": 483,
+    "verb": "allow",
+    "particle": "for",
+    "turkish": "hesaba katmak, dikkate almak",
+    "example": "Allow for delays in your planning.",
+    "exampleTr": "Planlamanda gecikmeleri hesaba kat."
+  },
+  {
+    "id": 484,
+    "verb": "answer",
+    "particle": "back",
+    "turkish": "karşılık vermek, saygısızca cevaplamak",
+    "example": "Don't answer back!",
+    "exampleTr": "Karşılık verme!"
+  },
+  {
+    "id": 485,
+    "verb": "answer",
+    "particle": "for",
+    "turkish": "hesap vermek, sorumlu olmak",
+    "example": "You'll answer for this decision.",
+    "exampleTr": "Bu kararın hesabını vereceksin."
+  },
+  {
+    "id": 486,
+    "verb": "brush",
+    "particle": "off",
+    "turkish": "geçiştirmek, önemsememek",
+    "example": "She brushed off the criticism.",
+    "exampleTr": "Eleştiriyi geçiştirdi."
+  },
+  {
+    "id": 487,
+    "verb": "brush",
+    "particle": "up on",
+    "turkish": "tazelemek, tekrar çalışmak",
+    "example": "Brush up on your grammar.",
+    "exampleTr": "Dilbilginizi tazeleyин."
+  },
+  {
+    "id": 488,
+    "verb": "build",
+    "particle": "on",
+    "turkish": "üzerine inşa etmek, geliştirmek",
+    "example": "Build on your previous success.",
+    "exampleTr": "Önceki başarın üzerine inşa et."
+  },
+  {
+    "id": 489,
+    "verb": "build",
+    "particle": "up",
+    "turkish": "güçlendirmek, biriktirmek",
+    "example": "Build up your confidence slowly.",
+    "exampleTr": "Özgüvenini yavaş yavaş güçlendir."
+  },
+  {
+    "id": 490,
+    "verb": "burst",
+    "particle": "into",
+    "turkish": "patlak vermek, aniden başlamak",
+    "example": "She burst into tears.",
+    "exampleTr": "Gözyaşlarına boğuldu."
+  },
+  {
+    "id": 491,
+    "verb": "burst",
+    "particle": "out",
+    "turkish": "aniden başlamak, patlamak",
+    "example": "He burst out laughing.",
+    "exampleTr": "Kahkahayı bastırdı."
+  },
+  {
+    "id": 492,
+    "verb": "buy",
+    "particle": "into",
+    "turkish": "inanmak, kabul etmek",
+    "example": "I don't buy into that theory.",
+    "exampleTr": "O teoriye inanmıyorum."
+  },
+  {
+    "id": 493,
+    "verb": "buy",
+    "particle": "out",
+    "turkish": "satın alarak ortak olmaktan çıkmak",
+    "example": "He bought out his business partner.",
+    "exampleTr": "İş ortağının payını satın aldı."
+  },
+  {
+    "id": 494,
+    "verb": "catch",
+    "particle": "out",
+    "turkish": "yakalamak, suçüstü yapmak",
+    "example": "They caught him out lying.",
+    "exampleTr": "Onu yalan söylerken yakaladılar."
+  },
+  {
+    "id": 495,
+    "verb": "close",
+    "particle": "off",
+    "turkish": "kapatmak, erişimi engellemek",
+    "example": "The road was closed off for repairs.",
+    "exampleTr": "Yol onarım için kapatıldı."
+  },
+  {
+    "id": 496,
+    "verb": "come",
+    "particle": "off it",
+    "turkish": "saçmalama, abartma",
+    "example": "Oh, come off it — that's ridiculous!",
+    "exampleTr": "Hadi canım — bu saçmalık!"
+  },
+  {
+    "id": 497,
+    "verb": "count",
+    "particle": "down",
+    "turkish": "geri saymak",
+    "example": "We're counting down to the launch.",
+    "exampleTr": "Lansmana geri sayıyoruz."
+  },
+  {
+    "id": 498,
+    "verb": "cover",
+    "particle": "up",
+    "turkish": "örtbas etmek, üstünü örtmek",
+    "example": "They tried to cover up the scandal.",
+    "exampleTr": "Skandalı örtbas etmeye çalıştılar."
+  },
+  {
+    "id": 499,
+    "verb": "crack",
+    "particle": "down on",
+    "turkish": "sıkı önlemler almak, üstüne gitmek",
+    "example": "Police cracked down on speeding.",
+    "exampleTr": "Polis hız limitini aşanlara karşı sıkı önlemler aldı."
+  },
+  {
+    "id": 500,
+    "verb": "crack",
+    "particle": "up",
+    "turkish": "kahkahaya boğulmak, çökmek",
+    "example": "That joke cracked everyone up.",
+    "exampleTr": "O fıkra herkesi güldürdü."
+  }
+]

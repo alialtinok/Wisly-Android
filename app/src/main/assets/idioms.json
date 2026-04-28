@@ -1,0 +1,3502 @@
+[
+  {
+    "id": 1,
+    "idiom": "break a leg",
+    "turkish": "bol şans, başarılar",
+    "example": "Break a leg on your job interview today!",
+    "exampleTr": "Bugünkü iş görüşmende bol şans!"
+  },
+  {
+    "id": 2,
+    "idiom": "it's raining cats and dogs",
+    "turkish": "bardaktan boşanırcasına yağmur yağmak",
+    "example": "We can't go out now — it's raining cats and dogs.",
+    "exampleTr": "Şimdi dışarı çıkamayız, bardaktan boşanırcasına yağıyor."
+  },
+  {
+    "id": 3,
+    "idiom": "bite the bullet",
+    "turkish": "dişini sıkıp katlanmak, zorluğu göğüslemek",
+    "example": "I hate going to the dentist, but I'll just have to bite the bullet.",
+    "exampleTr": "Dişçiye gitmeyi sevmiyorum ama dişimi sıkıp gitmek zorundayım."
+  },
+  {
+    "id": 4,
+    "idiom": "cost an arm and a leg",
+    "turkish": "çok pahalıya mal olmak",
+    "example": "That sports car costs an arm and a leg.",
+    "exampleTr": "O spor araba çok pahalıya mal oluyor."
+  },
+  {
+    "id": 5,
+    "idiom": "hit the nail on the head",
+    "turkish": "tam yerine koymak, tam isabet etmek",
+    "example": "You hit the nail on the head with that analysis.",
+    "exampleTr": "O analizle tam yerine koydun."
+  },
+  {
+    "id": 6,
+    "idiom": "kick the bucket",
+    "turkish": "nalları dikmek, ölmek",
+    "example": "The old car finally kicked the bucket.",
+    "exampleTr": "Eski araba sonunda nalları dikti."
+  },
+  {
+    "id": 7,
+    "idiom": "spill the beans",
+    "turkish": "sırrı ifşa etmek, ağzından kaçırmak",
+    "example": "Don't spill the beans about the surprise party.",
+    "exampleTr": "Sürpriz parti hakkında ağzından kaçırma."
+  },
+  {
+    "id": 8,
+    "idiom": "under the weather",
+    "turkish": "hasta hissetmek, keyifsiz olmak",
+    "example": "I'm feeling a bit under the weather today.",
+    "exampleTr": "Bugün biraz keyifsiz hissediyorum."
+  },
+  {
+    "id": 9,
+    "idiom": "once in a blue moon",
+    "turkish": "çok nadir, kırk yılda bir",
+    "example": "We only go to that restaurant once in a blue moon.",
+    "exampleTr": "O restorana kırk yılda bir gidiyoruz."
+  },
+  {
+    "id": 10,
+    "idiom": "burn the midnight oil",
+    "turkish": "gece geç saatlere kadar çalışmak",
+    "example": "She burned the midnight oil to finish her thesis.",
+    "exampleTr": "Tezini bitirmek için gece geç saatlere kadar çalıştı."
+  },
+  {
+    "id": 11,
+    "idiom": "the ball is in your court",
+    "turkish": "sıra sende, karar sana kalmış",
+    "example": "I've made my offer — the ball is in your court now.",
+    "exampleTr": "Teklifimi yaptım, artık karar sana kalmış."
+  },
+  {
+    "id": 12,
+    "idiom": "let the cat out of the bag",
+    "turkish": "yanlışlıkla sırrı açığa çıkarmak",
+    "example": "He let the cat out of the bag about the wedding plans.",
+    "exampleTr": "Düğün planları hakkındaki sırrı yanlışlıkla açığa çıkardı."
+  },
+  {
+    "id": 13,
+    "idiom": "beat around the bush",
+    "turkish": "lafı dolandırmak, lafa dolamak",
+    "example": "Stop beating around the bush and tell me the truth.",
+    "exampleTr": "Lafı dolandırmayı bırak ve bana gerçeği söyle."
+  },
+  {
+    "id": 14,
+    "idiom": "hit the sack",
+    "turkish": "yatağa girmek, uyumaya gitmek",
+    "example": "I'm exhausted — I'm going to hit the sack.",
+    "exampleTr": "Çok yorgunum, uyumaya gidiyorum."
+  },
+  {
+    "id": 15,
+    "idiom": "no pain, no gain",
+    "turkish": "emek vermeden kazanç olmaz",
+    "example": "Keep training hard — no pain, no gain.",
+    "exampleTr": "Sert antrenman yapmaya devam et, emek vermeden kazanç olmaz."
+  },
+  {
+    "id": 16,
+    "idiom": "kill two birds with one stone",
+    "turkish": "tek taşla iki kuş vurmak",
+    "example": "I'll kill two birds with one stone by stopping at the bank on my way to the gym.",
+    "exampleTr": "Spor salonuna giderken bankaya uğrayarak tek taşla iki kuş vuracağım."
+  },
+  {
+    "id": 17,
+    "idiom": "bite the hand that feeds you",
+    "turkish": "nankör olmak, iyiliğine kıymak",
+    "example": "Criticising your employer in public is biting the hand that feeds you.",
+    "exampleTr": "İşverenini kamuoyu önünde eleştirmek nankörce bir davranış."
+  },
+  {
+    "id": 18,
+    "idiom": "miss the boat",
+    "turkish": "fırsatı kaçırmak",
+    "example": "If you don't apply now, you'll miss the boat.",
+    "exampleTr": "Şimdi başvurmazsan fırsatı kaçırırsın."
+  },
+  {
+    "id": 19,
+    "idiom": "the best of both worlds",
+    "turkish": "her iki dünyanın en iyisini yaşamak",
+    "example": "Working from home gives me the best of both worlds.",
+    "exampleTr": "Evden çalışmak bana her iki dünyanın en iyisini sunuyor."
+  },
+  {
+    "id": 20,
+    "idiom": "get out of hand",
+    "turkish": "kontrolden çıkmak, elden gitmek",
+    "example": "The situation got out of hand very quickly.",
+    "exampleTr": "Durum çok hızlı bir şekilde kontrolden çıktı."
+  },
+  {
+    "id": 21,
+    "idiom": "go back to the drawing board",
+    "turkish": "başa dönmek, sıfırdan başlamak",
+    "example": "The plan failed, so we had to go back to the drawing board.",
+    "exampleTr": "Plan başarısız oldu, bu yüzden sıfırdan başlamak zorunda kaldık."
+  },
+  {
+    "id": 22,
+    "idiom": "on the fence",
+    "turkish": "kararsız kalmak, taraf tutmamak",
+    "example": "I'm still on the fence about which university to choose.",
+    "exampleTr": "Hangi üniversiteyi seçeceğim konusunda hâlâ kararsızım."
+  },
+  {
+    "id": 23,
+    "idiom": "speak of the devil",
+    "turkish": "iti an, iti gör",
+    "example": "Speak of the devil — here comes Tom!",
+    "exampleTr": "İti an iti gör, işte Tom geliyor!"
+  },
+  {
+    "id": 24,
+    "idiom": "bite off more than you can chew",
+    "turkish": "gücünü aşan işe girişmek, ağzından büyük lokma almak",
+    "example": "Taking on three projects at once means biting off more than you can chew.",
+    "exampleTr": "Aynı anda üç proje üstlenmek gücünü aşan bir iş."
+  },
+  {
+    "id": 25,
+    "idiom": "hit the ground running",
+    "turkish": "hızlı ve enerjik başlamak",
+    "example": "She hit the ground running on her first day at work.",
+    "exampleTr": "İşinin ilk gününde hızlı ve enerjik bir başlangıç yaptı."
+  },
+  {
+    "id": 26,
+    "idiom": "it takes two to tango",
+    "turkish": "tangoya iki kişi gerek, iki taraf da sorumlu",
+    "example": "Don't blame only him — it takes two to tango.",
+    "exampleTr": "Sadece onu suçlama, iki taraf da sorumlu."
+  },
+  {
+    "id": 27,
+    "idiom": "add fuel to the fire",
+    "turkish": "ateşe körükle gitmek, durumu kötüleştirmek",
+    "example": "His comment only added fuel to the fire.",
+    "exampleTr": "Onun yorumu durumu daha da kötüleştirdi."
+  },
+  {
+    "id": 28,
+    "idiom": "the elephant in the room",
+    "turkish": "görmezden gelinen bariz sorun",
+    "example": "No one mentioned the elephant in the room — the company's debt.",
+    "exampleTr": "Hiç kimse görmezden gelinen bariz sorunu, şirketin borcunu dile getirmedi."
+  },
+  {
+    "id": 29,
+    "idiom": "let sleeping dogs lie",
+    "turkish": "uyuyan yılanı uyandırmamak, geçmişi karıştırmamak",
+    "example": "Don't bring up that old argument — let sleeping dogs lie.",
+    "exampleTr": "O eski tartışmayı gündeme getirme, geçmişi karıştırma."
+  },
+  {
+    "id": 30,
+    "idiom": "barking up the wrong tree",
+    "turkish": "yanlış kişiyi suçlamak, yanlış yerde aramak",
+    "example": "If you think I took it, you're barking up the wrong tree.",
+    "exampleTr": "Benim aldığımı düşünüyorsan yanlış kişiyi suçluyorsun."
+  },
+  {
+    "id": 31,
+    "idiom": "a blessing in disguise",
+    "turkish": "görünürde kötü ama aslında iyi olan şey",
+    "example": "Losing that job was a blessing in disguise.",
+    "exampleTr": "O işi kaybetmek aslında iyi geldi."
+  },
+  {
+    "id": 32,
+    "idiom": "actions speak louder than words",
+    "turkish": "laftan çok eylem önemlidir",
+    "example": "Stop talking about helping and just do it — actions speak louder than words.",
+    "exampleTr": "Yardım etmekten bahsetmeyi bırak ve sadece yap, laftan çok eylem önemlidir."
+  },
+  {
+    "id": 33,
+    "idiom": "all ears",
+    "turkish": "kulak kesilmek, dikkatle dinlemek",
+    "example": "Tell me what happened — I'm all ears.",
+    "exampleTr": "Ne olduğunu anlat, kulak kesilmiş durumdayım."
+  },
+  {
+    "id": 34,
+    "idiom": "at the drop of a hat",
+    "turkish": "hemen, anında, tereddütsüzce",
+    "example": "She would help anyone at the drop of a hat.",
+    "exampleTr": "Herkese anında yardım ederdi."
+  },
+  {
+    "id": 35,
+    "idiom": "back to square one",
+    "turkish": "başa dönmek, en başa dönmek",
+    "example": "The deal fell through, so it's back to square one.",
+    "exampleTr": "Anlaşma bozuldu, yani en başa döndük."
+  },
+  {
+    "id": 36,
+    "idiom": "can't judge a book by its cover",
+    "turkish": "görünüşe aldanmamak, dışarıdan bakarak yargılamamak",
+    "example": "He seemed unfriendly at first, but you can't judge a book by its cover.",
+    "exampleTr": "İlk başta soğuk göründü ama görünüşe aldanmamak lazım."
+  },
+  {
+    "id": 37,
+    "idiom": "cut corners",
+    "turkish": "köşeden kesmek, kaliteden ödün vermek",
+    "example": "The builder cut corners and the house had many problems.",
+    "exampleTr": "Müteahhit kaliteden ödün verdi ve evin çok sorunu oldu."
+  },
+  {
+    "id": 38,
+    "idiom": "every cloud has a silver lining",
+    "turkish": "her kötülüğün bir iyiliği vardır",
+    "example": "I failed the exam, but at least I know what to study — every cloud has a silver lining.",
+    "exampleTr": "Sınavdan kaldım ama ne çalışmam gerektiğini öğrendim, her kötülüğün bir iyiliği vardır."
+  },
+  {
+    "id": 39,
+    "idiom": "face the music",
+    "turkish": "sonuçlarına katlanmak, hesap vermek",
+    "example": "You made the mistake, so you have to face the music.",
+    "exampleTr": "Hatayı sen yaptın, bu yüzden sonuçlarına katlanmak zorundasın."
+  },
+  {
+    "id": 40,
+    "idiom": "get a taste of your own medicine",
+    "turkish": "kendi ilacını içmek, aynı muameleye maruz kalmak",
+    "example": "He was always rude, and now he's getting a taste of his own medicine.",
+    "exampleTr": "Her zaman kaba davranırdı, şimdi kendi ilacını içiyor."
+  },
+  {
+    "id": 41,
+    "idiom": "hang in there",
+    "turkish": "dayanmak, pes etmemek, sabretmek",
+    "example": "Things are tough, but hang in there — it will get better.",
+    "exampleTr": "İşler zor ama sabret, daha iyi olacak."
+  },
+  {
+    "id": 42,
+    "idiom": "in hot water",
+    "turkish": "başı belada olmak, zor durumda olmak",
+    "example": "He's in hot water with his boss after missing the deadline.",
+    "exampleTr": "Son teslim tarihini kaçırdıktan sonra patronuyla başı belada."
+  },
+  {
+    "id": 43,
+    "idiom": "jump on the bandwagon",
+    "turkish": "moda akıma kapılmak, herkesle aynı şeyi yapmak",
+    "example": "Everyone started using that app, so she jumped on the bandwagon too.",
+    "exampleTr": "Herkes o uygulamayı kullanmaya başladı, o da moda akıma kapıldı."
+  },
+  {
+    "id": 44,
+    "idiom": "keep something at bay",
+    "turkish": "uzak tutmak, önünü almak",
+    "example": "Exercise can keep stress at bay.",
+    "exampleTr": "Egzersiz stresi uzak tutar."
+  },
+  {
+    "id": 45,
+    "idiom": "leave no stone unturned",
+    "turkish": "her yolu denemek, taşı taş üstünde bırakmamak",
+    "example": "The detective left no stone unturned in the investigation.",
+    "exampleTr": "Dedektif soruşturmada her yolu denedi."
+  },
+  {
+    "id": 46,
+    "idiom": "make a long story short",
+    "turkish": "kısaca özetlemek, uzatmadan anlatmak",
+    "example": "To make a long story short, we missed the flight.",
+    "exampleTr": "Kısaca özetlemek gerekirse, uçağı kaçırdık."
+  },
+  {
+    "id": 47,
+    "idiom": "not rocket science",
+    "turkish": "çok zor bir şey değil, beyin ameliyatı değil",
+    "example": "It's not rocket science — just follow the instructions.",
+    "exampleTr": "Çok zor bir şey değil, sadece talimatlara uy."
+  },
+  {
+    "id": 48,
+    "idiom": "on the ball",
+    "turkish": "çok dikkatli ve başarılı olmak, işinin ehli olmak",
+    "example": "Our new accountant is really on the ball.",
+    "exampleTr": "Yeni muhasebecimiz gerçekten işinin ehli."
+  },
+  {
+    "id": 49,
+    "idiom": "pull someone's leg",
+    "turkish": "şaka yapmak, dalga geçmek",
+    "example": "Don't worry, I was just pulling your leg.",
+    "exampleTr": "Merak etme, sadece şaka yapıyordum."
+  },
+  {
+    "id": 50,
+    "idiom": "the whole nine yards",
+    "turkish": "her şey dahil, tam anlamıyla",
+    "example": "They did the whole nine yards for the party — food, decorations, music.",
+    "exampleTr": "Parti için her şeyi yaptılar; yiyecek, dekorasyon, müzik."
+  },
+  {
+    "id": 51,
+    "idiom": "up in the air",
+    "turkish": "belirsiz, havada kalmak",
+    "example": "Our plans for the summer are still up in the air.",
+    "exampleTr": "Yaz planlarımız hâlâ belirsiz."
+  },
+  {
+    "id": 52,
+    "idiom": "when pigs fly",
+    "turkish": "olmayacak bir şey, hiç olmayacak",
+    "example": "He'll clean his room when pigs fly.",
+    "exampleTr": "Odasını asla temizlemeyecek."
+  },
+  {
+    "id": 53,
+    "idiom": "you can't have your cake and eat it too",
+    "turkish": "ikisini birden isteyemezsin",
+    "example": "You want more free time but also more money — you can't have your cake and eat it too.",
+    "exampleTr": "Hem daha fazla özgür zaman hem de daha fazla para istiyorsun, ikisini birden isteyemezsin."
+  },
+  {
+    "id": 54,
+    "idiom": "zip your lip",
+    "turkish": "ağzını kapatmak, sus",
+    "example": "Zip your lip and listen for a moment.",
+    "exampleTr": "Bir dakika ağzını kapat ve dinle."
+  },
+  {
+    "id": 55,
+    "idiom": "give the benefit of the doubt",
+    "turkish": "lehine yorum yapmak, iyi niyet varsaymak",
+    "example": "I'll give him the benefit of the doubt this time.",
+    "exampleTr": "Bu sefer lehine yorum yapacağım."
+  },
+  {
+    "id": 56,
+    "idiom": "bite the dust",
+    "turkish": "çökmek, batmak, ölmek",
+    "example": "Another small business has bitten the dust.",
+    "exampleTr": "Bir küçük işletme daha battı."
+  },
+  {
+    "id": 57,
+    "idiom": "cross that bridge when you come to it",
+    "turkish": "vakti gelince düşünmek, zamanı gelince halletmek",
+    "example": "Don't worry about the exam now — cross that bridge when you come to it.",
+    "exampleTr": "Sınav için şimdi endişelenme, vakti gelince düşünürsün."
+  },
+  {
+    "id": 58,
+    "idiom": "the last straw",
+    "turkish": "bardağı taşıran son damla",
+    "example": "His rudeness was the last straw — she walked out.",
+    "exampleTr": "Onun kabalığı bardağı taşıran son damla oldu ve ayrıldı."
+  },
+  {
+    "id": 59,
+    "idiom": "get cold feet",
+    "turkish": "son anda korkmak, çark etmek",
+    "example": "He got cold feet before the presentation.",
+    "exampleTr": "Sunum öncesinde son anda korktu."
+  },
+  {
+    "id": 60,
+    "idiom": "give a cold shoulder",
+    "turkish": "soğuk davranmak, yüz vermemek",
+    "example": "She's been giving me the cold shoulder all week.",
+    "exampleTr": "Bütün hafta bana soğuk davranıyor."
+  },
+  {
+    "id": 61,
+    "idiom": "go the extra mile",
+    "turkish": "fazladan çaba göstermek, elinden geleni yapmak",
+    "example": "Our team always goes the extra mile for customers.",
+    "exampleTr": "Ekibimiz müşteriler için her zaman fazladan çaba gösterir."
+  },
+  {
+    "id": 62,
+    "idiom": "have a change of heart",
+    "turkish": "fikrini değiştirmek, kararından caymak",
+    "example": "She had a change of heart and decided not to move abroad.",
+    "exampleTr": "Fikrini değiştirdi ve yurt dışına taşınmamaya karar verdi."
+  },
+  {
+    "id": 63,
+    "idiom": "in the nick of time",
+    "turkish": "tam zamanında, son anda",
+    "example": "The ambulance arrived in the nick of time.",
+    "exampleTr": "Ambulans tam zamanında geldi."
+  },
+  {
+    "id": 64,
+    "idiom": "keep your fingers crossed",
+    "turkish": "parmakları çapraz tutmak, şans dilemek",
+    "example": "Keep your fingers crossed — I have a big interview tomorrow.",
+    "exampleTr": "Parmakların çapraz olsun, yarın önemli bir mülakatım var."
+  },
+  {
+    "id": 65,
+    "idiom": "look before you leap",
+    "turkish": "önce düşün sonra atla, dikkatlice düşünmek",
+    "example": "Look before you leap — research the company before applying.",
+    "exampleTr": "Önce düşün sonra atla, başvurmadan önce şirketi araştır."
+  },
+  {
+    "id": 66,
+    "idiom": "on thin ice",
+    "turkish": "tehlikeli bir durumda olmak, kırılgan bir zeminde olmak",
+    "example": "You're on thin ice with your boss after that mistake.",
+    "exampleTr": "O hatanın ardından patronunla kırılgan bir zemindesin."
+  },
+  {
+    "id": 67,
+    "idiom": "out of the blue",
+    "turkish": "birdenbire, ansızın, beklenmedik şekilde",
+    "example": "Out of the blue, she called me after five years.",
+    "exampleTr": "Birdenbire beş yıl aradan sonra beni aradı."
+  },
+  {
+    "id": 68,
+    "idiom": "rock the boat",
+    "turkish": "ortamı bozmak, sorun çıkarmak",
+    "example": "Don't rock the boat — everything is fine as it is.",
+    "exampleTr": "Ortamı bozma, her şey olduğu gibi güzel."
+  },
+  {
+    "id": 69,
+    "idiom": "see eye to eye",
+    "turkish": "aynı fikirde olmak, görüş birliği içinde olmak",
+    "example": "We don't always see eye to eye, but we respect each other.",
+    "exampleTr": "Her zaman aynı fikirde olmayız ama birbirimize saygı duyarız."
+  },
+  {
+    "id": 70,
+    "idiom": "take it with a grain of salt",
+    "turkish": "ihtiyatla karşılamak, körü körüne inanmamak",
+    "example": "Take his advice with a grain of salt — he's not an expert.",
+    "exampleTr": "Onun tavsiyesini ihtiyatla karşıla, uzman değil."
+  },
+  {
+    "id": 71,
+    "idiom": "throw in the towel",
+    "turkish": "pes etmek, havlu atmak",
+    "example": "After three failed attempts, he threw in the towel.",
+    "exampleTr": "Üç başarısız denemeden sonra pes etti."
+  },
+  {
+    "id": 72,
+    "idiom": "twist someone's arm",
+    "turkish": "birini zorlamak, ikna etmeye çalışmak",
+    "example": "He didn't want to come, but we twisted his arm.",
+    "exampleTr": "Gelmek istemiyordu ama onu ikna ettik."
+  },
+  {
+    "id": 73,
+    "idiom": "under someone's thumb",
+    "turkish": "birinin etkisi altında olmak, birinin parmağında oynamak",
+    "example": "He's completely under his manager's thumb.",
+    "exampleTr": "Müdürünün parmağında tamamen oynuyor."
+  },
+  {
+    "id": 74,
+    "idiom": "wrap your head around something",
+    "turkish": "bir şeyi kavramak, anlamlandırmak",
+    "example": "I can't wrap my head around this math problem.",
+    "exampleTr": "Bu matematik problemini bir türlü kavrayamıyorum."
+  },
+  {
+    "id": 75,
+    "idiom": "a penny for your thoughts",
+    "turkish": "ne düşündüğünü merak etmek",
+    "example": "You look distracted — a penny for your thoughts.",
+    "exampleTr": "Dalgın görünüyorsun, ne düşündüğünü merak ediyorum."
+  },
+  {
+    "id": 76,
+    "idiom": "burn bridges",
+    "turkish": "geri dönüşü olmayan adım atmak, köprüleri yakmak",
+    "example": "Don't burn bridges with your old employer — you may need them later.",
+    "exampleTr": "Eski işverenle köprüleri yakma, ileride onlara ihtiyacın olabilir."
+  },
+  {
+    "id": 77,
+    "idiom": "blow hot and cold",
+    "turkish": "kararsız olmak, tutarsız davranmak",
+    "example": "She keeps blowing hot and cold about the relationship.",
+    "exampleTr": "İlişki konusunda sürekli kararsız davranıyor."
+  },
+  {
+    "id": 78,
+    "idiom": "catch someone red-handed",
+    "turkish": "suçüstü yakalamak",
+    "example": "The police caught him red-handed stealing the car.",
+    "exampleTr": "Polis onu arabayı çalarken suçüstü yakaladı."
+  },
+  {
+    "id": 79,
+    "idiom": "cry wolf",
+    "turkish": "asılsız alarm vermek, yalan yere yardım istemek",
+    "example": "He cried wolf so many times that no one believed him when it was real.",
+    "exampleTr": "O kadar çok asılsız alarm verdi ki gerçek olduğunda kimse inanmadı."
+  },
+  {
+    "id": 80,
+    "idiom": "devil's advocate",
+    "turkish": "karşı görüşü savunmak, şeytanın avukatlığını yapmak",
+    "example": "Let me play devil's advocate — what if the plan fails?",
+    "exampleTr": "Karşı tarafı savunayım, ya plan başarısız olursa?"
+  },
+  {
+    "id": 81,
+    "idiom": "draw a blank",
+    "turkish": "hiçbir şey hatırlayamamak, aklı durmak",
+    "example": "I drew a blank when she asked me the capital of Australia.",
+    "exampleTr": "Avustralya'nın başkentini sorduğunda aklım durdu."
+  },
+  {
+    "id": 82,
+    "idiom": "feel under the gun",
+    "turkish": "baskı altında hissetmek",
+    "example": "With the deadline tomorrow, I really feel under the gun.",
+    "exampleTr": "Yarınki son teslim tarihi ile gerçekten baskı altında hissediyorum."
+  },
+  {
+    "id": 83,
+    "idiom": "get the ball rolling",
+    "turkish": "bir şeye başlamak, topu yuvarlamak",
+    "example": "Let's get the ball rolling on the new project.",
+    "exampleTr": "Yeni projeye başlayalım."
+  },
+  {
+    "id": 84,
+    "idiom": "give someone the green light",
+    "turkish": "birine yeşil ışık yakmak, onay vermek",
+    "example": "The manager gave us the green light to start.",
+    "exampleTr": "Müdür başlamamız için bize yeşil ışık yaktı."
+  },
+  {
+    "id": 85,
+    "idiom": "go cold turkey",
+    "turkish": "bir alışkanlıktan aniden vazgeçmek",
+    "example": "He quit smoking by going cold turkey.",
+    "exampleTr": "Sigarayı birden keserek bıraktı."
+  },
+  {
+    "id": 86,
+    "idiom": "have a bone to pick",
+    "turkish": "hesaplaşmak, şikayeti olmak",
+    "example": "I have a bone to pick with you about what you said yesterday.",
+    "exampleTr": "Dün söylediklerin hakkında seninle hesaplaşmam gerekiyor."
+  },
+  {
+    "id": 87,
+    "idiom": "have butterflies in your stomach",
+    "turkish": "heyecandan kelebekler uçuşmak, çok heyecanlanmak",
+    "example": "I always have butterflies in my stomach before a big speech.",
+    "exampleTr": "Büyük bir konuşmadan önce her zaman çok heyecanlanırım."
+  },
+  {
+    "id": 88,
+    "idiom": "hit the books",
+    "turkish": "ders çalışmaya başlamak",
+    "example": "I have a big exam next week, so I need to hit the books.",
+    "exampleTr": "Gelecek hafta büyük bir sınavım var, ders çalışmaya başlamalıyım."
+  },
+  {
+    "id": 89,
+    "idiom": "in over your head",
+    "turkish": "başa çıkamayacağın bir durumda olmak",
+    "example": "I took on too many tasks and now I'm in over my head.",
+    "exampleTr": "Çok fazla iş üstlendim ve artık başa çıkamıyorum."
+  },
+  {
+    "id": 90,
+    "idiom": "it's not the end of the world",
+    "turkish": "dünyanın sonu değil, o kadar da büyük değil",
+    "example": "You failed one test — it's not the end of the world.",
+    "exampleTr": "Bir sınavdan kaldın, dünyanın sonu değil."
+  },
+  {
+    "id": 91,
+    "idiom": "keep a low profile",
+    "turkish": "gözden uzak durmak, dikkat çekmemek",
+    "example": "After the scandal, he kept a low profile for months.",
+    "exampleTr": "Skandalın ardından aylarca gözden uzak durdu."
+  },
+  {
+    "id": 92,
+    "idiom": "kill the mood",
+    "turkish": "havayı mahvetmek, keyfi kaçırmak",
+    "example": "His negative comment really killed the mood.",
+    "exampleTr": "Olumsuz yorumu gerçekten havayı mahvetti."
+  },
+  {
+    "id": 93,
+    "idiom": "know something inside out",
+    "turkish": "bir şeyi ezberden bilmek, her ayrıntısını bilmek",
+    "example": "She knows this city inside out.",
+    "exampleTr": "Bu şehri her köşesiyle biliyor."
+  },
+  {
+    "id": 94,
+    "idiom": "learn the ropes",
+    "turkish": "işin inceliklerini öğrenmek, nasıl yapıldığını öğrenmek",
+    "example": "It took me a few months to learn the ropes at the new job.",
+    "exampleTr": "Yeni işte işin inceliklerini öğrenmem birkaç ay sürdü."
+  },
+  {
+    "id": 95,
+    "idiom": "let the chips fall where they may",
+    "turkish": "ne olursa olsun, sonucu kabullenmek",
+    "example": "I'll tell the truth and let the chips fall where they may.",
+    "exampleTr": "Gerçeği söyleyeceğim ve ne olursa olsun kabulleneceğim."
+  },
+  {
+    "id": 96,
+    "idiom": "lose your touch",
+    "turkish": "elinin alışkanlığını kaybetmek, eski ustalığını yitirmek",
+    "example": "The chef seems to have lost his touch lately.",
+    "exampleTr": "Şef son zamanlarda eski ustalığını yitirmiş gibi görünüyor."
+  },
+  {
+    "id": 97,
+    "idiom": "make ends meet",
+    "turkish": "geçimini sağlamak, idare etmek",
+    "example": "With such a low salary, it's hard to make ends meet.",
+    "exampleTr": "Bu kadar düşük maaşla geçimini sağlamak zor."
+  },
+  {
+    "id": 98,
+    "idiom": "neck and neck",
+    "turkish": "başa baş, boyun boyuna yarışmak",
+    "example": "The two candidates are neck and neck in the polls.",
+    "exampleTr": "İki aday anketlerde başa baş gidiyor."
+  },
+  {
+    "id": 99,
+    "idiom": "on the tip of your tongue",
+    "turkish": "dilinin ucunda olmak",
+    "example": "Her name is on the tip of my tongue but I can't remember it.",
+    "exampleTr": "İsmi dilimin ucunda ama bir türlü aklıma gelmiyor."
+  },
+  {
+    "id": 100,
+    "idiom": "over the moon",
+    "turkish": "çok mutlu olmak, sevinçten uçmak",
+    "example": "She was over the moon when she got the job.",
+    "exampleTr": "İşi aldığında sevinçten uçtu."
+  },
+  {
+    "id": 101,
+    "idiom": "pass the buck",
+    "turkish": "sorumluluğu başkasına yıkmak, topu başkasına atmak",
+    "example": "Stop passing the buck — this is your responsibility.",
+    "exampleTr": "Topu başkasına atmayı bırak, bu senin sorumluluğun."
+  },
+  {
+    "id": 102,
+    "idiom": "piece of cake",
+    "turkish": "çok kolay, çocuk oyuncağı",
+    "example": "That exam was a piece of cake.",
+    "exampleTr": "O sınav çocuk oyuncağıydı."
+  },
+  {
+    "id": 103,
+    "idiom": "put all your eggs in one basket",
+    "turkish": "tüm yumurtaları tek sepete koymak, her şeyi tek şeye bağlamak",
+    "example": "Don't put all your eggs in one basket — apply to multiple companies.",
+    "exampleTr": "Her şeyi tek şeye bağlama, birden fazla şirkete başvur."
+  },
+  {
+    "id": 104,
+    "idiom": "put your foot in your mouth",
+    "turkish": "pot kırmak, ağzından yanlış bir şey kaçırmak",
+    "example": "I really put my foot in my mouth when I asked if she was pregnant.",
+    "exampleTr": "Hamile olup olmadığını sorduğumda gerçekten pot kırdım."
+  },
+  {
+    "id": 105,
+    "idiom": "rain on someone's parade",
+    "turkish": "birinin sevincini kaçırmak, kutlamasını bozmak",
+    "example": "I don't want to rain on your parade, but there's a problem.",
+    "exampleTr": "Sevincini kaçırmak istemiyorum ama bir sorun var."
+  },
+  {
+    "id": 106,
+    "idiom": "read between the lines",
+    "turkish": "satır aralarını okumak, söylenmeyeni anlamak",
+    "example": "Read between the lines — he clearly wasn't happy.",
+    "exampleTr": "Satır aralarını oku, belli ki mutlu değildi."
+  },
+  {
+    "id": 107,
+    "idiom": "ride shotgun",
+    "turkish": "ön koltukta oturmak, öncü olmak",
+    "example": "Can I ride shotgun on the way to the concert?",
+    "exampleTr": "Konsere giderken ön koltuğa oturabilir miyim?"
+  },
+  {
+    "id": 108,
+    "idiom": "sit on the fence",
+    "turkish": "tarafsız kalmak, karar vermemek",
+    "example": "You can't sit on the fence forever — make a decision.",
+    "exampleTr": "Sonsuza kadar tarafsız kalamazsın, bir karar ver."
+  },
+  {
+    "id": 109,
+    "idiom": "sleep on it",
+    "turkish": "bir geceye yatmak, düşünmek için zaman tanımak",
+    "example": "It's a big decision — sleep on it and let me know tomorrow.",
+    "exampleTr": "Bu büyük bir karar, bir geceye yat ve yarın haber ver."
+  },
+  {
+    "id": 110,
+    "idiom": "stab someone in the back",
+    "turkish": "birine ihanet etmek, arkadan hançerlemek",
+    "example": "I can't believe she stabbed me in the back like that.",
+    "exampleTr": "Bana böyle ihanet ettiğine inanamıyorum."
+  },
+  {
+    "id": 111,
+    "idiom": "stand your ground",
+    "turkish": "tutumunu korumak, sağlam durmak",
+    "example": "She stood her ground despite the pressure.",
+    "exampleTr": "Baskıya rağmen tutumunu korudu."
+  },
+  {
+    "id": 112,
+    "idiom": "steal someone's thunder",
+    "turkish": "birinin gösterişini gölgelemek, başkasının önüne geçmek",
+    "example": "He announced his promotion at her birthday party and stole her thunder.",
+    "exampleTr": "Doğum gününde terfi haberini duyurup onun önüne geçti."
+  },
+  {
+    "id": 113,
+    "idiom": "step on someone's toes",
+    "turkish": "birinin hakkına tecavüz etmek, birine zarar vermek",
+    "example": "I don't want to step on anyone's toes with this decision.",
+    "exampleTr": "Bu kararla kimsenin hakkına tecavüz etmek istemiyorum."
+  },
+  {
+    "id": 114,
+    "idiom": "take the bull by the horns",
+    "turkish": "sorunu doğrudan ele almak, boğanın boynuzundan tutmak",
+    "example": "It's time to take the bull by the horns and fix this problem.",
+    "exampleTr": "Bu sorunu doğrudan ele almanın zamanı geldi."
+  },
+  {
+    "id": 115,
+    "idiom": "the tip of the iceberg",
+    "turkish": "buzdağının görünen kısmı, sorunun küçük bir parçası",
+    "example": "The complaints we've heard are just the tip of the iceberg.",
+    "exampleTr": "Duyduğumuz şikayetler buzdağının sadece görünen kısmı."
+  },
+  {
+    "id": 116,
+    "idiom": "think outside the box",
+    "turkish": "kalıpların dışında düşünmek, yaratıcı olmak",
+    "example": "We need to think outside the box to solve this.",
+    "exampleTr": "Bunu çözmek için kalıpların dışında düşünmemiz gerekiyor."
+  },
+  {
+    "id": 117,
+    "idiom": "time flies",
+    "turkish": "zaman çabuk geçmek, vakit uçmak",
+    "example": "Time flies when you're having fun.",
+    "exampleTr": "Eğlenirken zaman çabuk geçer."
+  },
+  {
+    "id": 118,
+    "idiom": "touch base",
+    "turkish": "iletişime geçmek, durumu kontrol etmek",
+    "example": "Let's touch base next week to see how things are going.",
+    "exampleTr": "Gelecek hafta nasıl gittiğini görmek için iletişime geçelim."
+  },
+  {
+    "id": 119,
+    "idiom": "turn a blind eye",
+    "turkish": "görmezden gelmek, göz yummak",
+    "example": "The manager turned a blind eye to the violations.",
+    "exampleTr": "Müdür ihlallere göz yumdu."
+  },
+  {
+    "id": 120,
+    "idiom": "under the table",
+    "turkish": "gizlice, yasadışı yollarla",
+    "example": "He was paid under the table to avoid taxes.",
+    "exampleTr": "Vergi ödemekten kaçınmak için gizlice ödeme yapıldı."
+  },
+  {
+    "id": 121,
+    "idiom": "wear your heart on your sleeve",
+    "turkish": "duygularını saklamayan, açık yürekli olmak",
+    "example": "She wears her heart on her sleeve — you always know how she feels.",
+    "exampleTr": "Duygularını saklayan biri değil, ne hissettiğini her zaman anlarsın."
+  },
+  {
+    "id": 122,
+    "idiom": "you scratch my back, I'll scratch yours",
+    "turkish": "sen benim sırtımı kaşı, ben de seninkini kaşırım",
+    "example": "Help me with this and I'll help you later — you scratch my back, I'll scratch yours.",
+    "exampleTr": "Bana yardım et, ben de sana yardım ederim."
+  },
+  {
+    "id": 123,
+    "idiom": "a dime a dozen",
+    "turkish": "yaygın, bol miktarda bulunan, kıymetsiz",
+    "example": "Talented singers are a dime a dozen these days.",
+    "exampleTr": "Yetenekli şarkıcılar bugünlerde her yerde var."
+  },
+  {
+    "id": 124,
+    "idiom": "add insult to injury",
+    "turkish": "yaraya tuz basmak, üstüne bir de",
+    "example": "He crashed my car, and to add insult to injury, he didn't apologise.",
+    "exampleTr": "Arabama çarptı ve üstüne bir de özür bile dilemedi."
+  },
+  {
+    "id": 125,
+    "idiom": "beat a dead horse",
+    "turkish": "geçmişi kurcalamak, bitmiş bir konuya dönmek",
+    "example": "Stop beating a dead horse — the decision has been made.",
+    "exampleTr": "Geçmişi kurcalamayı bırak, karar verildi."
+  },
+  {
+    "id": 126,
+    "idiom": "blow the whistle",
+    "turkish": "ihbar etmek, gizli bir şeyi açığa çıkarmak",
+    "example": "An employee blew the whistle on the company's fraud.",
+    "exampleTr": "Bir çalışan şirketin sahtekarlığını ihbar etti."
+  },
+  {
+    "id": 127,
+    "idiom": "break the ice",
+    "turkish": "ortamı yumuşatmak, konuşmayı başlatmak",
+    "example": "He told a joke to break the ice at the meeting.",
+    "exampleTr": "Toplantıda ortamı yumuşatmak için bir şaka yaptı."
+  },
+  {
+    "id": 128,
+    "idiom": "carry the torch",
+    "turkish": "bir davayı sürdürmek, bayrak taşımak",
+    "example": "She carried the torch for women's rights her entire life.",
+    "exampleTr": "Tüm hayatı boyunca kadın hakları bayrağını taşıdı."
+  },
+  {
+    "id": 129,
+    "idiom": "close but no cigar",
+    "turkish": "az kaldı ama olmadı, neredeyse",
+    "example": "Close but no cigar — you were just one point away from passing.",
+    "exampleTr": "Az kaldı ama olmadı, geçmek için sadece bir puan eksiktin."
+  },
+  {
+    "id": 130,
+    "idiom": "cutting edge",
+    "turkish": "en son teknolojiyi kullanan, öncü",
+    "example": "Their lab is working on cutting-edge technology.",
+    "exampleTr": "Laboratuvarları en son teknolojiyle çalışıyor."
+  },
+  {
+    "id": 131,
+    "idiom": "dark horse",
+    "turkish": "beklenmedik rakip, sürpriz aday",
+    "example": "She was the dark horse of the competition and won.",
+    "exampleTr": "Yarışmanın sürpriz adayıydı ve kazandı."
+  },
+  {
+    "id": 132,
+    "idiom": "drop the ball",
+    "turkish": "hata yapmak, sorumluluğunu yerine getirememek",
+    "example": "We really dropped the ball on that project.",
+    "exampleTr": "O projede gerçekten hata yaptık."
+  },
+  {
+    "id": 133,
+    "idiom": "fish out of water",
+    "turkish": "suyun dışına çıkmış balık, kendini yersiz hissetmek",
+    "example": "At the formal dinner, I felt like a fish out of water.",
+    "exampleTr": "Resmi yemekte kendimi yersiz hissettim."
+  },
+  {
+    "id": 134,
+    "idiom": "fly off the handle",
+    "turkish": "aniden öfkelenmek, kontrolünü kaybetmek",
+    "example": "My boss flies off the handle at the smallest mistake.",
+    "exampleTr": "Patronum en küçük hatada aniden öfkeleniyor."
+  },
+  {
+    "id": 135,
+    "idiom": "get a second wind",
+    "turkish": "ikinci nefes almak, yeniden enerji kazanmak",
+    "example": "I was tired at km 30 but got a second wind and finished the race.",
+    "exampleTr": "30. kilometrede yoruldum ama yeniden enerji kazanarak yarışı bitirdim."
+  },
+  {
+    "id": 136,
+    "idiom": "get something off your chest",
+    "turkish": "içini dökmek, dertleşmek",
+    "example": "I need to get something off my chest — I've been feeling stressed.",
+    "exampleTr": "İçimi dökmem gerekiyor, stresli hissediyorum."
+  },
+  {
+    "id": 137,
+    "idiom": "get the hang of something",
+    "turkish": "bir şeyin nasıl yapıldığını kavramak, alışmak",
+    "example": "It took me a while, but I finally got the hang of driving.",
+    "exampleTr": "Biraz zaman aldı ama sonunda araba kullanmayı kavradım."
+  },
+  {
+    "id": 138,
+    "idiom": "give someone the cold shoulder",
+    "turkish": "birine soğuk davranmak, yüz vermemek",
+    "example": "Ever since the argument, she's been giving me the cold shoulder.",
+    "exampleTr": "Tartışmadan beri bana soğuk davranıyor."
+  },
+  {
+    "id": 139,
+    "idiom": "go against the grain",
+    "turkish": "akışa karşı gitmek, çoğunluğa aykırı olmak",
+    "example": "His decision to quit his stable job went against the grain.",
+    "exampleTr": "Sabit işini bırakma kararı akışa karşı gitmekti."
+  },
+  {
+    "id": 140,
+    "idiom": "go down in flames",
+    "turkish": "feci şekilde başarısız olmak, yanıp kül olmak",
+    "example": "The startup went down in flames after losing its biggest client.",
+    "exampleTr": "Girişim en büyük müşterisini kaybettikten sonra feci şekilde başarısız oldu."
+  },
+  {
+    "id": 141,
+    "idiom": "have a lot on your plate",
+    "turkish": "çok işi olmak, yoğun olmak",
+    "example": "I can't help you right now — I have a lot on my plate.",
+    "exampleTr": "Şu anda sana yardım edemem, çok işim var."
+  },
+  {
+    "id": 142,
+    "idiom": "have the upper hand",
+    "turkish": "üstün konumda olmak, avantajlı olmak",
+    "example": "With more experience, she has the upper hand in negotiations.",
+    "exampleTr": "Daha fazla deneyimiyle müzakerelerde avantajlı konumda."
+  },
+  {
+    "id": 143,
+    "idiom": "hit the ceiling",
+    "turkish": "çok sinirlenimek, tavana çıkmak",
+    "example": "My dad hit the ceiling when he saw my grades.",
+    "exampleTr": "Babam notlarımı görünce çok sinirlendi."
+  },
+  {
+    "id": 144,
+    "idiom": "hit the road",
+    "turkish": "yola çıkmak, hareket etmek",
+    "example": "We need to hit the road early to avoid traffic.",
+    "exampleTr": "Trafiği önlemek için erken yola çıkmamız gerekiyor."
+  },
+  {
+    "id": 145,
+    "idiom": "in a nutshell",
+    "turkish": "kısaca, özetle",
+    "example": "In a nutshell, the project was a success.",
+    "exampleTr": "Kısaca, proje başarılıydı."
+  },
+  {
+    "id": 146,
+    "idiom": "in the long run",
+    "turkish": "uzun vadede, sonunda",
+    "example": "It's expensive now, but it will save money in the long run.",
+    "exampleTr": "Şimdi pahalı ama uzun vadede para tasarrufu sağlayacak."
+  },
+  {
+    "id": 147,
+    "idiom": "jump the gun",
+    "turkish": "erkenden hareket etmek, acele etmek",
+    "example": "Don't jump the gun — wait until the results are official.",
+    "exampleTr": "Acele etme, sonuçlar resmileşene kadar bekle."
+  },
+  {
+    "id": 148,
+    "idiom": "keep someone in the loop",
+    "turkish": "birini bilgilendirmek, güncel tutmak",
+    "example": "Please keep me in the loop about any changes.",
+    "exampleTr": "Herhangi bir değişiklik hakkında lütfen beni bilgilendir."
+  },
+  {
+    "id": 149,
+    "idiom": "knock on wood",
+    "turkish": "nazar değmesin, tahtaya vurmak",
+    "example": "I've never been in a car accident, knock on wood.",
+    "exampleTr": "Hiç trafik kazasına karışmadım, nazar değmesin."
+  },
+  {
+    "id": 150,
+    "idiom": "a little bird told me",
+    "turkish": "duydum, haber aldım",
+    "example": "A little bird told me you got a promotion — congratulations!",
+    "exampleTr": "Terfi aldığını duydum, tebrikler!"
+  },
+  {
+    "id": 151,
+    "idiom": "an arm's length",
+    "turkish": "belirli bir mesafede tutmak",
+    "example": "He kept his competitors at arm's length.",
+    "exampleTr": "Rakiplerini belirli bir mesafede tuttu."
+  },
+  {
+    "id": 152,
+    "idiom": "ants in your pants",
+    "turkish": "yerinde duramamak, sabırsızlıktan kıpırdamamak",
+    "example": "The kids had ants in their pants before the trip.",
+    "exampleTr": "Çocuklar gezi öncesinde sabırsızlıktan yerinde duramamıştı."
+  },
+  {
+    "id": 153,
+    "idiom": "armed to the teeth",
+    "turkish": "tepeden tırnağa silahlı, çok iyi hazırlanmış",
+    "example": "She walked into the negotiation armed to the teeth with data.",
+    "exampleTr": "Müzakereye verilerle tepeden tırnağa donanmış girdi."
+  },
+  {
+    "id": 154,
+    "idiom": "as right as rain",
+    "turkish": "sağlıklı ve iyi, gayet iyi",
+    "example": "After a good night's sleep, she was as right as rain.",
+    "exampleTr": "İyi bir gece uykusunun ardından gayet iyiydi."
+  },
+  {
+    "id": 155,
+    "idiom": "as the crow flies",
+    "turkish": "kuş uçuşu mesafesi",
+    "example": "It's only 5 km as the crow flies, but 10 km by road.",
+    "exampleTr": "Kuş uçuşu sadece 5 km ama yol ile 10 km."
+  },
+  {
+    "id": 156,
+    "idiom": "backseat driver",
+    "turkish": "sürücüye yön veren yolcu, işe burnunu sokan kişi",
+    "example": "Stop being a backseat driver — I know how to get there.",
+    "exampleTr": "İşe burnunu sokma, oraya nasıl gidileceğini biliyorum."
+  },
+  {
+    "id": 157,
+    "idiom": "ball and chain",
+    "turkish": "yük olan şey, bağ",
+    "example": "That old house became a ball and chain for the family.",
+    "exampleTr": "O eski ev aile için bir yük haline geldi."
+  },
+  {
+    "id": 158,
+    "idiom": "be in someone's shoes",
+    "turkish": "birinin yerine geçmek, onun durumuna girmek",
+    "example": "I wouldn't want to be in his shoes right now.",
+    "exampleTr": "Şu an onun yerinde olmak istemezdim."
+  },
+  {
+    "id": 159,
+    "idiom": "beside yourself",
+    "turkish": "kendinden geçmek, çok üzülmek ya da sevinmek",
+    "example": "She was beside herself with joy when she heard the news.",
+    "exampleTr": "Haberi duyduğunda sevinçten kendinden geçti."
+  },
+  {
+    "id": 160,
+    "idiom": "blow your own trumpet",
+    "turkish": "kendi kendini övmek, böbürlenmek",
+    "example": "She never stops blowing her own trumpet.",
+    "exampleTr": "Kendini övmeyi hiç bırakmıyor."
+  },
+  {
+    "id": 161,
+    "idiom": "born with a silver spoon",
+    "turkish": "gümüş kaşıkla doğmak, varlıklı bir ailede doğmak",
+    "example": "He was born with a silver spoon and never had to work hard.",
+    "exampleTr": "Varlıklı bir ailede doğdu ve hiç çok çalışmak zorunda kalmadı."
+  },
+  {
+    "id": 162,
+    "idiom": "break the mold",
+    "turkish": "kalıpları kırmak, özgün olmak",
+    "example": "Her designs break the mold of traditional fashion.",
+    "exampleTr": "Tasarımları geleneksel modanın kalıplarını kırıyor."
+  },
+  {
+    "id": 163,
+    "idiom": "bring home the bacon",
+    "turkish": "eve ekmek getirmek, geçimini sağlamak",
+    "example": "With two kids, she had to bring home the bacon.",
+    "exampleTr": "İki çocukla eve ekmek getirmek zorundaydı."
+  },
+  {
+    "id": 164,
+    "idiom": "bury the hatchet",
+    "turkish": "barışmak, savaş baltasını gömmek",
+    "example": "After years of conflict, the two families finally buried the hatchet.",
+    "exampleTr": "Yıllarca süren çatışmanın ardından iki aile sonunda barıştı."
+  },
+  {
+    "id": 165,
+    "idiom": "by the skin of your teeth",
+    "turkish": "kıl payı, zar zor",
+    "example": "I passed the exam by the skin of my teeth.",
+    "exampleTr": "Sınavı kıl payı geçtim."
+  },
+  {
+    "id": 166,
+    "idiom": "call it a day",
+    "turkish": "günü bitirmek, işi bırakmak",
+    "example": "We've done enough — let's call it a day.",
+    "exampleTr": "Yeterince yaptık, bugünlük yeter."
+  },
+  {
+    "id": 167,
+    "idiom": "can't stomach something",
+    "turkish": "bir şeye tahammül edememek",
+    "example": "I can't stomach injustice.",
+    "exampleTr": "Adaletsizliğe tahammül edemiyorum."
+  },
+  {
+    "id": 168,
+    "idiom": "caught off guard",
+    "turkish": "hazırlıksız yakalanmak, gafil avlanmak",
+    "example": "The question caught me completely off guard.",
+    "exampleTr": "Soru beni tamamen hazırlıksız yakaladı."
+  },
+  {
+    "id": 169,
+    "idiom": "change of pace",
+    "turkish": "değişiklik, farklı bir şey denemek",
+    "example": "A weekend in the countryside would be a nice change of pace.",
+    "exampleTr": "Kırsalda geçirilecek bir hafta sonu güzel bir değişiklik olur."
+  },
+  {
+    "id": 170,
+    "idiom": "come clean",
+    "turkish": "itiraf etmek, temiz olmak",
+    "example": "You should come clean about what happened.",
+    "exampleTr": "Ne olduğunu itiraf etmelisin."
+  },
+  {
+    "id": 171,
+    "idiom": "come to a head",
+    "turkish": "bir noktaya ulaşmak, doruk noktasına gelmek",
+    "example": "The tension came to a head at the meeting.",
+    "exampleTr": "Toplantıda gerilim doruk noktasına geldi."
+  },
+  {
+    "id": 172,
+    "idiom": "cool your heels",
+    "turkish": "beklemek, sakinleşmek",
+    "example": "Just cool your heels — the doctor will see you soon.",
+    "exampleTr": "Sadece bekle, doktor seni yakında görecek."
+  },
+  {
+    "id": 173,
+    "idiom": "count your blessings",
+    "turkish": "sahip olduklarına şükretmek",
+    "example": "Instead of complaining, count your blessings.",
+    "exampleTr": "Şikayet etmek yerine sahip olduklarına şükret."
+  },
+  {
+    "id": 174,
+    "idiom": "curiosity killed the cat",
+    "turkish": "merak belayı getirir",
+    "example": "Don't open that file — curiosity killed the cat.",
+    "exampleTr": "O dosyayı açma, merak belayı getirir."
+  },
+  {
+    "id": 175,
+    "idiom": "cut to the chase",
+    "turkish": "konuya gelmek, lafı uzatmadan söylemek",
+    "example": "Let's cut to the chase — what do you actually want?",
+    "exampleTr": "Konuya gelelim, aslında ne istiyorsun?"
+  },
+  {
+    "id": 176,
+    "idiom": "dead in the water",
+    "turkish": "işe yaramaz, çökmüş, ilerleme kaydetmeyen",
+    "example": "Without funding, the project is dead in the water.",
+    "exampleTr": "Finansman olmadan proje çökmüş durumda."
+  },
+  {
+    "id": 177,
+    "idiom": "don't hold your breath",
+    "turkish": "bekleme, olmayacak",
+    "example": "Don't hold your breath waiting for him to apologise.",
+    "exampleTr": "Onun özür dilemesini bekleme, olmayacak."
+  },
+  {
+    "id": 178,
+    "idiom": "down to earth",
+    "turkish": "mütevazı, ayakları yere basan",
+    "example": "Despite her fame, she's very down to earth.",
+    "exampleTr": "Ünlü olmasına rağmen çok mütevazı."
+  },
+  {
+    "id": 179,
+    "idiom": "drive someone up the wall",
+    "turkish": "birini çıldırtmak, sinir bozmak",
+    "example": "That noise is driving me up the wall.",
+    "exampleTr": "O ses beni çıldırtıyor."
+  },
+  {
+    "id": 180,
+    "idiom": "easy does it",
+    "turkish": "ağır ol, dikkatli yap",
+    "example": "Easy does it — that vase is very fragile.",
+    "exampleTr": "Dikkatli ol, o vazo çok kırılgan."
+  },
+  {
+    "id": 181,
+    "idiom": "end of the road",
+    "turkish": "sonun sonu, çıkmaz",
+    "example": "Without more investment, this could be the end of the road for the company.",
+    "exampleTr": "Daha fazla yatırım olmadan bu şirket için sonun sonu olabilir."
+  },
+  {
+    "id": 182,
+    "idiom": "eyes bigger than your stomach",
+    "turkish": "gözü doymak bilmemek, gözü büyük olmak",
+    "example": "She ordered too much food — her eyes were bigger than her stomach.",
+    "exampleTr": "Çok fazla yemek ısmarlardı, gözü büyüktü."
+  },
+  {
+    "id": 183,
+    "idiom": "fair and square",
+    "turkish": "dürüst ve adil, kurallara uygun",
+    "example": "He won the game fair and square.",
+    "exampleTr": "Oyunu kurallara uygun kazandı."
+  },
+  {
+    "id": 184,
+    "idiom": "fall on deaf ears",
+    "turkish": "duymazdan gelmek, kulak tıkamak",
+    "example": "My advice fell on deaf ears.",
+    "exampleTr": "Tavsiyem duymazdan gelindi."
+  },
+  {
+    "id": 185,
+    "idiom": "feel the pinch",
+    "turkish": "sıkıntıyı hissetmek, maddi zorlanmak",
+    "example": "Many families are feeling the pinch of rising prices.",
+    "exampleTr": "Pek çok aile artan fiyatların sıkıntısını hissediyor."
+  },
+  {
+    "id": 186,
+    "idiom": "fit as a fiddle",
+    "turkish": "sağlıklı ve dinç olmak, zinde olmak",
+    "example": "After two weeks of rest, he was fit as a fiddle.",
+    "exampleTr": "İki haftalık dinlenmeden sonra zinde hissediyordu."
+  },
+  {
+    "id": 187,
+    "idiom": "food for thought",
+    "turkish": "düşündürücü şey, üzerinde düşünülecek konu",
+    "example": "Her speech gave me a lot of food for thought.",
+    "exampleTr": "Onun konuşması bana çok düşündürücü şeyler verdi."
+  },
+  {
+    "id": 188,
+    "idiom": "get your act together",
+    "turkish": "kendini toplamak, düzene girmek",
+    "example": "You need to get your act together before the deadline.",
+    "exampleTr": "Son teslim tarihinden önce kendini toplamalısın."
+  },
+  {
+    "id": 189,
+    "idiom": "give it your best shot",
+    "turkish": "elinden gelenin en iyisini yapmak",
+    "example": "I don't know if I'll win, but I'll give it my best shot.",
+    "exampleTr": "Kazanıp kazanmayacağımı bilmiyorum ama elimden gelenin en iyisini yapacağım."
+  },
+  {
+    "id": 190,
+    "idiom": "go for broke",
+    "turkish": "her şeyi ortaya koymak, büyük risk almak",
+    "example": "We decided to go for broke and launch the product early.",
+    "exampleTr": "Her şeyi ortaya koyarak ürünü erken piyasaya sürmeye karar verdik."
+  },
+  {
+    "id": 191,
+    "idiom": "got out of bed on the wrong side",
+    "turkish": "sabahtan huysuz olmak, sinirli kalkmak",
+    "example": "He must have got out of bed on the wrong side today.",
+    "exampleTr": "Bugün sabahtan huysuz kalkmış olmalı."
+  },
+  {
+    "id": 192,
+    "idiom": "have your hands full",
+    "turkish": "elleri dolu olmak, çok meşgul olmak",
+    "example": "With three kids, she has her hands full.",
+    "exampleTr": "Üç çocukla elleri dolu."
+  },
+  {
+    "id": 193,
+    "idiom": "head in the clouds",
+    "turkish": "hayallere dalmak, başı bulutlarda olmak",
+    "example": "He's always got his head in the clouds — very unrealistic.",
+    "exampleTr": "Her zaman hayallere dalar, çok gerçekçi değil."
+  },
+  {
+    "id": 194,
+    "idiom": "hit the jackpot",
+    "turkish": "büyük ikramiye kazanmak, büyük şans kazanmak",
+    "example": "With this job offer, I really hit the jackpot.",
+    "exampleTr": "Bu iş teklifiyle gerçekten büyük şans kazandım."
+  },
+  {
+    "id": 195,
+    "idiom": "hot under the collar",
+    "turkish": "sinirli olmak, öfkeli olmak",
+    "example": "He got hot under the collar when his idea was rejected.",
+    "exampleTr": "Fikri reddedilince çok sinirli oldu."
+  },
+  {
+    "id": 196,
+    "idiom": "keep your nose to the grindstone",
+    "turkish": "çalışmaya devam etmek, işine odaklanmak",
+    "example": "If you keep your nose to the grindstone, you'll succeed.",
+    "exampleTr": "İşine odaklanmaya devam edersen başarırsın."
+  },
+  {
+    "id": 197,
+    "idiom": "like a fish out of water",
+    "turkish": "kendini ortama uymayan hissetmek",
+    "example": "Moving to the city, she felt like a fish out of water.",
+    "exampleTr": "Şehre taşınınca kendini ortama uyumsuz hissetti."
+  },
+  {
+    "id": 198,
+    "idiom": "on the mend",
+    "turkish": "iyileşme sürecinde olmak",
+    "example": "She was sick last week but she's on the mend now.",
+    "exampleTr": "Geçen hafta hastaydi ama şimdi iyileşiyor."
+  },
+  {
+    "id": 199,
+    "idiom": "play it by ear",
+    "turkish": "duruma göre hareket etmek, plansız gitmek",
+    "example": "I don't have a strict plan — I'll just play it by ear.",
+    "exampleTr": "Katı bir planım yok, sadece duruma göre hareket edeceğim."
+  },
+  {
+    "id": 200,
+    "idiom": "the more the merrier",
+    "turkish": "ne kadar çok, o kadar iyi",
+    "example": "Bring your friends to the party — the more the merrier!",
+    "exampleTr": "Arkadaşlarını partiye getir, ne kadar çok o kadar iyi!"
+  },
+  {
+    "id": 201,
+    "idiom": "a penny saved is a penny earned",
+    "turkish": "biriktirilen para kazanılan paradır; tasarruf etmek de para kazanmaktır",
+    "example": "I never buy coffee out — a penny saved is a penny earned.",
+    "exampleTr": "Hiç dışarıdan kahve almam — biriktirilen para kazanılan paradır."
+  },
+  {
+    "id": 202,
+    "idiom": "a picture is worth a thousand words",
+    "turkish": "bir resim bin kelimeye bedeldir",
+    "example": "The chart explained everything instantly — a picture is worth a thousand words.",
+    "exampleTr": "Grafik her şeyi anında açıkladı — bir resim bin kelimeye bedeldir."
+  },
+  {
+    "id": 203,
+    "idiom": "absence makes the heart grow fonder",
+    "turkish": "uzaklık sevgiyi artırır; gözden uzak olan gönülden de uzak olur (tersi anlamda)",
+    "example": "After months apart, they realized absence makes the heart grow fonder.",
+    "exampleTr": "Aylarca ayrı kaldıktan sonra uzaklığın sevgiyi artırdığını fark ettiler."
+  },
+  {
+    "id": 204,
+    "idiom": "all that glitters is not gold",
+    "turkish": "her parlayan şey altın değildir",
+    "example": "The deal looked amazing, but all that glitters is not gold.",
+    "exampleTr": "Anlaşma harika görünüyordu ama her parlayan şey altın değildir."
+  },
+  {
+    "id": 205,
+    "idiom": "blowing smoke",
+    "turkish": "palavra atmak; boş vaatlerde bulunmak",
+    "example": "He was just blowing smoke when he said he could fix the problem in an hour.",
+    "exampleTr": "Problemi bir saatte çözebileceğini söylerken sadece palavra atıyordu."
+  },
+  {
+    "id": 206,
+    "idiom": "break new ground",
+    "turkish": "yeni bir çığır açmak; öncülük etmek",
+    "example": "Their research broke new ground in the field of medicine.",
+    "exampleTr": "Araştırmaları tıp alanında yeni bir çığır açtı."
+  },
+  {
+    "id": 207,
+    "idiom": "bring to the table",
+    "turkish": "katkıda bulunmak; bir şeyler sunmak",
+    "example": "What skills do you bring to the table for this project?",
+    "exampleTr": "Bu projeye ne gibi beceriler katkısında bulunabilirsiniz?"
+  },
+  {
+    "id": 208,
+    "idiom": "burn one's boats",
+    "turkish": "köprüleri yakmak; geri dönüş yolunu kapamak",
+    "example": "By quitting his job before finding a new one, he burned his boats.",
+    "exampleTr": "Yeni bir iş bulmadan işten ayrılarak köprülerini yaktı."
+  },
+  {
+    "id": 209,
+    "idiom": "by the seat of your pants",
+    "turkish": "içgüdüyle hareket etmek; hazırlıksız atlatmak",
+    "example": "He had no plan and was flying by the seat of his pants the whole time.",
+    "exampleTr": "Hiç planı yoktu ve tüm süre boyunca içgüdüyle hareket etti."
+  },
+  {
+    "id": 210,
+    "idiom": "can't see the forest for the trees",
+    "turkish": "ayrıntılara takılıp büyük resmi görmemek",
+    "example": "He kept fixing tiny bugs and couldn't see the forest for the trees.",
+    "exampleTr": "Küçük hataları düzeltmeye devam etti ve büyük resmi göremedi."
+  },
+  {
+    "id": 211,
+    "idiom": "catch someone's eye",
+    "turkish": "birinin dikkatini çekmek",
+    "example": "The bright red dress caught his eye immediately.",
+    "exampleTr": "Parlak kırmızı elbise hemen dikkatini çekti."
+  },
+  {
+    "id": 212,
+    "idiom": "change the subject",
+    "turkish": "konuyu değiştirmek",
+    "example": "Whenever she felt uncomfortable, she would change the subject.",
+    "exampleTr": "Ne zaman kendini rahatsız hisse, konuyu değiştirirdi."
+  },
+  {
+    "id": 213,
+    "idiom": "chase your tail",
+    "turkish": "kendi etrafında dönmek; boşa kürek çekmek",
+    "example": "Without a plan, we're just chasing our tails.",
+    "exampleTr": "Plan olmadan sadece kendi etrafımızda dönüyoruz."
+  },
+  {
+    "id": 214,
+    "idiom": "clear the air",
+    "turkish": "havayı temizlemek; yanlış anlamaları gidermek",
+    "example": "They sat down to talk and finally cleared the air between them.",
+    "exampleTr": "Oturup konuştular ve aralarındaki yanlış anlamaları nihayet giydirdiler."
+  },
+  {
+    "id": 215,
+    "idiom": "clip someone's wings",
+    "turkish": "birinin kanatlarını kırmak; özgürlüğünü kısıtlamak",
+    "example": "Moving back home felt like his parents were clipping his wings.",
+    "exampleTr": "Eve dönmek, ebeveynlerinin kanatlarını kırdığı gibi hissettirdi."
+  },
+  {
+    "id": 216,
+    "idiom": "close to the chest",
+    "turkish": "sır gibi saklamak; planlarını gizlemek",
+    "example": "She kept her business strategy close to the chest.",
+    "exampleTr": "İş stratejisini sır gibi sakladı."
+  },
+  {
+    "id": 217,
+    "idiom": "come rain or shine",
+    "turkish": "ne olursa olsun; her koşulda",
+    "example": "He went jogging every morning, come rain or shine.",
+    "exampleTr": "Her sabah yağmur yağsa da güneş açsa da koşuya giderdi."
+  },
+  {
+    "id": 218,
+    "idiom": "cost a pretty penny",
+    "turkish": "çok pahalıya mal olmak",
+    "example": "That vacation cost a pretty penny, but it was worth it.",
+    "exampleTr": "O tatil çok pahalıya mal oldu ama değdi."
+  },
+  {
+    "id": 219,
+    "idiom": "cry over spilled milk",
+    "turkish": "olan oldu deyip geçmek yerine sızlanmak; dökülen süte ağlamak",
+    "example": "The mistake is done — there's no use crying over spilled milk.",
+    "exampleTr": "Hata yapıldı — dökülen süte ağlamanın faydası yok."
+  },
+  {
+    "id": 220,
+    "idiom": "cut and dried",
+    "turkish": "önceden kararlaştırılmış; belli kurallara bağlı",
+    "example": "The procedures are cut and dried — just follow them.",
+    "exampleTr": "Prosedürler belli kurallara bağlı — sadece onları takip et."
+  },
+  {
+    "id": 221,
+    "idiom": "cut the mustard",
+    "turkish": "gereken standartta olmak; beklentileri karşılamak",
+    "example": "If he doesn't cut the mustard, he'll be replaced.",
+    "exampleTr": "Beklentileri karşılamazsa, yerini başkası alacak."
+  },
+  {
+    "id": 222,
+    "idiom": "dead ringer",
+    "turkish": "tıpkısının aynısı; çok benzeyen kimse",
+    "example": "She's a dead ringer for her mother.",
+    "exampleTr": "Annesinin tıpkısının aynısı."
+  },
+  {
+    "id": 223,
+    "idiom": "dig your heels in",
+    "turkish": "direnmek; tutumundan vazgeçmemek",
+    "example": "He dug his heels in and refused to compromise.",
+    "exampleTr": "Direndi ve taviz vermeyi reddetti."
+  },
+  {
+    "id": 224,
+    "idiom": "don't burn your bridges",
+    "turkish": "köprüleri yakma; ilişkileri bozmaktan kaçın",
+    "example": "Even if you leave the job angry, don't burn your bridges.",
+    "exampleTr": "İşten kızgın ayrılsan bile köprüleri yakma."
+  },
+  {
+    "id": 225,
+    "idiom": "don't count your chickens before they hatch",
+    "turkish": "deveyi yaratan çölü bilir; pişmemiş aşa su katma",
+    "example": "Don't count your chickens before they hatch — the deal isn't signed yet.",
+    "exampleTr": "Pişmemiş aşa su katma — anlaşma henüz imzalanmadı."
+  },
+  {
+    "id": 226,
+    "idiom": "down the hatch",
+    "turkish": "içip bitirmek; şerefe içmek",
+    "example": "He raised his glass and said, 'Down the hatch!'",
+    "exampleTr": "Kadehini kaldırıp 'Şerefe!' dedi."
+  },
+  {
+    "id": 227,
+    "idiom": "drag your feet",
+    "turkish": "ağırdan almak; isteksizce hareket etmek",
+    "example": "Stop dragging your feet and finish the report.",
+    "exampleTr": "Ağırdan almayı bırak ve raporu bitir."
+  },
+  {
+    "id": 228,
+    "idiom": "drink like a fish",
+    "turkish": "içki içmeyi çok sevmek; ayyaş olmak",
+    "example": "At the party, he drank like a fish all night.",
+    "exampleTr": "Partide tüm gece ayyaş gibi içti."
+  },
+  {
+    "id": 229,
+    "idiom": "drive a hard bargain",
+    "turkish": "ağır pazarlık etmek; sert müzakere yapmak",
+    "example": "He drives a hard bargain, but the deal is usually worth it.",
+    "exampleTr": "Ağır pazarlık eder ama anlaşma genellikle buna değer."
+  },
+  {
+    "id": 230,
+    "idiom": "drop like flies",
+    "turkish": "sinek gibi düşmek; peş peşe devrilmek",
+    "example": "The players were dropping like flies due to the heat.",
+    "exampleTr": "Oyuncular sıcaktan sinek gibi düşüyordu."
+  },
+  {
+    "id": 231,
+    "idiom": "eating humble pie",
+    "turkish": "hatasını kabul etmek; özür dilemek zorunda kalmak",
+    "example": "After his prediction failed, he had to eat humble pie.",
+    "exampleTr": "Tahmini tutmayınca hatasını kabul etmek zorunda kaldı."
+  },
+  {
+    "id": 232,
+    "idiom": "elbow grease",
+    "turkish": "çok çalışmak; el emeği göz nuru",
+    "example": "This old floor just needs a bit of elbow grease.",
+    "exampleTr": "Bu eski zemin sadece biraz el emeği ve çalışma istiyor."
+  },
+  {
+    "id": 233,
+    "idiom": "elbow room",
+    "turkish": "hareket alanı; genişlik",
+    "example": "I need some elbow room to think clearly.",
+    "exampleTr": "Net düşünebilmek için biraz hareket alanına ihtiyacım var."
+  },
+  {
+    "id": 234,
+    "idiom": "every dog has its day",
+    "turkish": "herkesin bir günü olur; her koyun kendi bacağından asılır",
+    "example": "Keep working hard — every dog has its day.",
+    "exampleTr": "Çalışmaya devam et — herkesin bir günü olur."
+  },
+  {
+    "id": 235,
+    "idiom": "face value",
+    "turkish": "yüzeysel değer; göründüğü gibi kabul etmek",
+    "example": "Don't take his words at face value — he exaggerates.",
+    "exampleTr": "Sözlerini göründüğü gibi kabul etme — abartıyor."
+  },
+  {
+    "id": 236,
+    "idiom": "fat chance",
+    "turkish": "olmaz öyle şey; çok düşük ihtimal",
+    "example": "Fat chance he'll agree to that plan.",
+    "exampleTr": "O planı kabul etmesi olmaz öyle şey."
+  },
+  {
+    "id": 237,
+    "idiom": "fences on both sides",
+    "turkish": "iki arada bir derede kalmak",
+    "example": "He tried to keep fences on both sides during the dispute.",
+    "exampleTr": "Anlaşmazlık sırasında iki arada bir derede kalmaya çalıştı."
+  },
+  {
+    "id": 238,
+    "idiom": "fight fire with fire",
+    "turkish": "misliyle karşılık vermek; ateşe ateşle karşılık vermek",
+    "example": "Sometimes you have to fight fire with fire to win.",
+    "exampleTr": "Bazen kazanmak için misliyle karşılık vermek gerekir."
+  },
+  {
+    "id": 239,
+    "idiom": "find your feet",
+    "turkish": "yeni bir ortama alışmak; kendine yol bulmak",
+    "example": "It took a few months to find her feet in the new city.",
+    "exampleTr": "Yeni şehre alışması birkaç ay sürdü."
+  },
+  {
+    "id": 240,
+    "idiom": "first come, first served",
+    "turkish": "ilk gelen ilk alır; önce gelen önce hizmet alır",
+    "example": "Seats are limited — it's first come, first served.",
+    "exampleTr": "Koltuklar sınırlı — ilk gelen ilk alır."
+  },
+  {
+    "id": 241,
+    "idiom": "fly in the ointment",
+    "turkish": "işi bozan şey; çözülemeyen engel",
+    "example": "The only fly in the ointment was the high cost of materials.",
+    "exampleTr": "İşi bozan tek şey malzeme maliyetinin yüksek olmasıydı."
+  },
+  {
+    "id": 242,
+    "idiom": "foam at the mouth",
+    "turkish": "köpürmek; çok sinirli olmak",
+    "example": "He was foaming at the mouth when he heard the news.",
+    "exampleTr": "Haberi duyunca köpürdü."
+  },
+  {
+    "id": 243,
+    "idiom": "foot the bill",
+    "turkish": "hesabı ödemek; masrafı üstlenmek",
+    "example": "The company will foot the bill for the business trip.",
+    "exampleTr": "Şirket iş gezisinin masrafını karşılayacak."
+  },
+  {
+    "id": 244,
+    "idiom": "for the long haul",
+    "turkish": "uzun vadede; uzun soluklu",
+    "example": "We're committed to this relationship for the long haul.",
+    "exampleTr": "Bu ilişkiye uzun vadeli bağlıyız."
+  },
+  {
+    "id": 245,
+    "idiom": "get a grip",
+    "turkish": "kendine hakim olmak; sakinleşmek",
+    "example": "Get a grip — it's not as bad as you think.",
+    "exampleTr": "Kendine hakim ol — düşündüğün kadar kötü değil."
+  },
+  {
+    "id": 246,
+    "idiom": "get in someone's hair",
+    "turkish": "birinin canını sıkmak; kıllanmak",
+    "example": "The kids kept getting in her hair while she was working.",
+    "exampleTr": "Çalışırken çocuklar sürekli canını sıktı."
+  },
+  {
+    "id": 247,
+    "idiom": "get out of bed on the wrong side",
+    "turkish": "sabahı huysuz geçirmek; uyku sersemi kalkmak",
+    "example": "He got out of bed on the wrong side and was grumpy all day.",
+    "exampleTr": "Sabahı huysuz geçirdi ve tüm gün somurttu."
+  },
+  {
+    "id": 248,
+    "idiom": "get the picture",
+    "turkish": "anlamak; kafaya koymak",
+    "example": "After the third explanation, he finally got the picture.",
+    "exampleTr": "Üçüncü açıklamadan sonra nihayet anladı."
+  },
+  {
+    "id": 249,
+    "idiom": "get wind of something",
+    "turkish": "bir şeyden haberdar olmak; kulağına çalınmak",
+    "example": "She got wind of the surprise party and pretended not to know.",
+    "exampleTr": "Sürpriz parti hakkında haberdar oldu ama bilmezden geldi."
+  },
+  {
+    "id": 250,
+    "idiom": "go back to basics",
+    "turkish": "temellere dönmek; sıfırdan başlamak",
+    "example": "When sales dropped, they decided to go back to basics.",
+    "exampleTr": "Satışlar düşünce temellere dönmeye karar verdiler."
+  },
+  {
+    "id": 251,
+    "idiom": "go bananas",
+    "turkish": "çıldırmak; deliye dönmek",
+    "example": "The crowd went bananas when the band came on stage.",
+    "exampleTr": "Grup sahneye çıkınca kalabalık deliye döndü."
+  },
+  {
+    "id": 252,
+    "idiom": "go over someone's head",
+    "turkish": "birinin anlama sınırını aşmak; kavrayamamak",
+    "example": "The technical jargon went completely over her head.",
+    "exampleTr": "Teknik terimler tamamen onun anlama sınırını aştı."
+  },
+  {
+    "id": 253,
+    "idiom": "go through the motions",
+    "turkish": "mekanik olarak yapmak; gönülsüz yapmak",
+    "example": "He was just going through the motions at work.",
+    "exampleTr": "İşte sadece mekanik olarak hareket ediyordu."
+  },
+  {
+    "id": 254,
+    "idiom": "go to great lengths",
+    "turkish": "her türlü çabayı göstermek; büyük fedakarlık yapmak",
+    "example": "She went to great lengths to ensure everyone was comfortable.",
+    "exampleTr": "Herkesin rahat olması için her türlü çabayı gösterdi."
+  },
+  {
+    "id": 255,
+    "idiom": "grasp at straws",
+    "turkish": "çöpten ip yapmaya çalışmak; son çareye sarılmak",
+    "example": "At this point, you're just grasping at straws.",
+    "exampleTr": "Bu noktada sadece son çareye sarılmaya çalışıyorsun."
+  },
+  {
+    "id": 256,
+    "idiom": "grease someone's palm",
+    "turkish": "birine rüşvet vermek; el altından para vermek",
+    "example": "He greased the inspector's palm to get the permit faster.",
+    "exampleTr": "İzni daha hızlı almak için denetçiye rüşvet verdi."
+  },
+  {
+    "id": 257,
+    "idiom": "hang on by a thread",
+    "turkish": "bir ipliğe tutunmak; son derece zor durumda olmak",
+    "example": "The old bridge was hanging on by a thread.",
+    "exampleTr": "Eski köprü bir ipliğe tutunuyordu."
+  },
+  {
+    "id": 258,
+    "idiom": "have a heart of gold",
+    "turkish": "altın kalp sahibi olmak; çok iyi kalpli olmak",
+    "example": "She volunteers every weekend — she has a heart of gold.",
+    "exampleTr": "Her hafta sonu gönüllü çalışıyor — altın kalp sahibi biri."
+  },
+  {
+    "id": 259,
+    "idiom": "have a lot on one's plate",
+    "turkish": "üzerinde çok fazla iş olmak",
+    "example": "I can't take on more tasks — I already have a lot on my plate.",
+    "exampleTr": "Daha fazla iş alamam — zaten üzerimde çok fazla iş var."
+  },
+  {
+    "id": 260,
+    "idiom": "have an axe to grind",
+    "turkish": "çıkarı olmak; kişisel hesabı olmak",
+    "example": "He always criticizes the policy — he has an axe to grind.",
+    "exampleTr": "Politikayı her zaman eleştiriyor — kişisel hesabı var."
+  },
+  {
+    "id": 261,
+    "idiom": "have it both ways",
+    "turkish": "her iki taraftan da faydalanmak; iki yüzlü olmak",
+    "example": "You can't work part-time and still expect a full salary — you can't have it both ways.",
+    "exampleTr": "Yarı zamanlı çalışıp tam maaş bekleyemezsin — her iki taraftan faydalanamassın."
+  },
+  {
+    "id": 262,
+    "idiom": "have the last laugh",
+    "turkish": "son gülen iyi güler",
+    "example": "Despite being mocked, she had the last laugh when her startup succeeded.",
+    "exampleTr": "Alay edilmesine rağmen girişimi başarılı olunca son gülen o oldu."
+  },
+  {
+    "id": 263,
+    "idiom": "head over heels",
+    "turkish": "delicesine aşık olmak; derin bir şekilde düşkün olmak",
+    "example": "He fell head over heels in love with her.",
+    "exampleTr": "Ona delicesine aşık oldu."
+  },
+  {
+    "id": 264,
+    "idiom": "heard it through the grapevine",
+    "turkish": "elden ele dolaşarak duymak; kulaktan kulağa yayılan haber",
+    "example": "I heard it through the grapevine that the company is merging.",
+    "exampleTr": "Şirketin birleşeceğini kulaktan kulağa duydum."
+  },
+  {
+    "id": 265,
+    "idiom": "hit below the belt",
+    "turkish": "haksız yere saldırmak; kurallara aykırı hareket etmek",
+    "example": "Bringing up his past mistakes was hitting below the belt.",
+    "exampleTr": "Geçmiş hatalarını gündeme getirmek haksız bir saldırıydı."
+  },
+  {
+    "id": 266,
+    "idiom": "hit the spot",
+    "turkish": "tam ihtiyacı karşılamak; tam yerine oturmak",
+    "example": "That hot soup really hit the spot on a cold day.",
+    "exampleTr": "O sıcak çorba soğuk bir günde tam ihtiyacı karşıladı."
+  },
+  {
+    "id": 267,
+    "idiom": "hold your horses",
+    "turkish": "acele etme; sakin ol",
+    "example": "Hold your horses — we haven't finished reviewing the plan yet.",
+    "exampleTr": "Acele etme — planı gözden geçirmeyi henüz bitirmedik."
+  },
+  {
+    "id": 268,
+    "idiom": "in a bind",
+    "turkish": "zor bir durumda olmak; sıkışmak",
+    "example": "Without a babysitter, she was in a real bind.",
+    "exampleTr": "Bakıcısı olmadan gerçekten zor bir durumda kaldı."
+  },
+  {
+    "id": 269,
+    "idiom": "in black and white",
+    "turkish": "yazılı olarak; açık ve net",
+    "example": "Please get the agreement in black and white.",
+    "exampleTr": "Lütfen anlaşmayı yazılı hale getir."
+  },
+  {
+    "id": 270,
+    "idiom": "in good shape",
+    "turkish": "iyi durumda olmak; sağlıklı olmak",
+    "example": "The project is in good shape and on schedule.",
+    "exampleTr": "Proje iyi durumda ve takvime göre ilerliyor."
+  },
+  {
+    "id": 271,
+    "idiom": "in seventh heaven",
+    "turkish": "yedinci katta olmak; çok mutlu olmak",
+    "example": "She was in seventh heaven after getting accepted to her dream university.",
+    "exampleTr": "Hayalindeki üniversiteye kabul edilince yedinci kattaydı."
+  },
+  {
+    "id": 272,
+    "idiom": "in the bag",
+    "turkish": "kesinleşmiş; garantilenmiş",
+    "example": "The deal is in the bag — we just need to sign the papers.",
+    "exampleTr": "Anlaşma kesinleşti — sadece kağıtları imzalamamız gerekiyor."
+  },
+  {
+    "id": 273,
+    "idiom": "in the cards",
+    "turkish": "kader olarak yazılmış; olası",
+    "example": "A merger was always in the cards for those two companies.",
+    "exampleTr": "Bu iki şirketin birleşmesi her zaman kader olarak yazılmıştı."
+  },
+  {
+    "id": 274,
+    "idiom": "in the dark",
+    "turkish": "bilgisizlik içinde; habersiz",
+    "example": "She was kept in the dark about the company's financial problems.",
+    "exampleTr": "Şirketin mali sorunları hakkında bilgisizlik içinde bırakıldı."
+  },
+  {
+    "id": 275,
+    "idiom": "in the doghouse",
+    "turkish": "gözden düşmek; ceza almak",
+    "example": "He forgot their anniversary and was in the doghouse for a week.",
+    "exampleTr": "Yıl dönümünü unuttu ve bir hafta gözden düştü."
+  },
+  {
+    "id": 276,
+    "idiom": "in the heat of the moment",
+    "turkish": "sinirli bir anda; anlık öfkeyle",
+    "example": "He said things he regretted in the heat of the moment.",
+    "exampleTr": "Anlık öfkeyle pişman olacağı şeyler söyledi."
+  },
+  {
+    "id": 277,
+    "idiom": "in the spotlight",
+    "turkish": "göz önünde; dikkatlerin odağında",
+    "example": "After winning the award, she was constantly in the spotlight.",
+    "exampleTr": "Ödülü kazandıktan sonra sürekli dikkatlerin odağındaydı."
+  },
+  {
+    "id": 278,
+    "idiom": "in the works",
+    "turkish": "hazırlanmakta olan; yapım aşamasında",
+    "example": "A new product line is already in the works.",
+    "exampleTr": "Yeni bir ürün serisi zaten yapım aşamasında."
+  },
+  {
+    "id": 279,
+    "idiom": "it ain't over till the fat lady sings",
+    "turkish": "son düdük çalınmadan maç bitmez",
+    "example": "We're down by two points, but it ain't over till the fat lady sings.",
+    "exampleTr": "İki sayı gerideyiz ama son düdük çalınmadan maç bitmez."
+  },
+  {
+    "id": 280,
+    "idiom": "it's not all sunshine and rainbows",
+    "turkish": "her şey gül yağı değil; hayat her zaman kolay değil",
+    "example": "Running a business — it's not all sunshine and rainbows.",
+    "exampleTr": "İşletme yönetmek — her şey gül yağı değildir."
+  },
+  {
+    "id": 281,
+    "idiom": "jump to conclusions",
+    "turkish": "acele sonuca varmak; yargıya erken varmak",
+    "example": "Don't jump to conclusions before hearing the full story.",
+    "exampleTr": "Hikayenin tamamını duymadan acele sonuca varma."
+  },
+  {
+    "id": 282,
+    "idiom": "keep an eye on",
+    "turkish": "gözünü dört açmak; takip etmek",
+    "example": "Can you keep an eye on the baby while I cook?",
+    "exampleTr": "Ben yemek yaparken bebeği takip edebilir misin?"
+  },
+  {
+    "id": 283,
+    "idiom": "keep one's chin up",
+    "turkish": "umudunu yitirmemek; cesaretini korumak",
+    "example": "Keep your chin up — things will get better soon.",
+    "exampleTr": "Umudunu yitirme — yakında her şey düzelecek."
+  },
+  {
+    "id": 284,
+    "idiom": "keep tabs on",
+    "turkish": "takip etmek; gözetim altında tutmak",
+    "example": "The manager kept tabs on all the team members' progress.",
+    "exampleTr": "Müdür tüm ekip üyelerinin gelişimini takip etti."
+  },
+  {
+    "id": 285,
+    "idiom": "keep your eyes peeled",
+    "turkish": "gözleri dört açmak; dikkatli bakmak",
+    "example": "Keep your eyes peeled for a parking space.",
+    "exampleTr": "Park yeri için gözlerin dört açık olsun."
+  },
+  {
+    "id": 286,
+    "idiom": "kick off",
+    "turkish": "başlatmak; başlamak",
+    "example": "They kicked off the meeting with a quick review of last week.",
+    "exampleTr": "Toplantıya geçen haftanın kısa bir değerlendirmesiyle başladılar."
+  },
+  {
+    "id": 287,
+    "idiom": "know the ropes",
+    "turkish": "işin inceliklerini bilmek; deneyimli olmak",
+    "example": "Ask Sarah — she knows the ropes around here.",
+    "exampleTr": "Sarah'ya sor — o buranın inceliklerini bilir."
+  },
+  {
+    "id": 288,
+    "idiom": "laid-back",
+    "turkish": "rahat ve stressiz; kayıtsız",
+    "example": "He has a very laid-back attitude toward deadlines.",
+    "exampleTr": "Son tarihlere karşı çok rahat ve stressiz bir tutumu var."
+  },
+  {
+    "id": 289,
+    "idiom": "leave someone in the lurch",
+    "turkish": "birini zor durumda bırakmak; yarı yolda bırakmak",
+    "example": "He quit without notice and left the team in the lurch.",
+    "exampleTr": "Haber vermeden işten ayrıldı ve ekibi yarı yolda bıraktı."
+  },
+  {
+    "id": 290,
+    "idiom": "like clockwork",
+    "turkish": "saat gibi işlemek; çok düzenli olmak",
+    "example": "Everything went like clockwork at the ceremony.",
+    "exampleTr": "Törende her şey saat gibi ilerledi."
+  },
+  {
+    "id": 291,
+    "idiom": "like pulling teeth",
+    "turkish": "çok zor ve yorucu olmak; diş çektirir gibi",
+    "example": "Getting him to talk about his feelings is like pulling teeth.",
+    "exampleTr": "Onu duygularından konuşturmak diş çektirir gibi zor."
+  },
+  {
+    "id": 292,
+    "idiom": "live and learn",
+    "turkish": "yaşa ve öğren; hatalardan ders çıkarmak",
+    "example": "I made a lot of mistakes that year, but live and learn.",
+    "exampleTr": "O yıl çok hata yaptım ama hatalardan ders çıkarmak gerekir."
+  },
+  {
+    "id": 293,
+    "idiom": "live on the edge",
+    "turkish": "tehlikeli yaşamak; sınırda yaşamak",
+    "example": "He loves extreme sports and truly lives on the edge.",
+    "exampleTr": "Aşırı sporlara bayılır ve gerçekten tehlikeli yaşar."
+  },
+  {
+    "id": 294,
+    "idiom": "look on the bright side",
+    "turkish": "olumlu tarafından bakmak; iyimser olmak",
+    "example": "Try to look on the bright side — at least you have your health.",
+    "exampleTr": "Olumlu tarafından bakmaya çalış — en azından sağlığın var."
+  },
+  {
+    "id": 295,
+    "idiom": "lose sleep over something",
+    "turkish": "bir şey yüzünden uyuyamamak; kaygılanmak",
+    "example": "Don't lose sleep over a small mistake.",
+    "exampleTr": "Küçük bir hata yüzünden uyuyamamak saçmalık olur."
+  },
+  {
+    "id": 296,
+    "idiom": "low-hanging fruit",
+    "turkish": "kolay kazanım; ulaşması kolay hedef",
+    "example": "Start with the low-hanging fruit and tackle harder issues later.",
+    "exampleTr": "Kolay hedeflerle başla, zor sorunları sonraya bırak."
+  },
+  {
+    "id": 297,
+    "idiom": "make a mountain out of a molehill",
+    "turkish": "pireyi deve yapmak; abartmak",
+    "example": "It was a small mistake — don't make a mountain out of a molehill.",
+    "exampleTr": "Küçük bir hataydı — pireyi deve yapma."
+  },
+  {
+    "id": 298,
+    "idiom": "make hay while the sun shines",
+    "turkish": "demir tavında dövülür; fırsatı kaçırma",
+    "example": "Business is booming — make hay while the sun shines.",
+    "exampleTr": "İşler iyi gidiyor — demir tavında dövülür."
+  },
+  {
+    "id": 299,
+    "idiom": "make no bones about it",
+    "turkish": "açıkça söylemek; çekinmeden belirtmek",
+    "example": "She made no bones about her dissatisfaction with the policy.",
+    "exampleTr": "Politikadan memnuniyetsizliğini açıkça belirtti."
+  },
+  {
+    "id": 300,
+    "idiom": "make waves",
+    "turkish": "dalgalanma yaratmak; olaylar çıkarmak",
+    "example": "His proposal made waves in the industry.",
+    "exampleTr": "Teklifi sektörde dalgalanma yarattı."
+  },
+  {
+    "id": 301,
+    "idiom": "miss the point",
+    "turkish": "konunun özünü kaçırmak; asıl meseleyi anlamamak",
+    "example": "He argued about minor details and completely missed the point.",
+    "exampleTr": "Küçük ayrıntılar hakkında tartıştı ve asıl meseleyi tamamen kaçırdı."
+  },
+  {
+    "id": 302,
+    "idiom": "Monday morning quarterback",
+    "turkish": "her şeyi sonradan eleştiren kişi; sonradan akıllı",
+    "example": "It's easy to be a Monday morning quarterback after the game.",
+    "exampleTr": "Maçtan sonra her şeyi eleştirmek kolay tabii."
+  },
+  {
+    "id": 303,
+    "idiom": "money doesn't grow on trees",
+    "turkish": "para ağaçta bitmiyor; para kazanmak kolay değil",
+    "example": "Think before you spend — money doesn't grow on trees.",
+    "exampleTr": "Harcamadan önce düşün — para ağaçta bitmiyor."
+  },
+  {
+    "id": 304,
+    "idiom": "move the goalposts",
+    "turkish": "hedefleri değiştirmek; kuralları sonradan değiştirmek",
+    "example": "Every time we meet a target, they move the goalposts.",
+    "exampleTr": "Her hedefi tutturduğumuzda kuralları değiştiriyorlar."
+  },
+  {
+    "id": 305,
+    "idiom": "muddy the waters",
+    "turkish": "işleri karıştırmak; durumu belirsizleştirmek",
+    "example": "His comments only muddied the waters.",
+    "exampleTr": "Yorumları sadece işleri daha da karıştırdı."
+  },
+  {
+    "id": 306,
+    "idiom": "nip it in the bud",
+    "turkish": "başlangıçta önlemek; filizlenirken kesmek",
+    "example": "We must nip this conflict in the bud before it escalates.",
+    "exampleTr": "Bu çatışmayı büyümeden önce filizlenirken kesmeliyiz."
+  },
+  {
+    "id": 307,
+    "idiom": "no strings attached",
+    "turkish": "şartsız; bağı olmayan",
+    "example": "He offered help with no strings attached.",
+    "exampleTr": "Şartsız yardım teklif etti."
+  },
+  {
+    "id": 308,
+    "idiom": "not beat around the bush",
+    "turkish": "lafı dolandırmamak; doğrudan söylemek",
+    "example": "Please don't beat around the bush — just tell me what happened.",
+    "exampleTr": "Lütfen lafı dolandırma — sadece ne olduğunu söyle."
+  },
+  {
+    "id": 309,
+    "idiom": "nothing to write home about",
+    "turkish": "övünülecek bir şey değil; sıradan",
+    "example": "The movie was okay, but nothing to write home about.",
+    "exampleTr": "Film iyiydi ama övünülecek bir şey değildi."
+  },
+  {
+    "id": 310,
+    "idiom": "off the cuff",
+    "turkish": "hazırlıksız; doğaçlama",
+    "example": "His off-the-cuff remarks impressed everyone.",
+    "exampleTr": "Hazırlıksız söylediği sözler herkesi etkiledi."
+  },
+  {
+    "id": 311,
+    "idiom": "off the record",
+    "turkish": "gayri resmi; kayıt dışı",
+    "example": "Off the record, the manager was not happy with the decision.",
+    "exampleTr": "Gayri resmi olarak söylersem, müdür karardan memnun değildi."
+  },
+  {
+    "id": 312,
+    "idiom": "on a shoestring",
+    "turkish": "çok az parayla; kısıtlı bütçeyle",
+    "example": "They built the startup on a shoestring budget.",
+    "exampleTr": "Girişimi çok az parayla kurdular."
+  },
+  {
+    "id": 313,
+    "idiom": "on cloud nine",
+    "turkish": "pembe bulutlar üzerinde; çok mutlu",
+    "example": "She was on cloud nine after getting the promotion.",
+    "exampleTr": "Terfiyi aldıktan sonra pembe bulutlar üzerindeydi."
+  },
+  {
+    "id": 314,
+    "idiom": "on the back burner",
+    "turkish": "ertelemek; bekletmek",
+    "example": "The project was put on the back burner due to budget cuts.",
+    "exampleTr": "Proje bütçe kesintileri nedeniyle ertelendi."
+  },
+  {
+    "id": 315,
+    "idiom": "on the same page",
+    "turkish": "aynı fikirde olmak; aynı anlayışta buluşmak",
+    "example": "Before we start, let's make sure we're all on the same page.",
+    "exampleTr": "Başlamadan önce hepimizin aynı fikirde olduğundan emin olalım."
+  },
+  {
+    "id": 316,
+    "idiom": "on the tip of my tongue",
+    "turkish": "dilimin ucunda; hatırlamak üzere olmak",
+    "example": "His name is on the tip of my tongue — I'll remember it soon.",
+    "exampleTr": "Adı dilimin ucunda — yakında hatırlayacağım."
+  },
+  {
+    "id": 317,
+    "idiom": "once bitten, twice shy",
+    "turkish": "sütten ağzı yanan yoğurdu üfleyerek yer",
+    "example": "After the bad investment, he became cautious — once bitten, twice shy.",
+    "exampleTr": "Kötü yatırımdan sonra temkinli oldu — sütten ağzı yanan yoğurdu üfler."
+  },
+  {
+    "id": 318,
+    "idiom": "out of the loop",
+    "turkish": "gelişmelerden habersiz olmak",
+    "example": "I was on vacation and completely out of the loop.",
+    "exampleTr": "Tatildeydim ve gelişmelerden tamamen habersizidim."
+  },
+  {
+    "id": 319,
+    "idiom": "out of the woods",
+    "turkish": "tehlikeden kurtulmak; zor dönemi atlatmak",
+    "example": "The patient is recovering but not yet out of the woods.",
+    "exampleTr": "Hasta iyileşiyor ama tehlikeli dönemi henüz tam atlatmadı."
+  },
+  {
+    "id": 320,
+    "idiom": "over and above",
+    "turkish": "üstüne üstlük; bunun ötesinde",
+    "example": "She went over and above her duties to help the team.",
+    "exampleTr": "Ekibe yardım etmek için görevinin de ötesine geçti."
+  },
+  {
+    "id": 321,
+    "idiom": "paint the town red",
+    "turkish": "şehri başına yıkmak; eğlenmek için dışarı çıkmak",
+    "example": "It's her birthday — let's paint the town red tonight!",
+    "exampleTr": "Doğum günü — bu gece şehri başına yıkalım!"
+  },
+  {
+    "id": 322,
+    "idiom": "pay through the nose",
+    "turkish": "gözü kapalı para ödemek; çok pahalı ödemek",
+    "example": "We had to pay through the nose for last-minute flight tickets.",
+    "exampleTr": "Son dakika uçak biletleri için gözü kapalı para ödedik."
+  },
+  {
+    "id": 323,
+    "idiom": "pick someone's brain",
+    "turkish": "birine fikir danışmak; birinden bilgi almak",
+    "example": "Can I pick your brain about marketing strategies?",
+    "exampleTr": "Pazarlama stratejileri hakkında sana fikir danışabilir miyim?"
+  },
+  {
+    "id": 324,
+    "idiom": "plain sailing",
+    "turkish": "düz yol; kolay ilerleme",
+    "example": "Once the funding was secured, it was plain sailing.",
+    "exampleTr": "Finansman sağlandıktan sonra her şey düz yol oldu."
+  },
+  {
+    "id": 325,
+    "idiom": "play devil's advocate",
+    "turkish": "karşı tarafı savunmak için argüman üretmek",
+    "example": "Let me play devil's advocate and challenge your assumption.",
+    "exampleTr": "Varsayımına meydan okumak için karşı tarafı savunayım."
+  },
+  {
+    "id": 326,
+    "idiom": "play hardball",
+    "turkish": "sert oynamak; taviz vermemek",
+    "example": "They decided to play hardball during negotiations.",
+    "exampleTr": "Müzakereler sırasında sert oynamaya karar verdiler."
+  },
+  {
+    "id": 327,
+    "idiom": "play your cards right",
+    "turkish": "iyi oynamak; fırsatları iyi değerlendirmek",
+    "example": "If you play your cards right, you could get a promotion.",
+    "exampleTr": "Fırsatları iyi değerlendirirsen terfi alabilirsin."
+  },
+  {
+    "id": 328,
+    "idiom": "pound the pavement",
+    "turkish": "iş aramak; sokak sokak gezmek",
+    "example": "After losing his job, he spent weeks pounding the pavement.",
+    "exampleTr": "İşini kaybettikten sonra haftalarca sokak sokak iş aradı."
+  },
+  {
+    "id": 329,
+    "idiom": "pull no punches",
+    "turkish": "açık sözlü olmak; lafını sakınmamak",
+    "example": "The critic pulled no punches in her review of the film.",
+    "exampleTr": "Eleştirmen filmin değerlendirmesinde lafını sakınmadı."
+  },
+  {
+    "id": 330,
+    "idiom": "pull strings",
+    "turkish": "arka kapıdan iş çevirmek; torpil kullanmak",
+    "example": "He pulled strings to get his daughter into the top school.",
+    "exampleTr": "Kızını en iyi okula almak için torpil kullandı."
+  },
+  {
+    "id": 331,
+    "idiom": "pull the plug",
+    "turkish": "fişi çekmek; sona erdirmek",
+    "example": "The investors decided to pull the plug on the project.",
+    "exampleTr": "Yatırımcılar projenin fişini çekmeye karar verdi."
+  },
+  {
+    "id": 332,
+    "idiom": "put on hold",
+    "turkish": "askıya almak; ertelemek",
+    "example": "The launch was put on hold due to technical issues.",
+    "exampleTr": "Lansman teknik sorunlar nedeniyle askıya alındı."
+  },
+  {
+    "id": 333,
+    "idiom": "put someone on the spot",
+    "turkish": "birini zor duruma düşürmek; köşeye sıkıştırmak",
+    "example": "The journalist put the politician on the spot with a tough question.",
+    "exampleTr": "Gazeteci zor bir soruyla politikacıyı köşeye sıkıştırdı."
+  },
+  {
+    "id": 334,
+    "idiom": "put two and two together",
+    "turkish": "bağ kurmak; sonucu anlamak",
+    "example": "She put two and two together and realized he was lying.",
+    "exampleTr": "Bağ kurdu ve yalan söylediğini anladı."
+  },
+  {
+    "id": 335,
+    "idiom": "raise the bar",
+    "turkish": "çıtayı yükseltmek; standardı artırmak",
+    "example": "Her performance really raised the bar for the rest of the team.",
+    "exampleTr": "Performansı ekibin geri kalanı için çıtayı gerçekten yükseltti."
+  },
+  {
+    "id": 336,
+    "idiom": "read someone the riot act",
+    "turkish": "birine sert uyarıda bulunmak; fırça atmak",
+    "example": "The coach read the team the riot act after the poor performance.",
+    "exampleTr": "Antrenör kötü performansın ardından takıma sert uyarıda bulundu."
+  },
+  {
+    "id": 337,
+    "idiom": "rub someone the wrong way",
+    "turkish": "birini rahatsız etmek; inadına gitmek",
+    "example": "His arrogant tone rubbed everyone the wrong way.",
+    "exampleTr": "Kibirli tonu herkesi rahatsız etti."
+  },
+  {
+    "id": 338,
+    "idiom": "rule of thumb",
+    "turkish": "genel kural; pratik kural",
+    "example": "As a rule of thumb, save at least 10% of your monthly income.",
+    "exampleTr": "Genel kural olarak, aylık gelirinizin en az %10'unu biriktirin."
+  },
+  {
+    "id": 339,
+    "idiom": "run circles around someone",
+    "turkish": "birinden çok daha iyi olmak; birini geride bırakmak",
+    "example": "She runs circles around her competitors in sales.",
+    "exampleTr": "Satışlarda rakiplerini geride bırakıyor."
+  },
+  {
+    "id": 340,
+    "idiom": "run out of steam",
+    "turkish": "enerjisi tükenmek; hevesi kalmamak",
+    "example": "He ran out of steam halfway through the marathon.",
+    "exampleTr": "Maratonun ortasında enerjisi tükendi."
+  },
+  {
+    "id": 341,
+    "idiom": "safe and sound",
+    "turkish": "sağ salim; sapasağlam",
+    "example": "After the storm, the hikers returned home safe and sound.",
+    "exampleTr": "Fırtınadan sonra yürüyüşçüler eve sağ salim döndü."
+  },
+  {
+    "id": 342,
+    "idiom": "save face",
+    "turkish": "yüzünü kurtarmak; itibarını korumak",
+    "example": "He apologized publicly to save face.",
+    "exampleTr": "Yüzünü kurtarmak için alenen özür diledi."
+  },
+  {
+    "id": 343,
+    "idiom": "scare the living daylights out of someone",
+    "turkish": "birini çok korkutmak; canını çıkarmak",
+    "example": "The sudden noise scared the living daylights out of her.",
+    "exampleTr": "Ani ses onu çok korkuttu."
+  },
+  {
+    "id": 344,
+    "idiom": "scratch the surface",
+    "turkish": "yüzeyi çizmek; konuya yüzeysel değinmek",
+    "example": "We barely scratched the surface of the topic in class today.",
+    "exampleTr": "Bugün derste konuya yüzeysel bile değinemedik."
+  },
+  {
+    "id": 345,
+    "idiom": "set in stone",
+    "turkish": "kesinleşmiş; değiştirilemez",
+    "example": "The deadline isn't set in stone — we can adjust it.",
+    "exampleTr": "Son tarih kesinleşmiş değil — ayarlayabiliriz."
+  },
+  {
+    "id": 346,
+    "idiom": "set the record straight",
+    "turkish": "gerçeği ortaya koymak; yanlışları düzeltmek",
+    "example": "She wrote an article to set the record straight.",
+    "exampleTr": "Gerçeği ortaya koymak için bir makale yazdı."
+  },
+  {
+    "id": 347,
+    "idiom": "shoot from the hip",
+    "turkish": "düşünmeden konuşmak; içinden geldiği gibi söylemek",
+    "example": "He tends to shoot from the hip, which gets him in trouble.",
+    "exampleTr": "Düşünmeden konuşma eğiliminde, bu da başını belaya sokuyor."
+  },
+  {
+    "id": 348,
+    "idiom": "shoot the breeze",
+    "turkish": "boşboşuna sohbet etmek; muhabbet etmek",
+    "example": "They spent the afternoon just shooting the breeze.",
+    "exampleTr": "Öğleden sonrayı sadece muhabbet ederek geçirdiler."
+  },
+  {
+    "id": 349,
+    "idiom": "show your true colors",
+    "turkish": "gerçek yüzünü göstermek; maskesini düşürmek",
+    "example": "Under pressure, he showed his true colors.",
+    "exampleTr": "Baskı altında gerçek yüzünü gösterdi."
+  },
+  {
+    "id": 350,
+    "idiom": "sick and tired of",
+    "turkish": "bıkmak; usanmak",
+    "example": "I'm sick and tired of hearing the same excuses.",
+    "exampleTr": "Aynı bahaneleri duymaktan bıktım."
+  },
+  {
+    "id": 351,
+    "idiom": "silver lining",
+    "turkish": "her işin hayırlı bir yanı vardır",
+    "example": "Losing the contract had a silver lining — we found better clients.",
+    "exampleTr": "Sözleşmeyi kaybetmenin hayırlı bir yanı vardı — daha iyi müşteriler bulduk."
+  },
+  {
+    "id": 352,
+    "idiom": "sit tight",
+    "turkish": "sabırlı olmak; beklemek",
+    "example": "Just sit tight — we'll have an answer by tomorrow.",
+    "exampleTr": "Sabırlı ol — yarına kadar bir cevabımız olacak."
+  },
+  {
+    "id": 353,
+    "idiom": "skating on thin ice",
+    "turkish": "ince buzda yürümek; tehlikeli bir konuda ilerlemek",
+    "example": "He's skating on thin ice with those risky investments.",
+    "exampleTr": "O riskli yatırımlarla ince buzda yürüyor."
+  },
+  {
+    "id": 354,
+    "idiom": "smell a rat",
+    "turkish": "bir bit yeniği olduğunu hissetmek; kuşkulanmak",
+    "example": "When he avoided eye contact, I smelled a rat.",
+    "exampleTr": "Göz temasından kaçınınca bir bit yeniği olduğunu hissettim."
+  },
+  {
+    "id": 355,
+    "idiom": "smooth sailing",
+    "turkish": "sorunsuz ilerleme; engelsiz gidiş",
+    "example": "After a tough start, the project was smooth sailing.",
+    "exampleTr": "Zorlu bir başlangıcın ardından proje sorunsuzca ilerledi."
+  },
+  {
+    "id": 356,
+    "idiom": "spill the tea",
+    "turkish": "dedikodu yapmak; sır dökmek",
+    "example": "Come on, spill the tea — what happened at the party?",
+    "exampleTr": "Hadi, döke döke anlat — partide ne oldu?"
+  },
+  {
+    "id": 357,
+    "idiom": "square meal",
+    "turkish": "tam ve doyurucu yemek",
+    "example": "All she wanted after hiking was a square meal.",
+    "exampleTr": "Yürüyüşten sonra istediği tek şey doyurucu bir yemekti."
+  },
+  {
+    "id": 358,
+    "idiom": "stab in the dark",
+    "turkish": "körü körüne tahmin etmek; rastgele denemek",
+    "example": "We had no data, so every prediction was a stab in the dark.",
+    "exampleTr": "Hiç verimiz yoktu, bu yüzden her tahmin körü körüneydi."
+  },
+  {
+    "id": 359,
+    "idiom": "start from scratch",
+    "turkish": "sıfırdan başlamak",
+    "example": "After the system crash, they had to start from scratch.",
+    "exampleTr": "Sistem çöktükten sonra sıfırdan başlamak zorunda kaldılar."
+  },
+  {
+    "id": 360,
+    "idiom": "steal a march on someone",
+    "turkish": "birinin önüne geçmek; fırsatı kapmak",
+    "example": "They stole a march on their rivals by launching early.",
+    "exampleTr": "Erken çıkış yaparak rakiplerinin önüne geçtiler."
+  },
+  {
+    "id": 361,
+    "idiom": "stick to your guns",
+    "turkish": "tutumundan vazgeçmemek; diretmek",
+    "example": "Despite pressure, she stuck to her guns and made the right call.",
+    "exampleTr": "Baskıya rağmen tutumundan vazgeçmedi ve doğru kararı verdi."
+  },
+  {
+    "id": 362,
+    "idiom": "stir the pot",
+    "turkish": "ortalığı karıştırmak; fitne çıkarmak",
+    "example": "He loves stirring the pot with his controversial opinions.",
+    "exampleTr": "Tartışmalı görüşleriyle ortalığı karıştırmayı seviyor."
+  },
+  {
+    "id": 363,
+    "idiom": "straight from the horse's mouth",
+    "turkish": "kaynağından; birinci ağızdan",
+    "example": "I heard straight from the horse's mouth that they're relocating.",
+    "exampleTr": "Taşınacaklarını doğrudan kaynağından duydum."
+  },
+  {
+    "id": 364,
+    "idiom": "sweep something under the rug",
+    "turkish": "halının altına süpürmek; üstünü örtmek",
+    "example": "They tried to sweep the scandal under the rug.",
+    "exampleTr": "Skandalı halının altına süpürmeye çalıştılar."
+  },
+  {
+    "id": 365,
+    "idiom": "swing for the fences",
+    "turkish": "büyük hedeflere yönelmek; her şeyini ortaya koymak",
+    "example": "With this new product, the company is swinging for the fences.",
+    "exampleTr": "Bu yeni ürünle şirket büyük hedeflere yöneliyor."
+  },
+  {
+    "id": 366,
+    "idiom": "take the cake",
+    "turkish": "ödülü kazanmak; en büyüğü olmak (genellikle olumsuz)",
+    "example": "Of all his bad ideas, this one really takes the cake.",
+    "exampleTr": "Tüm kötü fikirlerinden bu gerçekten en büyüğü."
+  },
+  {
+    "id": 367,
+    "idiom": "take the wind out of someone's sails",
+    "turkish": "birinin hevesini kırmak; coşkusunu söndürmek",
+    "example": "The negative feedback took the wind out of his sails.",
+    "exampleTr": "Olumsuz geri bildirim coşkusunu söndürdü."
+  },
+  {
+    "id": 368,
+    "idiom": "talk the talk",
+    "turkish": "laftan öteye gidememek; yalnızca konuşmak",
+    "example": "He talks the talk, but never follows through.",
+    "exampleTr": "Çok konuşur ama hiç uygulamaya geçmez."
+  },
+  {
+    "id": 369,
+    "idiom": "talk through one's hat",
+    "turkish": "saçma konuşmak; bilmeden laf yapmak",
+    "example": "He was clearly talking through his hat about the economy.",
+    "exampleTr": "Ekonomi hakkında açıkça bilmeden laf yapıyordu."
+  },
+  {
+    "id": 370,
+    "idiom": "test the waters",
+    "turkish": "yoklamak; nabız tutmak",
+    "example": "She tested the waters by asking a few informal questions.",
+    "exampleTr": "Birkaç gayri resmi soru sorarak nabız tuttu."
+  },
+  {
+    "id": 371,
+    "idiom": "the bottom line",
+    "turkish": "sonuç itibarıyla; asıl mesele",
+    "example": "The bottom line is that we need to cut costs.",
+    "exampleTr": "Sonuç itibarıyla maliyetleri düşürmemiz gerekiyor."
+  },
+  {
+    "id": 372,
+    "idiom": "the devil is in the details",
+    "turkish": "şeytan ayrıntıda gizlidir",
+    "example": "Review the contract carefully — the devil is in the details.",
+    "exampleTr": "Sözleşmeyi dikkatli incele — şeytan ayrıntıda gizlidir."
+  },
+  {
+    "id": 373,
+    "idiom": "the early bird catches the worm",
+    "turkish": "erken kalkan yol alır",
+    "example": "She always arrives first — the early bird catches the worm.",
+    "exampleTr": "Her zaman ilk gelir — erken kalkan yol alır."
+  },
+  {
+    "id": 374,
+    "idiom": "the final straw",
+    "turkish": "bardağı taşıran son damla",
+    "example": "His constant tardiness was the final straw for the manager.",
+    "exampleTr": "Sürekli geç kalması müdür için bardağı taşıran son damlaydı."
+  },
+  {
+    "id": 375,
+    "idiom": "the grass is always greener on the other side",
+    "turkish": "komşunun tavuğu komşuya kaz görünür",
+    "example": "He quit his job for another, only to find out the grass is always greener.",
+    "exampleTr": "Başka bir iş için işten ayrıldı ama komşunun tavuğunun kaz göründüğünü anladı."
+  },
+  {
+    "id": 376,
+    "idiom": "the lion's share",
+    "turkish": "aslan payı; en büyük pay",
+    "example": "He took the lion's share of the profits.",
+    "exampleTr": "Kârın aslan payını aldı."
+  },
+  {
+    "id": 377,
+    "idiom": "the real deal",
+    "turkish": "gerçek olan; sahte olmayan",
+    "example": "After many imitations, this product is the real deal.",
+    "exampleTr": "Birçok taklide rağmen bu ürün gerçek olan."
+  },
+  {
+    "id": 378,
+    "idiom": "the writing is on the wall",
+    "turkish": "sonun yaklaştığı belliydi; felaket işaretleri görünüyor",
+    "example": "The writing was on the wall — the company was going to close.",
+    "exampleTr": "Felaket işaretleri belliydi — şirket kapanacaktı."
+  },
+  {
+    "id": 379,
+    "idiom": "through thick and thin",
+    "turkish": "her koşulda; iyi ve kötü günde",
+    "example": "True friends stick by you through thick and thin.",
+    "exampleTr": "Gerçek arkadaşlar her koşulda yanında durur."
+  },
+  {
+    "id": 380,
+    "idiom": "throw a curveball",
+    "turkish": "sürpriz bir şey yapmak; beklenmedik hamle",
+    "example": "The interviewer threw a curveball with an unexpected question.",
+    "exampleTr": "Mülakatçı beklenmedik bir soruyla sürpriz bir hamle yaptı."
+  },
+  {
+    "id": 381,
+    "idiom": "throw money at a problem",
+    "turkish": "sorunlara para saçmak; parayla çözmeye çalışmak",
+    "example": "You can't solve every issue by throwing money at the problem.",
+    "exampleTr": "Her sorunu parayla çözmeye çalışarak halledemezsin."
+  },
+  {
+    "id": 382,
+    "idiom": "tie the knot",
+    "turkish": "düğüm atmak; evlenmek",
+    "example": "After five years together, they finally tied the knot.",
+    "exampleTr": "Beş yıl birlikte olduktan sonra nihayet evlendiler."
+  },
+  {
+    "id": 383,
+    "idiom": "time is of the essence",
+    "turkish": "zaman çok önemli; vakit nakittir",
+    "example": "We need to act now — time is of the essence.",
+    "exampleTr": "Şimdi harekete geçmeliyiz — vakit çok önemli."
+  },
+  {
+    "id": 384,
+    "idiom": "tip the scales",
+    "turkish": "dengeyi bozmak; üstünlüğü ele geçirmek",
+    "example": "His experience tipped the scales in his favor during the interview.",
+    "exampleTr": "Deneyimi mülakata dengeyi onun lehine çevirdi."
+  },
+  {
+    "id": 385,
+    "idiom": "to bite the hand that feeds you",
+    "turkish": "nimetin kadrini bilmemek; iyilik eden kişiye zarar vermek",
+    "example": "Criticizing your sponsor publicly is biting the hand that feeds you.",
+    "exampleTr": "Sponsorunu alenen eleştirmek nimetin kadrini bilmemektir."
+  },
+  {
+    "id": 386,
+    "idiom": "to each their own",
+    "turkish": "her kafadan bir ses; zevkler tartışılmaz",
+    "example": "He loves country music — to each their own.",
+    "exampleTr": "Country müziği seviyor — zevkler tartışılmaz."
+  },
+  {
+    "id": 387,
+    "idiom": "to get the ball rolling",
+    "turkish": "topu harekete geçirmek; başlatmak",
+    "example": "Let's get the ball rolling on the new campaign today.",
+    "exampleTr": "Bugün yeni kampanyayı başlatalım."
+  },
+  {
+    "id": 388,
+    "idiom": "to put the cart before the horse",
+    "turkish": "arabayı atın önüne koşmak; önce sonrayı düşünmek",
+    "example": "Planning the celebration before passing the exam is putting the cart before the horse.",
+    "exampleTr": "Sınavı geçmeden kutlamayı planlamak arabayı atın önüne koşmaktır."
+  },
+  {
+    "id": 389,
+    "idiom": "touch and go",
+    "turkish": "tehlikeli bir şekilde askıda olmak; belirsizlik içinde olmak",
+    "example": "It was touch and go for a while, but the patient survived.",
+    "exampleTr": "Bir süre tehlikeli bir belirsizlik içindeydi ama hasta hayatta kaldı."
+  },
+  {
+    "id": 390,
+    "idiom": "turn a new leaf",
+    "turkish": "yeni bir sayfa açmak; yeniden başlamak",
+    "example": "After rehab, he turned a new leaf and changed his lifestyle.",
+    "exampleTr": "Rehabilitasyondan sonra yeni bir sayfa açtı ve yaşam tarzını değiştirdi."
+  },
+  {
+    "id": 391,
+    "idiom": "turn the tables",
+    "turkish": "dengeleri değiştirmek; durumu tersine çevirmek",
+    "example": "With one brilliant move, she turned the tables on her opponent.",
+    "exampleTr": "Parlak bir hamleyle rakibine karşı dengeleri değiştirdi."
+  },
+  {
+    "id": 392,
+    "idiom": "two peas in a pod",
+    "turkish": "birbirinin aynısı; çok benzeyen iki kişi",
+    "example": "Those brothers are two peas in a pod.",
+    "exampleTr": "O iki kardeş birbirinin aynısı."
+  },
+  {
+    "id": 393,
+    "idiom": "under one's belt",
+    "turkish": "deneyim kazanmak; altında bulunmak",
+    "example": "With three successful projects under her belt, she applied for a senior role.",
+    "exampleTr": "Üç başarılı projeyi tecrübe ettikten sonra kıdemli pozisyona başvurdu."
+  },
+  {
+    "id": 394,
+    "idiom": "up for grabs",
+    "turkish": "ele geçirilebilir; herkesin kapabileceği",
+    "example": "The contract is up for grabs — any firm can bid.",
+    "exampleTr": "Sözleşme herkesin kapabileceği bir konumda — herhangi bir firma teklif verebilir."
+  },
+  {
+    "id": 395,
+    "idiom": "up the ante",
+    "turkish": "bahsi artırmak; beklentiyi yükseltmek",
+    "example": "They upped the ante by offering a bigger salary.",
+    "exampleTr": "Daha yüksek maaş teklif ederek bahsi artırdılar."
+  },
+  {
+    "id": 396,
+    "idiom": "use your head",
+    "turkish": "beynini kullanmak; mantıklı düşünmek",
+    "example": "Use your head before making any decision.",
+    "exampleTr": "Herhangi bir karar vermeden önce beynini kullan."
+  },
+  {
+    "id": 397,
+    "idiom": "wait on hand and foot",
+    "turkish": "her ihtiyacına koşmak; hizmetkarlık etmek",
+    "example": "She waited on her guests hand and foot all evening.",
+    "exampleTr": "Tüm akşam boyunca misafirlerinin her ihtiyacına koştu."
+  },
+  {
+    "id": 398,
+    "idiom": "walk on eggshells",
+    "turkish": "yumurta kabuğu üzerinde yürümek; çok dikkatli davranmak",
+    "example": "Whenever her boss was in a bad mood, she walked on eggshells.",
+    "exampleTr": "Patronu kötü huyda olduğunda çok dikkatli davranırdı."
+  },
+  {
+    "id": 399,
+    "idiom": "walk the talk",
+    "turkish": "söylemleriyle tutarlı hareket etmek; sözünün eri olmak",
+    "example": "If you want respect, you have to walk the talk.",
+    "exampleTr": "Saygı istiyorsan söylemlerin ve eylemlerinin tutarlı olmalı."
+  },
+  {
+    "id": 400,
+    "idiom": "wash your hands of something",
+    "turkish": "elini eteğini çekmek; sorumluluğu reddetmek",
+    "example": "After the failure, he washed his hands of the entire project.",
+    "exampleTr": "Başarısızlığın ardından tüm projeden elini eteğini çekti."
+  },
+  {
+    "id": 401,
+    "idiom": "water under the bridge",
+    "turkish": "geçmişte kalan şey; artık önemli değil",
+    "example": "We had our differences, but that's water under the bridge now.",
+    "exampleTr": "Aramızda anlaşmazlıklar oldu ama bu artık geçmişte kaldı."
+  },
+  {
+    "id": 402,
+    "idiom": "wear the pants",
+    "turkish": "pantolonu giymek; yönetici rolünde olmak",
+    "example": "In that family, it's clear who wears the pants.",
+    "exampleTr": "O ailede kimin yönetici olduğu belli."
+  },
+  {
+    "id": 403,
+    "idiom": "weather the storm",
+    "turkish": "fırtınayı atlatmak; zor dönemi geçirmek",
+    "example": "The company managed to weather the storm during the recession.",
+    "exampleTr": "Şirket durgunluk döneminde zor dönemi atlatmayı başardı."
+  },
+  {
+    "id": 404,
+    "idiom": "wet behind the ears",
+    "turkish": "toy olmak; deneyimsiz olmak",
+    "example": "He's smart but still wet behind the ears in this industry.",
+    "exampleTr": "Zeki ama bu sektörde hâlâ çok toy."
+  },
+  {
+    "id": 405,
+    "idiom": "wild goose chase",
+    "turkish": "boşa çıkan arama; akılsızca kovalama",
+    "example": "Looking for the lost keys turned into a wild goose chase.",
+    "exampleTr": "Kayıp anahtarları aramak boşa çıkan bir arayışa döndü."
+  },
+  {
+    "id": 406,
+    "idiom": "win hands down",
+    "turkish": "rahatça kazanmak; büyük farkla galip gelmek",
+    "example": "Our team won hands down in the final match.",
+    "exampleTr": "Takımımız final maçında rahatça kazandı."
+  },
+  {
+    "id": 407,
+    "idiom": "with flying colors",
+    "turkish": "başarıyla tamamlamak; büyük başarı elde etmek",
+    "example": "She passed the exam with flying colors.",
+    "exampleTr": "Sınavı büyük başarıyla geçti."
+  },
+  {
+    "id": 408,
+    "idiom": "word of mouth",
+    "turkish": "ağızdan ağıza yayılma; söylenti",
+    "example": "Most of our customers found us through word of mouth.",
+    "exampleTr": "Müşterilerimizin çoğu bizi ağızdan ağıza yayılan söylentiyle buldu."
+  },
+  {
+    "id": 409,
+    "idiom": "work your fingers to the bone",
+    "turkish": "parmak kemiklerine kadar çalışmak; aşırı çalışmak",
+    "example": "She worked her fingers to the bone to support her family.",
+    "exampleTr": "Ailesini geçindirmek için parmak kemiklerine kadar çalıştı."
+  },
+  {
+    "id": 410,
+    "idiom": "wouldn't be caught dead",
+    "turkish": "ne olursa olsun yapmamak; hiç yapmamak",
+    "example": "I wouldn't be caught dead wearing that outfit.",
+    "exampleTr": "O kıyafeti ne olursa olsun giymem."
+  },
+  {
+    "id": 411,
+    "idiom": "you reap what you sow",
+    "turkish": "ne ekersen onu biçersin",
+    "example": "He treated people poorly and now has no friends — you reap what you sow.",
+    "exampleTr": "İnsanlara kötü davrandı ve şimdi dostu yok — ne ekersen onu biçersin."
+  },
+  {
+    "id": 412,
+    "idiom": "zip it",
+    "turkish": "ağzını kapamak; susmak",
+    "example": "Zip it — the professor is about to start.",
+    "exampleTr": "Ağzını kapat — profesör başlamak üzere."
+  },
+  {
+    "id": 413,
+    "idiom": "a drop in the bucket",
+    "turkish": "devede kulak; çok az bir katkı",
+    "example": "Our donation was just a drop in the bucket compared to the total need.",
+    "exampleTr": "Bağışımız toplam ihtiyaçla kıyaslandığında devede kulak bile değildi."
+  },
+  {
+    "id": 414,
+    "idiom": "a fish out of water",
+    "turkish": "suyun dışındaki balık; kendini rahat hissetmemek",
+    "example": "At the formal dinner, she felt like a fish out of water.",
+    "exampleTr": "Resmi akşam yemeğinde kendini bir balık gibi rahat hissetmedi."
+  },
+  {
+    "id": 415,
+    "idiom": "a shot in the arm",
+    "turkish": "teşvik edici bir şey; canlandırıcı destek",
+    "example": "The government grant was a real shot in the arm for the startup.",
+    "exampleTr": "Devlet hibesi girişim için gerçek anlamda canlandırıcı bir destek oldu."
+  },
+  {
+    "id": 416,
+    "idiom": "a stone's throw away",
+    "turkish": "taş atımı mesafesinde; çok yakın",
+    "example": "The hotel is just a stone's throw away from the beach.",
+    "exampleTr": "Otel sahilden sadece taş atımı mesafesinde."
+  },
+  {
+    "id": 417,
+    "idiom": "a storm in a teacup",
+    "turkish": "çay fincanındaki fırtına; önemi olmayan bir şeyi abartmak",
+    "example": "The argument was just a storm in a teacup — it blew over quickly.",
+    "exampleTr": "Tartışma sadece çay fincanındaki bir fırtınaydı — çabuk geçti."
+  },
+  {
+    "id": 418,
+    "idiom": "add up",
+    "turkish": "toplam mantıklı olmak; anlamlı olmak",
+    "example": "The expenses don't add up — something is wrong.",
+    "exampleTr": "Harcamalar tutmuyor — bir şeyler yanlış."
+  },
+  {
+    "id": 419,
+    "idiom": "ahead of the curve",
+    "turkish": "eğrinin önünde; ileride olmak",
+    "example": "Their technology was well ahead of the curve.",
+    "exampleTr": "Teknolojileri çok ilerideyi."
+  },
+  {
+    "id": 420,
+    "idiom": "all in a day's work",
+    "turkish": "olağan bir işin parçası; sıradan",
+    "example": "Dealing with difficult clients is all in a day's work for her.",
+    "exampleTr": "Zor müşterilerle uğraşmak onun için sıradan işin parçası."
+  },
+  {
+    "id": 421,
+    "idiom": "an arm and a leg",
+    "turkish": "çok pahalı; göz çıkartacak fiyat",
+    "example": "That car costs an arm and a leg.",
+    "exampleTr": "O araba çok pahalı."
+  },
+  {
+    "id": 422,
+    "idiom": "at the end of the day",
+    "turkish": "günün sonunda; nihayetinde",
+    "example": "At the end of the day, what matters is the quality of the work.",
+    "exampleTr": "Günün sonunda önemli olan işin kalitesi."
+  },
+  {
+    "id": 423,
+    "idiom": "back in the day",
+    "turkish": "eskiden; o günlerde",
+    "example": "Back in the day, we used to walk to school.",
+    "exampleTr": "Eskiden okula yürüyerek giderdik."
+  },
+  {
+    "id": 424,
+    "idiom": "back on track",
+    "turkish": "yoluna girmek; doğru rotaya dönmek",
+    "example": "After the setback, the team got back on track quickly.",
+    "exampleTr": "Aksilikten sonra ekip çabuk yoluna girdi."
+  },
+  {
+    "id": 425,
+    "idiom": "backhanded compliment",
+    "turkish": "arka kapıdan iltifat; girizgahlı iltifat",
+    "example": "'You look good for your age' is a backhanded compliment.",
+    "exampleTr": "'Yaşına göre iyi görünüyorsun' girizgahlı bir iltifat."
+  },
+  {
+    "id": 426,
+    "idiom": "beat the clock",
+    "turkish": "zamanla yarışmak; zamana karşı kazanmak",
+    "example": "She beat the clock and submitted the report just in time.",
+    "exampleTr": "Zamanla yarışıp raporu tam zamanında teslim etti."
+  },
+  {
+    "id": 427,
+    "idiom": "behind closed doors",
+    "turkish": "kapalı kapılar arkasında; gizlice",
+    "example": "The real decisions were made behind closed doors.",
+    "exampleTr": "Gerçek kararlar kapalı kapılar arkasında alındı."
+  },
+  {
+    "id": 428,
+    "idiom": "behind the scenes",
+    "turkish": "sahne arkasında; görünmez yerde çalışmak",
+    "example": "A lot of hard work happens behind the scenes.",
+    "exampleTr": "Sahne arkasında çok fazla çalışma yapılıyor."
+  },
+  {
+    "id": 429,
+    "idiom": "better late than never",
+    "turkish": "geç olsun güç olmasın",
+    "example": "You finally replied to my email — better late than never.",
+    "exampleTr": "Sonunda e-postama cevap verdin — geç olsun güç olmasın."
+  },
+  {
+    "id": 430,
+    "idiom": "blood is thicker than water",
+    "turkish": "kan her şeyden kuvvetlidir; aile her şeyin üstündedir",
+    "example": "He chose to help his brother despite the disagreement — blood is thicker than water.",
+    "exampleTr": "Anlaşmazlığa rağmen kardeşine yardım etmeyi seçti — kan her şeyden kuvvetlidir."
+  },
+  {
+    "id": 431,
+    "idiom": "blow off steam",
+    "turkish": "buharı boşaltmak; stres atmak",
+    "example": "He went for a run to blow off steam after the argument.",
+    "exampleTr": "Tartışmadan sonra stres atmak için koşuya çıktı."
+  },
+  {
+    "id": 432,
+    "idiom": "born yesterday",
+    "turkish": "dün doğmamak; saf olmamak",
+    "example": "I wasn't born yesterday — I know what you're planning.",
+    "exampleTr": "Dün doğmadım — ne planladığını biliyorum."
+  },
+  {
+    "id": 433,
+    "idiom": "break even",
+    "turkish": "zararsız çıkmak; başa baş olmak",
+    "example": "After six months, the business finally broke even.",
+    "exampleTr": "Altı ay sonra işletme nihayet başa baş noktasına geldi."
+  },
+  {
+    "id": 434,
+    "idiom": "by leaps and bounds",
+    "turkish": "büyük adımlarla; hızla gelişmek",
+    "example": "Her language skills improved by leaps and bounds.",
+    "exampleTr": "Dil becerileri büyük adımlarla gelişti."
+  },
+  {
+    "id": 435,
+    "idiom": "can't make heads or tails of something",
+    "turkish": "başını sonunu anlamamak; hiç anlamamak",
+    "example": "I can't make heads or tails of this instruction manual.",
+    "exampleTr": "Bu kullanma kılavuzunun başını sonunu anlayamıyorum."
+  },
+  {
+    "id": 436,
+    "idiom": "carry your weight",
+    "turkish": "kendi payına düşeni yapmak; üzerine düşeni yapmak",
+    "example": "Everyone on the team needs to carry their weight.",
+    "exampleTr": "Ekipteki herkesin kendi payına düşeni yapması gerekiyor."
+  },
+  {
+    "id": 437,
+    "idiom": "catch some Z's",
+    "turkish": "kestirmek; biraz uyumak",
+    "example": "I'm exhausted — I need to catch some Z's before the meeting.",
+    "exampleTr": "Çok yorgunum — toplantıdan önce biraz kestirmem gerekiyor."
+  },
+  {
+    "id": 438,
+    "idiom": "chickens come home to roost",
+    "turkish": "işin sonu gün gelir ortaya çıkar; geçmişin seni yakalar",
+    "example": "After years of poor decisions, his chickens have finally come home to roost.",
+    "exampleTr": "Yıllarca kötü kararların ardından geçmişi sonunda onu yakaladı."
+  },
+  {
+    "id": 439,
+    "idiom": "chip on your shoulder",
+    "turkish": "omzunda bir yük; kompleksli olmak",
+    "example": "He's always had a chip on his shoulder about not going to university.",
+    "exampleTr": "Üniversiteye gitmediği konusunda hep kompleksliydi."
+  },
+  {
+    "id": 440,
+    "idiom": "clean slate",
+    "turkish": "temiz sayfa; yeni başlangıç",
+    "example": "Moving to a new city gave her a clean slate.",
+    "exampleTr": "Yeni bir şehre taşınmak ona temiz bir sayfa açtı."
+  },
+  {
+    "id": 441,
+    "idiom": "close shave",
+    "turkish": "kılpayı kurtulmak; çok az farkla atlatmak",
+    "example": "The cyclist had a close shave with that truck.",
+    "exampleTr": "Bisikletçi o kamyondan kılpayı kurtuldu."
+  },
+  {
+    "id": 442,
+    "idiom": "cold turkey",
+    "turkish": "aniden ve tamamen bırakmak",
+    "example": "He quit smoking cold turkey and never looked back.",
+    "exampleTr": "Sigarayı aniden ve tamamen bıraktı ve bir daha arkasına bakmadı."
+  },
+  {
+    "id": 443,
+    "idiom": "come a long way",
+    "turkish": "çok yol kat etmek; çok gelişmek",
+    "example": "Technology has come a long way in the last twenty years.",
+    "exampleTr": "Teknoloji son yirmi yılda çok yol kat etti."
+  },
+  {
+    "id": 444,
+    "idiom": "come to terms with",
+    "turkish": "kabullenmek; uzlaşmak",
+    "example": "It took years to come to terms with the loss.",
+    "exampleTr": "Kaybı kabullenebilmek yıllar sürdü."
+  },
+  {
+    "id": 445,
+    "idiom": "come up short",
+    "turkish": "yetersiz kalmak; beklentiyi karşılayamamak",
+    "example": "Despite their efforts, the team came up short in the finals.",
+    "exampleTr": "Tüm çabalarına rağmen ekip finalde yetersiz kaldı."
+  },
+  {
+    "id": 446,
+    "idiom": "cook the books",
+    "turkish": "defterleri tahrif etmek; muhasebe sahtekarlığı yapmak",
+    "example": "The accountant was arrested for cooking the books.",
+    "exampleTr": "Muhasebeci defterleri tahrif ettiği için tutuklandı."
+  },
+  {
+    "id": 447,
+    "idiom": "cover all bases",
+    "turkish": "tüm ihtimalleri düşünmek; her şeyi kapsamak",
+    "example": "We need to cover all bases before presenting the plan.",
+    "exampleTr": "Planı sunmadan önce tüm ihtimalleri düşünmemiz gerekiyor."
+  },
+  {
+    "id": 448,
+    "idiom": "cross your mind",
+    "turkish": "aklından geçmek; aklına gelmek",
+    "example": "Did it ever cross your mind that she might be upset?",
+    "exampleTr": "Onun üzgün olabileceği hiç aklından geçmedi mi?"
+  },
+  {
+    "id": 449,
+    "idiom": "cut the chase",
+    "turkish": "lafı dolandırmamak; konuya gelmek",
+    "example": "Cut the chase and tell me what you really want.",
+    "exampleTr": "Lafı dolandırma ve gerçekten ne istediğini söyle."
+  },
+  {
+    "id": 450,
+    "idiom": "dead set against",
+    "turkish": "kesinlikle karşı olmak; kesinlikle reddetmek",
+    "example": "Her parents were dead set against the marriage.",
+    "exampleTr": "Ailesi evliliğe kesinlikle karşıydı."
+  },
+  {
+    "id": 451,
+    "idiom": "digging your own grave",
+    "turkish": "kendi mezarını kazmak; kendine zarar vermek",
+    "example": "By ignoring customer feedback, they were digging their own grave.",
+    "exampleTr": "Müşteri geri bildirimlerini görmezden gelerek kendi mezarlarını kazıyorlardı."
+  },
+  {
+    "id": 452,
+    "idiom": "do the math",
+    "turkish": "hesabı yapmak; sonucu anlamak",
+    "example": "Do the math — if you spend more than you earn, you'll go into debt.",
+    "exampleTr": "Hesabı yap — kazandığından fazla harcarsan borçlanırsın."
+  },
+  {
+    "id": 453,
+    "idiom": "double-edged sword",
+    "turkish": "çift taraflı kılıç; hem faydalı hem zararlı olan şey",
+    "example": "Fame can be a double-edged sword.",
+    "exampleTr": "Şöhret çift taraflı bir kılıç olabilir."
+  },
+  {
+    "id": 454,
+    "idiom": "down in the dumps",
+    "turkish": "çok üzgün olmak; kederli olmak",
+    "example": "He's been down in the dumps since losing his job.",
+    "exampleTr": "İşini kaybettiğinden beri çok üzgün."
+  },
+  {
+    "id": 455,
+    "idiom": "down to the wire",
+    "turkish": "son ana kadar sürmek; çok yakın mücadele",
+    "example": "The election was down to the wire, with both candidates neck and neck.",
+    "exampleTr": "Seçim her iki aday da kafa kafaya son ana kadar sürdü."
+  },
+  {
+    "id": 456,
+    "idiom": "drop in the ocean",
+    "turkish": "okyanusta bir damla; çok az",
+    "example": "The aid provided was just a drop in the ocean.",
+    "exampleTr": "Sağlanan yardım sadece okyanusta bir damlaydı."
+  },
+  {
+    "id": 457,
+    "idiom": "easier said than done",
+    "turkish": "söylemesi kolay, yapması zor",
+    "example": "Losing weight is easier said than done.",
+    "exampleTr": "Kilo vermek söylemesi kolay, yapması zor."
+  },
+  {
+    "id": 458,
+    "idiom": "eat your heart out",
+    "turkish": "içi sızlamak; kıskançlıktan çıldırmak",
+    "example": "Eat your heart out — I just got tickets to the sold-out show.",
+    "exampleTr": "Kıskan bakalım — biletleri tükenmiş gösteriyi aldım."
+  },
+  {
+    "id": 459,
+    "idiom": "every trick in the book",
+    "turkish": "her türlü yola başvurmak; her numarayı denemek",
+    "example": "She tried every trick in the book to win the negotiation.",
+    "exampleTr": "Müzakereyi kazanmak için her türlü yola başvurdu."
+  },
+  {
+    "id": 460,
+    "idiom": "fall back on",
+    "turkish": "geri dönmek; başvurmak",
+    "example": "When the plan fails, what can we fall back on?",
+    "exampleTr": "Plan başarısız olursa neye başvurabiliriz?"
+  },
+  {
+    "id": 461,
+    "idiom": "fall flat",
+    "turkish": "etkisiz kalmak; tutmamak",
+    "example": "His joke fell flat and nobody laughed.",
+    "exampleTr": "Şakası tutmadı ve kimse gülmedi."
+  },
+  {
+    "id": 462,
+    "idiom": "fall through the cracks",
+    "turkish": "gözden kaçmak; fark edilmemek",
+    "example": "Some applications fell through the cracks during the review process.",
+    "exampleTr": "İnceleme sürecinde bazı başvurular gözden kaçtı."
+  },
+  {
+    "id": 463,
+    "idiom": "far and wide",
+    "turkish": "uzak yakın; her yerde",
+    "example": "Word spread far and wide about the new restaurant.",
+    "exampleTr": "Yeni restoran hakkındaki haberler her yere yayıldı."
+  },
+  {
+    "id": 464,
+    "idiom": "feel at home",
+    "turkish": "evinde gibi hissetmek; rahat olmak",
+    "example": "She immediately felt at home in the new neighborhood.",
+    "exampleTr": "Yeni mahallede hemen evinde gibi hissetti."
+  },
+  {
+    "id": 465,
+    "idiom": "find a middle ground",
+    "turkish": "orta yolu bulmak; uzlaşmak",
+    "example": "Both sides needed to find a middle ground on the issue.",
+    "exampleTr": "Her iki tarafın da konuda orta yolu bulması gerekiyordu."
+  },
+  {
+    "id": 466,
+    "idiom": "flip the script",
+    "turkish": "durumu tersine çevirmek; rolleri değiştirmek",
+    "example": "The underdog flipped the script and beat the champion.",
+    "exampleTr": "Favorisi olmayan iddia sahibi durumu tersine çevirip şampiyonu yendi."
+  },
+  {
+    "id": 467,
+    "idiom": "fly by the seat of one's pants",
+    "turkish": "içgüdüyle hareket etmek; hazırlıksız gitmek",
+    "example": "Without a script, the presenter flew by the seat of his pants.",
+    "exampleTr": "Senaryo olmadan sunucu içgüdüyle hareket etti."
+  },
+  {
+    "id": 468,
+    "idiom": "follow in someone's footsteps",
+    "turkish": "birinin izinden gitmek; örnek almak",
+    "example": "She followed in her father's footsteps and became a doctor.",
+    "exampleTr": "Babasının izinden gidip doktor oldu."
+  },
+  {
+    "id": 469,
+    "idiom": "for a rainy day",
+    "turkish": "kötü gün için; ihtiyaç halinde kullanmak üzere",
+    "example": "She always saves a little money for a rainy day.",
+    "exampleTr": "Kötü gün için her zaman biraz para biriktirdi."
+  },
+  {
+    "id": 470,
+    "idiom": "for the birds",
+    "turkish": "anlamsız; değersiz",
+    "example": "This whole plan is for the birds — let's start over.",
+    "exampleTr": "Bu planın tamamı anlamsız — baştan başlayalım."
+  },
+  {
+    "id": 471,
+    "idiom": "from the bottom of one's heart",
+    "turkish": "yürekten; içtenlikle",
+    "example": "I want to thank you from the bottom of my heart.",
+    "exampleTr": "Sizi yürekten teşekkür etmek istiyorum."
+  },
+  {
+    "id": 472,
+    "idiom": "gain ground",
+    "turkish": "ilerleme kaydetmek; güçlenmek",
+    "example": "The opposition party is gaining ground in the polls.",
+    "exampleTr": "Muhalefet partisi anketlerde güçleniyor."
+  },
+  {
+    "id": 473,
+    "idiom": "get a head start",
+    "turkish": "erkenden başlamak; avantajlı çıkmak",
+    "example": "Waking up early gave him a head start on the day.",
+    "exampleTr": "Erken kalkmak ona gün içinde avantajlı başlangıç sağladı."
+  },
+  {
+    "id": 474,
+    "idiom": "get carried away",
+    "turkish": "kendini kaptırmak; abartmak",
+    "example": "He got carried away and spent too much at the store.",
+    "exampleTr": "Kendini kaptırdı ve mağazada fazla harcadı."
+  },
+  {
+    "id": 475,
+    "idiom": "get off on the wrong foot",
+    "turkish": "yanlış başlamak; kötü bir başlangıç yapmak",
+    "example": "They got off on the wrong foot at their first meeting.",
+    "exampleTr": "İlk toplantıda yanlış bir başlangıç yaptılar."
+  },
+  {
+    "id": 476,
+    "idiom": "get on someone's nerves",
+    "turkish": "birinin sinirini bozmak; can sıkmak",
+    "example": "The constant noise was getting on her nerves.",
+    "exampleTr": "Sürekli gürültü onun sinirini bozuyordu."
+  },
+  {
+    "id": 477,
+    "idiom": "get the most out of",
+    "turkish": "en iyi şekilde değerlendirmek; azami fayda sağlamak",
+    "example": "Make sure you get the most out of your time abroad.",
+    "exampleTr": "Yurt dışındaki zamanını en iyi şekilde değerlendirdiğinden emin ol."
+  },
+  {
+    "id": 478,
+    "idiom": "get to the point",
+    "turkish": "konuya gelmek; özüne inmek",
+    "example": "Please get to the point — we don't have much time.",
+    "exampleTr": "Lütfen konuya gel — çok zamanımız yok."
+  },
+  {
+    "id": 479,
+    "idiom": "give and take",
+    "turkish": "vermek ve almak; karşılıklı fedakarlık",
+    "example": "Every good relationship involves give and take.",
+    "exampleTr": "Her iyi ilişki karşılıklı fedakarlık içerir."
+  },
+  {
+    "id": 480,
+    "idiom": "give someone a piece of your mind",
+    "turkish": "birine fikrini açıkça söylemek; azarlamak",
+    "example": "She gave him a piece of her mind after he was rude.",
+    "exampleTr": "Kaba davranınca ona fikrini açıkça söyledi."
+  },
+  {
+    "id": 481,
+    "idiom": "go with the flow",
+    "turkish": "akışa bırakmak; duruma uyum sağlamak",
+    "example": "He decided to just go with the flow and see what happens.",
+    "exampleTr": "Akışa bırakıp ne olacağını görmeye karar verdi."
+  },
+  {
+    "id": 482,
+    "idiom": "an eye for an eye",
+    "turkish": "göze göz, dişe diş",
+    "example": "An eye for an eye leaves the whole world blind.",
+    "exampleTr": "Göze göz dişe diş anlayışı tüm dünyayı kör bırakır."
+  },
+  {
+    "id": 483,
+    "idiom": "on a shoestring",
+    "turkish": "çok az para ile, kısıtlı bütçeyle",
+    "example": "They built the company on a shoestring budget.",
+    "exampleTr": "Şirketi çok kısıtlı bir bütçeyle kurdular."
+  },
+  {
+    "id": 484,
+    "idiom": "a wild goose chase",
+    "turkish": "boş yere uğraşmak, beyhude arayış",
+    "example": "Looking for that document was a wild goose chase.",
+    "exampleTr": "O belgeyi aramak boş bir uğraştı."
+  },
+  {
+    "id": 485,
+    "idiom": "bite your tongue",
+    "turkish": "dilini tutmak, söylemek istediğini söylememek",
+    "example": "I wanted to argue but bit my tongue.",
+    "exampleTr": "İtiraz etmek istedim ama dilimi tuttum."
+  },
+  {
+    "id": 486,
+    "idiom": "keep your chin up",
+    "turkish": "morali bozmamak, umudunu kaybetmemek",
+    "example": "Keep your chin up — things will get better.",
+    "exampleTr": "Morali bozma, işler düzelecek."
+  },
+  {
+    "id": 487,
+    "idiom": "two peas in a pod",
+    "turkish": "birbirinin ikizi, çok benzeyen iki kişi",
+    "example": "Those two are like two peas in a pod.",
+    "exampleTr": "O ikisi birbirinin ikizi gibi."
+  },
+  {
+    "id": 488,
+    "idiom": "go bananas",
+    "turkish": "çıldırmak, delirmek, aşırı heyecanlanmak",
+    "example": "The crowd went bananas when the singer appeared.",
+    "exampleTr": "Şarkıcı sahneye çıkınca kalabalık çıldırdı."
+  },
+  {
+    "id": 489,
+    "idiom": "on the house",
+    "turkish": "ev ısmarlıyor, bedava",
+    "example": "The dessert is on the house tonight.",
+    "exampleTr": "Bu gece tatlı ev ısmarlıyor."
+  },
+  {
+    "id": 490,
+    "idiom": "jump through hoops",
+    "turkish": "büyük engelleri aşmak, türlü zorluklarla uğraşmak",
+    "example": "We had to jump through hoops to get the visa approved.",
+    "exampleTr": "Vizeyi onaylatmak için türlü zorluklarla uğraştık."
+  },
+  {
+    "id": 491,
+    "idiom": "paint the town red",
+    "turkish": "çılgınca eğlenmek, ortalığı kırmızıya boyamak",
+    "example": "We decided to paint the town red for her birthday.",
+    "exampleTr": "Doğum günü için çılgınca eğlenmeye karar verdik."
+  },
+  {
+    "id": 492,
+    "idiom": "go with the flow",
+    "turkish": "akışa bırakmak, ortama uymak",
+    "example": "Just go with the flow and enjoy the trip.",
+    "exampleTr": "Sadece akışa bırak ve yolculuğun tadını çıkar."
+  },
+  {
+    "id": 493,
+    "idiom": "under one's belt",
+    "turkish": "deneyim kazanmış olmak, tecrübe edinmek",
+    "example": "With ten years under her belt, she was ready for any challenge.",
+    "exampleTr": "On yıllık deneyimiyle her zorluğa hazırdı."
+  },
+  {
+    "id": 494,
+    "idiom": "a drop in the bucket",
+    "turkish": "devede kulak, çok az",
+    "example": "The donation was a drop in the bucket compared to what was needed.",
+    "exampleTr": "Bağış, ihtiyaç duyulana kıyasla devede kulaktı."
+  },
+  {
+    "id": 495,
+    "idiom": "have a field day",
+    "turkish": "çok eğlenmek veya fırsatı iyi değerlendirmek",
+    "example": "The press had a field day with the scandal.",
+    "exampleTr": "Basın skandalı fırsatı iyi değerlendirdi."
+  },
+  {
+    "id": 496,
+    "idiom": "at the end of your rope",
+    "turkish": "sabrının sonuna gelmek, tükenmek",
+    "example": "I am at the end of my rope with this situation.",
+    "exampleTr": "Bu durumda sabrımın sonuna geldim."
+  },
+  {
+    "id": 497,
+    "idiom": "through the grapevine",
+    "turkish": "kulaktan kulağa, dedikodu yoluyla duymak",
+    "example": "I heard through the grapevine that he is leaving.",
+    "exampleTr": "Kulaktan kulağa onun gideceğini duydum."
+  },
+  {
+    "id": 498,
+    "idiom": "ring a bell",
+    "turkish": "tanıdık gelmek, aklına gelmek",
+    "example": "Does the name Tom Carter ring a bell?",
+    "exampleTr": "Tom Carter ismi sana tanıdık geliyor mu?"
+  },
+  {
+    "id": 499,
+    "idiom": "in the same boat",
+    "turkish": "aynı durumda olmak, aynı gemide olmak",
+    "example": "We are all in the same boat here.",
+    "exampleTr": "Hepimiz burada aynı gemideyiz."
+  },
+  {
+    "id": 500,
+    "idiom": "get the show on the road",
+    "turkish": "işe başlamak, yola çıkmak",
+    "example": "Let's get the show on the road — we're already late.",
+    "exampleTr": "Hadi işe başlayalım, zaten geç kaldık."
+  }
+]
