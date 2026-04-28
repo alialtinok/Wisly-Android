@@ -1,0 +1,19 @@
+package com.alialtinok.lexiup.ui.navigation
+
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Bolt
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Style
+import androidx.compose.ui.graphics.vector.ImageVector
+
+enum class TopLevelRoute(
+    val route: String,
+    val label: String,
+    val icon: ImageVector,
+) {
+    Home("home", "Home", Icons.Filled.Home),
+    Study("study", "Study", Icons.Filled.Style),
+    Practice("practice", "Practice", Icons.Filled.Bolt),
+    My("my", "My", Icons.Filled.Person),
+}
