@@ -16,7 +16,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.alialtinok.lexiup.ui.screens.home.HomeScreen
+import com.alialtinok.lexiup.ui.screens.my.FavoritesScreen
 import com.alialtinok.lexiup.ui.screens.my.MyScreen
+import com.alialtinok.lexiup.ui.screens.my.MyWordsScreen
+import com.alialtinok.lexiup.ui.screens.my.UnknownWordsScreen
 import com.alialtinok.lexiup.ui.screens.practice.PracticeScreen
 import com.alialtinok.lexiup.ui.screens.study.StudyScreen
 
@@ -25,26 +28,29 @@ fun MainScreen() {
     val navController = rememberNavController()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
+    val isTopLevel = TopLevelRoute.entries.any { it.route == currentRoute }
 
     Scaffold(
         bottomBar = {
-            NavigationBar {
-                TopLevelRoute.entries.forEach { tab ->
-                    NavigationBarItem(
-                        selected = currentRoute == tab.route,
-                        onClick = {
-                            if (currentRoute == tab.route) return@NavigationBarItem
-                            navController.navigate(tab.route) {
-                                popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
+            if (isTopLevel) {
+                NavigationBar {
+                    TopLevelRoute.entries.forEach { tab ->
+                        NavigationBarItem(
+                            selected = currentRoute == tab.route,
+                            onClick = {
+                                if (currentRoute == tab.route) return@NavigationBarItem
+                                navController.navigate(tab.route) {
+                                    popUpTo(navController.graph.findStartDestination().id) {
+                                        saveState = true
+                                    }
+                                    launchSingleTop = true
+                                    restoreState = true
                                 }
-                                launchSingleTop = true
-                                restoreState = true
-                            }
-                        },
-                        icon = { Icon(tab.icon, contentDescription = tab.label) },
-                        label = { Text(tab.label) },
-                    )
+                            },
+                            icon = { Icon(tab.icon, contentDescription = tab.label) },
+                            label = { Text(tab.label) },
+                        )
+                    }
                 }
             }
         },
@@ -59,7 +65,22 @@ fun MainScreen() {
             composable(TopLevelRoute.Home.route) { HomeScreen() }
             composable(TopLevelRoute.Study.route) { StudyScreen() }
             composable(TopLevelRoute.Practice.route) { PracticeScreen() }
-            composable(TopLevelRoute.My.route) { MyScreen() }
+            composable(TopLevelRoute.My.route) {
+                MyScreen(
+                    onNavigateToFavorites = { navController.navigate(Routes.FAVORITES) },
+                    onNavigateToUnknown = { navController.navigate(Routes.UNKNOWN) },
+                    onNavigateToMyWords = { navController.navigate(Routes.MY_WORDS) },
+                )
+            }
+            composable(Routes.FAVORITES) {
+                FavoritesScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.UNKNOWN) {
+                UnknownWordsScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.MY_WORDS) {
+                MyWordsScreen(onBack = { navController.popBackStack() })
+            }
         }
     }
 }

@@ -1,0 +1,299 @@
+package com.alialtinok.lexiup.ui.screens.my
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.NoteAdd
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.Text
+import androidx.compose.material3.rememberModalBottomSheetState
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.data.model.CustomWord
+import com.alialtinok.lexiup.ui.screens.my.components.EmptyState
+import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
+import com.alialtinok.lexiup.ui.theme.LexiColors
+import kotlinx.coroutines.launch
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MyWordsScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
+    val container = remember { (context.applicationContext as LexiUpApplication).container }
+    val repo = container.wordRepository
+    val settings = container.userSettingsRepository
+
+    val myWords by repo.myWords.collectAsState(initial = emptyList())
+    val nativeLanguage by settings.nativeLanguage.collectAsState(
+        initial = com.alialtinok.lexiup.data.model.NativeLanguage.Default,
+    )
+    val scope = rememberCoroutineScope()
+
+    var showAddSheet by remember { mutableStateOf(false) }
+
+    SubScreenScaffold(
+        title = "My Words",
+        onBack = onBack,
+        actions = {
+            IconButton(onClick = { showAddSheet = true }) {
+                Icon(
+                    imageVector = Icons.Filled.Add,
+                    contentDescription = "Add",
+                    tint = LexiColors.AccentGreen,
+                )
+            }
+        },
+    ) {
+        if (myWords.isEmpty()) {
+            EmptyState(
+                title = "No words yet",
+                message = "Tap the + button to add your first word.",
+                icon = Icons.Filled.NoteAdd,
+                iconTint = LexiColors.AccentGreen,
+            )
+        } else {
+            LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                items(myWords, key = { it.id }) { word ->
+                    MyWordRow(
+                        word = word,
+                        onDelete = { scope.launch { repo.removeMyWord(word) } },
+                    )
+                }
+            }
+        }
+    }
+
+    if (showAddSheet) {
+        val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            onDismissRequest = { showAddSheet = false },
+            sheetState = sheetState,
+            containerColor = LexiColors.Background,
+        ) {
+            AddWordForm(
+                onSave = { wordText, translation, example ->
+                    scope.launch {
+                        repo.addMyWord(
+                            CustomWord(
+                                word = wordText.trim(),
+                                translation = translation.trim(),
+                                languageID = nativeLanguage.id,
+                                example = example.trim(),
+                            ),
+                        )
+                    }
+                    showAddSheet = false
+                },
+                onCancel = { showAddSheet = false },
+            )
+        }
+    }
+}
+
+@Composable
+private fun MyWordRow(word: CustomWord, onDelete: () -> Unit) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(LexiColors.Surface, RoundedCornerShape(14.dp))
+            .border(1.dp, LexiColors.SurfaceBorder, RoundedCornerShape(14.dp))
+            .padding(14.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Column(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(3.dp),
+        ) {
+            Text(
+                text = word.word,
+                fontSize = 17.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White,
+            )
+            Text(
+                text = word.translation.ifEmpty { "—" },
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Medium,
+                color = if (word.translation.isEmpty()) LexiColors.OnSurfaceMuted else LexiColors.Primary,
+            )
+            if (word.example.isNotEmpty()) {
+                Text(
+                    text = word.example,
+                    fontSize = 12.sp,
+                    color = LexiColors.OnSurfaceMuted,
+                )
+            }
+        }
+        Text(
+            text = word.languageID.uppercase(),
+            fontSize = 9.sp,
+            fontWeight = FontWeight.Bold,
+            color = LexiColors.AccentGreen,
+            modifier = Modifier
+                .background(LexiColors.AccentGreen.copy(alpha = 0.1f), CircleShape)
+                .padding(horizontal = 6.dp, vertical = 3.dp),
+        )
+        IconButton(onClick = onDelete) {
+            Icon(
+                imageVector = Icons.Filled.Delete,
+                contentDescription = "Delete",
+                tint = LexiColors.AccentRed,
+            )
+        }
+    }
+}
+
+@Composable
+private fun AddWordForm(
+    onSave: (word: String, translation: String, example: String) -> Unit,
+    onCancel: () -> Unit,
+) {
+    var wordText by remember { mutableStateOf("") }
+    var translationText by remember { mutableStateOf("") }
+    var exampleText by remember { mutableStateOf("") }
+
+    val canSave = wordText.trim().isNotEmpty() && translationText.trim().isNotEmpty()
+
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(20.dp)
+            .imePadding()
+            .navigationBarsPadding(),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Text(
+            text = "Add Word",
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Black,
+            color = Color.White,
+        )
+
+        FieldLabel("English")
+        AppTextField(
+            value = wordText,
+            onValueChange = { wordText = it },
+            placeholder = "e.g. serendipity",
+        )
+
+        FieldLabel("Translation")
+        AppTextField(
+            value = translationText,
+            onValueChange = { translationText = it },
+            placeholder = "translation in your language",
+            capitalization = KeyboardCapitalization.Sentences,
+        )
+
+        FieldLabel("Example (optional)")
+        AppTextField(
+            value = exampleText,
+            onValueChange = { exampleText = it },
+            placeholder = "Example sentence",
+            capitalization = KeyboardCapitalization.Sentences,
+        )
+
+        Spacer(Modifier.height(8.dp))
+
+        Button(
+            onClick = { onSave(wordText, translationText, exampleText) },
+            enabled = canSave,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(54.dp),
+            shape = RoundedCornerShape(14.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = LexiColors.AccentGreen,
+                disabledContainerColor = LexiColors.SurfaceBorder,
+                contentColor = Color.White,
+                disabledContentColor = LexiColors.OnSurfaceMuted,
+            ),
+        ) {
+            Text(
+                text = "Add",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+            )
+        }
+    }
+}
+
+@Composable
+private fun FieldLabel(text: String) {
+    Text(
+        text = text,
+        fontSize = 13.sp,
+        color = LexiColors.OnSurfaceMuted,
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun AppTextField(
+    value: String,
+    onValueChange: (String) -> Unit,
+    placeholder: String,
+    capitalization: KeyboardCapitalization = KeyboardCapitalization.None,
+) {
+    OutlinedTextField(
+        value = value,
+        onValueChange = onValueChange,
+        placeholder = { Text(placeholder, color = LexiColors.OnSurfaceMuted.copy(alpha = 0.6f)) },
+        singleLine = true,
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(12.dp),
+        keyboardOptions = KeyboardOptions(capitalization = capitalization),
+        colors = OutlinedTextFieldDefaults.colors(
+            focusedBorderColor = LexiColors.Primary,
+            unfocusedBorderColor = LexiColors.SurfaceBorder,
+            focusedContainerColor = LexiColors.Surface,
+            unfocusedContainerColor = LexiColors.Surface,
+            focusedTextColor = Color.White,
+            unfocusedTextColor = Color.White,
+            cursorColor = LexiColors.Primary,
+        ),
+    )
+}
