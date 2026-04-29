@@ -22,6 +22,7 @@ import com.alialtinok.lexiup.ui.screens.my.MyWordsScreen
 import com.alialtinok.lexiup.ui.screens.my.UnknownWordsScreen
 import com.alialtinok.lexiup.ui.screens.practice.PracticeScreen
 import com.alialtinok.lexiup.ui.screens.study.FlashcardScreen
+import com.alialtinok.lexiup.ui.screens.study.QuizScreen
 import com.alialtinok.lexiup.ui.screens.study.StudyScreen
 
 @Composable
@@ -67,6 +68,7 @@ fun MainScreen() {
             composable(TopLevelRoute.Study.route) {
                 StudyScreen(
                     onNavigateToFlashcards = { navController.navigate(Routes.FLASHCARDS) },
+                    onNavigateToQuiz = { navController.navigate(Routes.QUIZ) },
                 )
             }
             composable(TopLevelRoute.Practice.route) { PracticeScreen() }
@@ -88,6 +90,9 @@ fun MainScreen() {
             }
             composable(Routes.FLASHCARDS) {
                 FlashcardScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.QUIZ) {
+                QuizScreen(onBack = { navController.popBackStack() })
             }
         }
     }

@@ -23,4 +23,5 @@ object Routes {
     const val UNKNOWN = "my/unknown"
     const val MY_WORDS = "my/words"
     const val FLASHCARDS = "study/flashcards"
+    const val QUIZ = "study/quiz"
 }

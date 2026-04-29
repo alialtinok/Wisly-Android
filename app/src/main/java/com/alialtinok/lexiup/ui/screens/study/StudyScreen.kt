@@ -33,7 +33,10 @@ import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
-fun StudyScreen(onNavigateToFlashcards: () -> Unit) {
+fun StudyScreen(
+    onNavigateToFlashcards: () -> Unit,
+    onNavigateToQuiz: () -> Unit,
+) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -69,12 +72,11 @@ fun StudyScreen(onNavigateToFlashcards: () -> Unit) {
             item {
                 StudyCard(
                     title = "Quiz",
-                    subtitle = "Coming soon",
+                    subtitle = "Test your vocabulary",
                     icon = Icons.Filled.Quiz,
                     gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
                     accent = LexiColors.AccentPurple,
-                    onClick = {},
-                    enabled = false,
+                    onClick = onNavigateToQuiz,
                     modifier = Modifier.padding(horizontal = 20.dp),
                 )
             }
