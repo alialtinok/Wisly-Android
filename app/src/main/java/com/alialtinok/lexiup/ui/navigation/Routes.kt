@@ -22,4 +22,5 @@ object Routes {
     const val FAVORITES = "my/favorites"
     const val UNKNOWN = "my/unknown"
     const val MY_WORDS = "my/words"
+    const val FLASHCARDS = "study/flashcards"
 }
