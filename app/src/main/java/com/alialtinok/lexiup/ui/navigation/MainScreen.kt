@@ -20,6 +20,9 @@ import com.alialtinok.lexiup.ui.screens.my.FavoritesScreen
 import com.alialtinok.lexiup.ui.screens.my.MyScreen
 import com.alialtinok.lexiup.ui.screens.my.MyWordsScreen
 import com.alialtinok.lexiup.ui.screens.my.UnknownWordsScreen
+import com.alialtinok.lexiup.ui.screens.practice.FillBlankScreen
+import com.alialtinok.lexiup.ui.screens.practice.IdiomQuizScreen
+import com.alialtinok.lexiup.ui.screens.practice.PhrasalVerbQuizScreen
 import com.alialtinok.lexiup.ui.screens.practice.PracticeScreen
 import com.alialtinok.lexiup.ui.screens.study.FlashcardScreen
 import com.alialtinok.lexiup.ui.screens.study.QuizScreen
@@ -71,7 +74,13 @@ fun MainScreen() {
                     onNavigateToQuiz = { navController.navigate(Routes.QUIZ) },
                 )
             }
-            composable(TopLevelRoute.Practice.route) { PracticeScreen() }
+            composable(TopLevelRoute.Practice.route) {
+                PracticeScreen(
+                    onNavigateToFillBlank = { navController.navigate(Routes.FILL_BLANK) },
+                    onNavigateToPhrasalQuiz = { navController.navigate(Routes.PHRASAL_QUIZ) },
+                    onNavigateToIdiomQuiz = { navController.navigate(Routes.IDIOM_QUIZ) },
+                )
+            }
             composable(TopLevelRoute.My.route) {
                 MyScreen(
                     onNavigateToFavorites = { navController.navigate(Routes.FAVORITES) },
@@ -93,6 +102,15 @@ fun MainScreen() {
             }
             composable(Routes.QUIZ) {
                 QuizScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.FILL_BLANK) {
+                FillBlankScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.PHRASAL_QUIZ) {
+                PhrasalVerbQuizScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.IDIOM_QUIZ) {
+                IdiomQuizScreen(onBack = { navController.popBackStack() })
             }
         }
     }

@@ -24,4 +24,7 @@ object Routes {
     const val MY_WORDS = "my/words"
     const val FLASHCARDS = "study/flashcards"
     const val QUIZ = "study/quiz"
+    const val FILL_BLANK = "practice/fill-blank"
+    const val PHRASAL_QUIZ = "practice/phrasal"
+    const val IDIOM_QUIZ = "practice/idiom"
 }
