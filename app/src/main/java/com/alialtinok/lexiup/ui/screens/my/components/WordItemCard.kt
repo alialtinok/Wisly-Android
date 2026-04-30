@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -27,6 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.data.model.Word
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -34,6 +36,7 @@ fun WordItemCard(
     word: Word,
     isExpanded: Boolean,
     onToggleExpand: () -> Unit,
+    onSpeak: () -> Unit,
     trailing: @Composable () -> Unit,
 ) {
     val levelColor = parseHex(word.cefrColor)
@@ -73,7 +76,14 @@ fun WordItemCard(
                     .background(levelColor.copy(alpha = 0.15f), CircleShape)
                     .padding(horizontal = 8.dp, vertical = 3.dp),
             )
-            Box(modifier = Modifier.padding(start = 6.dp)) { trailing() }
+            IconButton(onClick = onSpeak, modifier = Modifier.size(36.dp)) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.VolumeUp,
+                    contentDescription = LocalAppStrings.current.ttsSpeak,
+                    tint = LexiColors.OnSurfaceMuted,
+                )
+            }
+            Box(modifier = Modifier.padding(start = 2.dp)) { trailing() }
         }
 
         Text(

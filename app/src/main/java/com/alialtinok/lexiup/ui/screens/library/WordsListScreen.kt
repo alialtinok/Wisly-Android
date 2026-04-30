@@ -52,6 +52,7 @@ fun WordsListScreen(onBack: () -> Unit) {
     val context = LocalContext.current
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
+    val tts = container.ttsManager
     val scope = rememberCoroutineScope()
 
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
@@ -87,6 +88,7 @@ fun WordsListScreen(onBack: () -> Unit) {
                     onToggleExpand = {
                         expandedId = if (expandedId == word.id) null else word.id
                     },
+                    onSpeak = { tts.speak(word.word) },
                     trailing = {
                         FavoriteToggleButton(
                             isFavorite = word.id in favoriteIds,

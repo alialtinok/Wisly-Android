@@ -18,6 +18,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.TouchApp
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -39,6 +40,7 @@ fun FlashcardFront(
     word: Word,
     isFavorite: Boolean,
     onToggleFavorite: () -> Unit,
+    onSpeak: () -> Unit,
     swipeColor: Color,
     modifier: Modifier = Modifier,
 ) {
@@ -61,6 +63,13 @@ fun FlashcardFront(
                     )
                 }
                 Spacer(Modifier.weight(1f))
+                IconButton(onClick = onSpeak) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.VolumeUp,
+                        contentDescription = LocalAppStrings.current.ttsSpeak,
+                        tint = LexiColors.OnSurfaceMuted,
+                    )
+                }
                 Text(
                     text = word.level,
                     fontSize = 12.sp,

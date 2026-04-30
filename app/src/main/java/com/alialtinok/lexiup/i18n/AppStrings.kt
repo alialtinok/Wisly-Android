@@ -98,6 +98,8 @@ data class AppStrings(
     val myWordsFieldEnglish: String,
     val myWordsFieldTranslation: String,
     val myWordsFieldExample: String,
+
+    val ttsSpeak: String,
 ) {
     companion object {
         val EN = AppStrings(
@@ -193,6 +195,8 @@ data class AppStrings(
             myWordsFieldEnglish = "English",
             myWordsFieldTranslation = "Translation",
             myWordsFieldExample = "Example (optional)",
+
+            ttsSpeak = "Speak",
         )
 
         val TR = AppStrings(
@@ -288,6 +292,8 @@ data class AppStrings(
             myWordsFieldEnglish = "İngilizce",
             myWordsFieldTranslation = "Çeviri",
             myWordsFieldExample = "Örnek (opsiyonel)",
+
+            ttsSpeak = "Dinle",
         )
 
         fun forLanguage(language: NativeLanguage): AppStrings =

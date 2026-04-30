@@ -95,6 +95,8 @@ fun FlashcardScreen(onBack: () -> Unit) {
     var isFinished by remember(sessionKey) { mutableStateOf(false) }
     var isAnimating by remember(sessionKey) { mutableStateOf(false) }
 
+    val tts = container.ttsManager
+
     val offsetX = remember(sessionKey) { Animatable(0f) }
 
     fun resetSession() {
@@ -125,9 +127,12 @@ fun FlashcardScreen(onBack: () -> Unit) {
     }
 
     LaunchedEffect(sessionWords) {
-        // ensure index is within range when filter changes
-        if (currentIndex >= sessionWords.size) {
-            currentIndex = 0
+        if (currentIndex >= sessionWords.size) currentIndex = 0
+    }
+
+    LaunchedEffect(currentIndex, sessionKey) {
+        if (sessionWords.isNotEmpty() && !isFinished) {
+            tts.speak(sessionWords[currentIndex].word)
         }
     }
 
@@ -191,6 +196,7 @@ fun FlashcardScreen(onBack: () -> Unit) {
                     onFlip = { if (!isAnimating) isFlipped = !isFlipped },
                     isFavorite = word.id in favoriteIds,
                     onToggleFavorite = { scope.launch { repo.toggleFavorite(word.id) } },
+                    onSpeak = { tts.speak(word.word) },
                     offsetX = offsetX.value,
                     onDragX = { delta ->
                         if (isAnimating) return@FlashcardCard
@@ -379,6 +385,7 @@ private fun FlashcardCard(
     onFlip: () -> Unit,
     isFavorite: Boolean,
     onToggleFavorite: () -> Unit,
+    onSpeak: () -> Unit,
     offsetX: Float,
     onDragX: (Float) -> Unit,
     onDragEnd: () -> Unit,
@@ -432,6 +439,7 @@ private fun FlashcardCard(
                 word = word,
                 isFavorite = isFavorite,
                 onToggleFavorite = onToggleFavorite,
+                onSpeak = onSpeak,
                 swipeColor = swipeColor,
             )
         }

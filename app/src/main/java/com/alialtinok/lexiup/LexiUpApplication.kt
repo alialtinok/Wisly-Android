@@ -4,6 +4,7 @@ import android.app.Application
 import com.alialtinok.lexiup.data.repository.TranslationRepository
 import com.alialtinok.lexiup.data.repository.UserSettingsRepository
 import com.alialtinok.lexiup.data.repository.WordRepository
+import com.alialtinok.lexiup.tts.TtsManager
 
 class LexiUpApplication : Application() {
     lateinit var container: AppContainer
@@ -19,4 +20,5 @@ class AppContainer(application: Application) {
     val wordRepository = WordRepository(application)
     val userSettingsRepository = UserSettingsRepository(application)
     val translationRepository = TranslationRepository(application)
+    val ttsManager = TtsManager(application)
 }
