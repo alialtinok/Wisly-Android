@@ -16,6 +16,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.alialtinok.lexiup.ui.screens.home.HomeScreen
+import com.alialtinok.lexiup.ui.screens.library.IdiomsListScreen
+import com.alialtinok.lexiup.ui.screens.library.PhrasalVerbsListScreen
+import com.alialtinok.lexiup.ui.screens.library.WordsListScreen
 import com.alialtinok.lexiup.ui.screens.my.FavoritesScreen
 import com.alialtinok.lexiup.ui.screens.my.MyScreen
 import com.alialtinok.lexiup.ui.screens.my.MyWordsScreen
@@ -67,7 +70,13 @@ fun MainScreen() {
                 .fillMaxSize()
                 .padding(padding),
         ) {
-            composable(TopLevelRoute.Home.route) { HomeScreen() }
+            composable(TopLevelRoute.Home.route) {
+                HomeScreen(
+                    onNavigateToWordsList = { navController.navigate(Routes.WORDS_LIST) },
+                    onNavigateToPhrasalList = { navController.navigate(Routes.PHRASAL_LIST) },
+                    onNavigateToIdiomsList = { navController.navigate(Routes.IDIOMS_LIST) },
+                )
+            }
             composable(TopLevelRoute.Study.route) {
                 StudyScreen(
                     onNavigateToFlashcards = { navController.navigate(Routes.FLASHCARDS) },
@@ -111,6 +120,15 @@ fun MainScreen() {
             }
             composable(Routes.IDIOM_QUIZ) {
                 IdiomQuizScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.WORDS_LIST) {
+                WordsListScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.PHRASAL_LIST) {
+                PhrasalVerbsListScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.IDIOMS_LIST) {
+                IdiomsListScreen(onBack = { navController.popBackStack() })
             }
         }
     }

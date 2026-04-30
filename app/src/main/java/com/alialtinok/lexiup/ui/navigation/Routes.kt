@@ -27,4 +27,7 @@ object Routes {
     const val FILL_BLANK = "practice/fill-blank"
     const val PHRASAL_QUIZ = "practice/phrasal"
     const val IDIOM_QUIZ = "practice/idiom"
+    const val WORDS_LIST = "library/words"
+    const val PHRASAL_LIST = "library/phrasal"
+    const val IDIOMS_LIST = "library/idioms"
 }

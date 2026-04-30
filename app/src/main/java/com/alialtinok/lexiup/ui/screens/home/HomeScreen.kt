@@ -2,6 +2,7 @@ package com.alialtinok.lexiup.ui.screens.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -44,7 +45,11 @@ import com.alialtinok.lexiup.data.repository.WordRepository
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(
+    onNavigateToWordsList: () -> Unit,
+    onNavigateToPhrasalList: () -> Unit,
+    onNavigateToIdiomsList: () -> Unit,
+) {
     val context = LocalContext.current
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
@@ -90,6 +95,9 @@ fun HomeScreen() {
                 wordCount = repo.allWords.size,
                 phrasalCount = repo.allPhrasalVerbs.size,
                 idiomCount = repo.allIdioms.size,
+                onWordsClick = onNavigateToWordsList,
+                onPhrasalClick = onNavigateToPhrasalList,
+                onIdiomsClick = onNavigateToIdiomsList,
                 modifier = Modifier.padding(horizontal = 20.dp),
             )
         }
@@ -351,6 +359,9 @@ private fun ContentSection(
     wordCount: Int,
     phrasalCount: Int,
     idiomCount: Int,
+    onWordsClick: () -> Unit,
+    onPhrasalClick: () -> Unit,
+    onIdiomsClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Column(
@@ -371,6 +382,7 @@ private fun ContentSection(
                 accent = LexiColors.Primary,
                 title = "Words",
                 value = "$wordCount words",
+                onClick = onWordsClick,
             )
             ContentCard(
                 icon = Icons.Filled.Style,
@@ -378,6 +390,7 @@ private fun ContentSection(
                 accent = LexiColors.AccentPurple,
                 title = "Phrasal Verbs",
                 value = "$phrasalCount verbs",
+                onClick = onPhrasalClick,
             )
             ContentCard(
                 icon = Icons.Filled.FormatQuote,
@@ -385,6 +398,7 @@ private fun ContentSection(
                 accent = LexiColors.AccentAmber,
                 title = "Idioms",
                 value = "$idiomCount idioms",
+                onClick = onIdiomsClick,
             )
         }
     }
@@ -397,12 +411,14 @@ private fun ContentCard(
     accent: Color,
     title: String,
     value: String,
+    onClick: () -> Unit,
 ) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .background(brush = Brush.linearGradient(gradient), shape = RoundedCornerShape(18.dp))
             .border(1.dp, accent.copy(alpha = 0.20f), RoundedCornerShape(18.dp))
+            .clickable(onClick = onClick)
             .padding(16.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(16.dp),
