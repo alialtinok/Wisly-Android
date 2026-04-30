@@ -20,6 +20,7 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,6 +36,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -42,10 +44,12 @@ fun MyScreen(
     onNavigateToFavorites: () -> Unit,
     onNavigateToUnknown: () -> Unit,
     onNavigateToMyWords: () -> Unit,
+    onNavigateToSettings: () -> Unit,
 ) {
     val context = LocalContext.current
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
+    val strings = LocalAppStrings.current
 
     val favorites by repo.favoriteIds.collectAsState(initial = emptySet())
     val unknown by repo.unknownIds.collectAsState(initial = emptySet())
@@ -60,21 +64,20 @@ fun MyScreen(
     ) {
         item {
             Text(
-                text = "My",
+                text = strings.myTitle,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Black,
                 color = Color.White,
                 modifier = Modifier.padding(bottom = 8.dp),
             )
         }
-        item { SectionLabel("MY LISTS") }
         item {
             MyRow(
                 icon = Icons.Filled.Favorite,
                 color = LexiColors.C2,
-                title = "Favorites",
+                title = strings.myFavorites,
                 count = favorites.size,
-                subtitle = "Saved words",
+                subtitle = strings.myFavoritesDesc,
                 onClick = onNavigateToFavorites,
             )
         }
@@ -82,9 +85,9 @@ fun MyScreen(
             MyRow(
                 icon = Icons.Filled.ErrorOutline,
                 color = LexiColors.B2,
-                title = "Unknown Words",
+                title = strings.myUnknown,
                 count = unknown.size,
-                subtitle = "Need review",
+                subtitle = strings.myUnknownDesc,
                 onClick = onNavigateToUnknown,
             )
         }
@@ -92,10 +95,20 @@ fun MyScreen(
             MyRow(
                 icon = Icons.Filled.AddCircle,
                 color = LexiColors.AccentGreen,
-                title = "My Words",
+                title = strings.myWords,
                 count = myWords.size,
-                subtitle = "Your own words",
+                subtitle = strings.myWordsDesc,
                 onClick = onNavigateToMyWords,
+            )
+        }
+        item {
+            MyRow(
+                icon = Icons.Filled.Settings,
+                color = LexiColors.OnSurfaceMuted,
+                title = strings.mySettings,
+                count = null,
+                subtitle = strings.mySettingsDesc,
+                onClick = onNavigateToSettings,
             )
         }
     }
@@ -118,7 +131,7 @@ private fun MyRow(
     icon: ImageVector,
     color: Color,
     title: String,
-    count: Int,
+    count: Int?,
     subtitle: String,
     onClick: () -> Unit,
 ) {
@@ -161,16 +174,18 @@ private fun MyRow(
                 color = LexiColors.OnSurfaceMuted,
             )
         }
-        Text(
-            text = count.toString(),
-            fontSize = 17.sp,
-            fontWeight = FontWeight.Bold,
-            color = color,
-            modifier = Modifier
-                .widthIn(min = 32.dp)
-                .background(color.copy(alpha = 0.15f), RoundedCornerShape(8.dp))
-                .padding(horizontal = 10.dp, vertical = 5.dp),
-        )
+        if (count != null) {
+            Text(
+                text = count.toString(),
+                fontSize = 17.sp,
+                fontWeight = FontWeight.Bold,
+                color = color,
+                modifier = Modifier
+                    .widthIn(min = 32.dp)
+                    .background(color.copy(alpha = 0.15f), RoundedCornerShape(8.dp))
+                    .padding(horizontal = 10.dp, vertical = 5.dp),
+            )
+        }
         Icon(
             imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
             contentDescription = null,

@@ -30,4 +30,5 @@ object Routes {
     const val WORDS_LIST = "library/words"
     const val PHRASAL_LIST = "library/phrasal"
     const val IDIOMS_LIST = "library/idioms"
+    const val SETTINGS = "my/settings"
 }

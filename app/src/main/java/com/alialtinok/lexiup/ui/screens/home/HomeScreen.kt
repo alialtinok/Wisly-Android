@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Word
 import com.alialtinok.lexiup.data.repository.WordRepository
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -161,6 +162,7 @@ private fun StreakHeroCard(
     unknown: Int,
     modifier: Modifier = Modifier,
 ) {
+    val strings = LocalAppStrings.current
     Box(
         modifier = modifier
             .fillMaxWidth()
@@ -182,15 +184,16 @@ private fun StreakHeroCard(
         ) {
             StreakColumn(streak = streak, modifier = Modifier.weight(1f))
             StatDivider()
-            StatColumn(value = favorites.toString(), label = "favorites", modifier = Modifier.weight(1f))
+            StatColumn(value = favorites.toString(), label = strings.statFavorites, modifier = Modifier.weight(1f))
             StatDivider()
-            StatColumn(value = unknown.toString(), label = "to review", modifier = Modifier.weight(1f))
+            StatColumn(value = unknown.toString(), label = strings.statToReview, modifier = Modifier.weight(1f))
         }
     }
 }
 
 @Composable
 private fun StreakColumn(streak: Int, modifier: Modifier = Modifier) {
+    val strings = LocalAppStrings.current
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -207,7 +210,7 @@ private fun StreakColumn(streak: Int, modifier: Modifier = Modifier) {
             Text(text = "🔥", fontSize = 28.sp)
         }
         Text(
-            text = "day streak",
+            text = strings.dayStreak,
             color = Color(0xFFFF6B00),
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
@@ -278,7 +281,7 @@ private fun WordOfTheDayCard(
                 )
                 Spacer(Modifier.width(6.dp))
                 Text(
-                    text = "WORD OF THE DAY",
+                    text = LocalAppStrings.current.wordOfTheDay,
                     fontSize = 11.sp,
                     fontWeight = FontWeight.Bold,
                     color = levelColor,
@@ -364,12 +367,13 @@ private fun ContentSection(
     onIdiomsClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val strings = LocalAppStrings.current
     Column(
         modifier = modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         Text(
-            text = "CONTENT",
+            text = strings.sectionContent,
             fontSize = 11.sp,
             fontWeight = FontWeight.SemiBold,
             color = LexiColors.OnSurfaceMuted,
@@ -380,24 +384,24 @@ private fun ContentSection(
                 icon = Icons.AutoMirrored.Filled.MenuBook,
                 gradient = listOf(Color(0xFF1A3A6B), Color(0xFF0F2244)),
                 accent = LexiColors.Primary,
-                title = "Words",
-                value = "$wordCount words",
+                title = strings.contentWords,
+                value = "$wordCount ${strings.unitWords}",
                 onClick = onWordsClick,
             )
             ContentCard(
                 icon = Icons.Filled.Style,
                 gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
                 accent = LexiColors.AccentPurple,
-                title = "Phrasal Verbs",
-                value = "$phrasalCount verbs",
+                title = strings.contentPhrasal,
+                value = "$phrasalCount ${strings.unitVerbs}",
                 onClick = onPhrasalClick,
             )
             ContentCard(
                 icon = Icons.Filled.FormatQuote,
                 gradient = listOf(Color(0xFF5A3600), Color(0xFF3A2200)),
                 accent = LexiColors.AccentAmber,
-                title = "Idioms",
-                value = "$idiomCount idioms",
+                title = strings.contentIdioms,
+                value = "$idiomCount ${strings.unitIdioms}",
                 onClick = onIdiomsClick,
             )
         }

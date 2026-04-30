@@ -15,6 +15,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.home.HomeScreen
 import com.alialtinok.lexiup.ui.screens.library.IdiomsListScreen
 import com.alialtinok.lexiup.ui.screens.library.PhrasalVerbsListScreen
@@ -23,6 +24,7 @@ import com.alialtinok.lexiup.ui.screens.my.FavoritesScreen
 import com.alialtinok.lexiup.ui.screens.my.MyScreen
 import com.alialtinok.lexiup.ui.screens.my.MyWordsScreen
 import com.alialtinok.lexiup.ui.screens.my.UnknownWordsScreen
+import com.alialtinok.lexiup.ui.screens.settings.SettingsScreen
 import com.alialtinok.lexiup.ui.screens.practice.FillBlankScreen
 import com.alialtinok.lexiup.ui.screens.practice.IdiomQuizScreen
 import com.alialtinok.lexiup.ui.screens.practice.PhrasalVerbQuizScreen
@@ -37,12 +39,19 @@ fun MainScreen() {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
     val isTopLevel = TopLevelRoute.entries.any { it.route == currentRoute }
+    val strings = LocalAppStrings.current
 
     Scaffold(
         bottomBar = {
             if (isTopLevel) {
                 NavigationBar {
                     TopLevelRoute.entries.forEach { tab ->
+                        val tabLabel = when (tab) {
+                            TopLevelRoute.Home -> strings.tabHome
+                            TopLevelRoute.Study -> strings.tabStudy
+                            TopLevelRoute.Practice -> strings.tabPractice
+                            TopLevelRoute.My -> strings.tabMy
+                        }
                         NavigationBarItem(
                             selected = currentRoute == tab.route,
                             onClick = {
@@ -55,8 +64,8 @@ fun MainScreen() {
                                     restoreState = true
                                 }
                             },
-                            icon = { Icon(tab.icon, contentDescription = tab.label) },
-                            label = { Text(tab.label) },
+                            icon = { Icon(tab.icon, contentDescription = tabLabel) },
+                            label = { Text(tabLabel) },
                         )
                     }
                 }
@@ -95,6 +104,7 @@ fun MainScreen() {
                     onNavigateToFavorites = { navController.navigate(Routes.FAVORITES) },
                     onNavigateToUnknown = { navController.navigate(Routes.UNKNOWN) },
                     onNavigateToMyWords = { navController.navigate(Routes.MY_WORDS) },
+                    onNavigateToSettings = { navController.navigate(Routes.SETTINGS) },
                 )
             }
             composable(Routes.FAVORITES) {
@@ -129,6 +139,9 @@ fun MainScreen() {
             }
             composable(Routes.IDIOMS_LIST) {
                 IdiomsListScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.SETTINGS) {
+                SettingsScreen(onBack = { navController.popBackStack() })
             }
         }
     }

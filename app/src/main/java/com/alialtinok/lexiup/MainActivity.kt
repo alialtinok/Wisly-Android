@@ -8,6 +8,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
+import com.alialtinok.lexiup.data.model.NativeLanguage
+import com.alialtinok.lexiup.i18n.ProvideAppStrings
 import com.alialtinok.lexiup.ui.navigation.MainScreen
 import com.alialtinok.lexiup.ui.screens.onboarding.OnboardingScreen
 import com.alialtinok.lexiup.ui.theme.LexiUpTheme
@@ -30,10 +32,14 @@ private fun AppRoot() {
     val container = (context.applicationContext as LexiUpApplication).container
     val onboardingDone by container.userSettingsRepository.hasCompletedOnboarding
         .collectAsState(initial = null)
+    val nativeLanguage by container.userSettingsRepository.nativeLanguage
+        .collectAsState(initial = NativeLanguage.Default)
 
-    when (onboardingDone) {
-        null -> Unit
-        true -> MainScreen()
-        false -> OnboardingScreen()
+    ProvideAppStrings(language = nativeLanguage) {
+        when (onboardingDone) {
+            null -> Unit
+            true -> MainScreen()
+            false -> OnboardingScreen()
+        }
     }
 }
