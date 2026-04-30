@@ -36,6 +36,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.FavoriteToggleButton
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
 import com.alialtinok.lexiup.ui.screens.my.components.WordItemCard
@@ -53,6 +54,7 @@ fun WordsListScreen(onBack: () -> Unit) {
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
     val tts = container.ttsManager
+    val s = LocalAppStrings.current
     val scope = rememberCoroutineScope()
 
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
@@ -67,7 +69,7 @@ fun WordsListScreen(onBack: () -> Unit) {
     }
 
     SubScreenScaffold(
-        title = "Words",
+        title = s.contentWords,
         onBack = onBack,
         actions = {
             LevelChip(
@@ -111,8 +113,8 @@ fun WordsListScreen(onBack: () -> Unit) {
                 add(
                     LevelOption(
                         id = null,
-                        title = "All",
-                        subtitle = "${repo.allWords.size} words",
+                        title = s.levelPickerAll,
+                        subtitle = "${repo.allWords.size} ${s.countWordsLabel}",
                         color = LexiColors.Primary,
                     ),
                 )
@@ -122,7 +124,7 @@ fun WordsListScreen(onBack: () -> Unit) {
                         LevelOption(
                             id = level,
                             title = level,
-                            subtitle = "$count words",
+                            subtitle = "$count ${s.countWordsLabel}",
                             color = colorForLevel(level),
                         ),
                     )

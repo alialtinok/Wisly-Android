@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.PhrasalVerb
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
@@ -39,9 +40,10 @@ fun PhrasalVerbsListScreen(onBack: () -> Unit) {
 
     val verbs = remember { repo.allPhrasalVerbs }
     var expandedId by remember { mutableStateOf<Int?>(null) }
+    val s = LocalAppStrings.current
 
     SubScreenScaffold(
-        title = "Phrasal Verbs",
+        title = s.contentPhrasal,
         onBack = onBack,
         actions = {
             CountBadge(count = verbs.size, color = LexiColors.AccentPurple)

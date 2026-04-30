@@ -100,6 +100,11 @@ data class AppStrings(
     val myWordsFieldExample: String,
 
     val ttsSpeak: String,
+
+    val favoritesEmptyTitle: String,
+    val favoritesEmptyDesc: String,
+    val unknownEmptyTitle: String,
+    val unknownEmptyDesc: String,
 ) {
     companion object {
         val EN = AppStrings(
@@ -197,6 +202,11 @@ data class AppStrings(
             myWordsFieldExample = "Example (optional)",
 
             ttsSpeak = "Speak",
+
+            favoritesEmptyTitle = "No favorites yet",
+            favoritesEmptyDesc = "Tap the heart on any word to save it here.",
+            unknownEmptyTitle = "All caught up",
+            unknownEmptyDesc = "Words you mark as unknown during practice will appear here.",
         )
 
         val TR = AppStrings(
@@ -294,6 +304,11 @@ data class AppStrings(
             myWordsFieldExample = "Örnek (opsiyonel)",
 
             ttsSpeak = "Dinle",
+
+            favoritesEmptyTitle = "Henüz favori yok",
+            favoritesEmptyDesc = "Bir kelimeyi kaydetmek için kalp ikonuna dokun.",
+            unknownEmptyTitle = "Hepsi tamam",
+            unknownEmptyDesc = "Pratik sırasında bilmediğin kelimeler burada görünecek.",
         )
 
         fun forLanguage(language: NativeLanguage): AppStrings =

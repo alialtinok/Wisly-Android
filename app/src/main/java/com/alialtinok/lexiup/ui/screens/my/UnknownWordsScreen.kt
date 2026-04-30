@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.EmptyState
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
 import com.alialtinok.lexiup.ui.screens.my.components.TrailingButton
@@ -32,6 +33,7 @@ fun UnknownWordsScreen(onBack: () -> Unit) {
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
     val tts = container.ttsManager
+    val s = LocalAppStrings.current
 
     val unknownIds by repo.unknownIds.collectAsState(initial = emptySet())
     val scope = rememberCoroutineScope()
@@ -42,11 +44,11 @@ fun UnknownWordsScreen(onBack: () -> Unit) {
 
     var expandedId by remember { mutableStateOf<Int?>(null) }
 
-    SubScreenScaffold(title = "Unknown Words", onBack = onBack) {
+    SubScreenScaffold(title = s.myUnknown, onBack = onBack) {
         if (unknownWords.isEmpty()) {
             EmptyState(
-                title = "All caught up",
-                message = "Words you mark as unknown during practice will appear here.",
+                title = s.unknownEmptyTitle,
+                message = s.unknownEmptyDesc,
                 icon = Icons.Filled.ErrorOutline,
                 iconTint = LexiColors.B2,
             )

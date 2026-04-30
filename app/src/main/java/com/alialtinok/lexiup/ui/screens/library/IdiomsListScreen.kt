@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Idiom
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
@@ -38,9 +39,10 @@ fun IdiomsListScreen(onBack: () -> Unit) {
 
     val idioms = remember { repo.allIdioms }
     var expandedId by remember { mutableStateOf<Int?>(null) }
+    val s = LocalAppStrings.current
 
     SubScreenScaffold(
-        title = "Idioms",
+        title = s.contentIdioms,
         onBack = onBack,
         actions = {
             CountBadge(count = idioms.size, color = LexiColors.AccentAmber)

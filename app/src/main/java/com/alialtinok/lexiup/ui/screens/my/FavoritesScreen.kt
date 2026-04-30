@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.EmptyState
 import com.alialtinok.lexiup.ui.screens.my.components.FavoriteToggleButton
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
@@ -31,6 +32,7 @@ fun FavoritesScreen(onBack: () -> Unit) {
     val container = remember { (context.applicationContext as LexiUpApplication).container }
     val repo = container.wordRepository
     val tts = container.ttsManager
+    val s = LocalAppStrings.current
 
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
     val scope = rememberCoroutineScope()
@@ -41,11 +43,11 @@ fun FavoritesScreen(onBack: () -> Unit) {
 
     var expandedId by remember { mutableStateOf<Int?>(null) }
 
-    SubScreenScaffold(title = "Favorites", onBack = onBack) {
+    SubScreenScaffold(title = s.myFavorites, onBack = onBack) {
         if (favorites.isEmpty()) {
             EmptyState(
-                title = "No favorites yet",
-                message = "Tap the heart on any word to save it here.",
+                title = s.favoritesEmptyTitle,
+                message = s.favoritesEmptyDesc,
                 icon = Icons.Filled.Favorite,
                 iconTint = LexiColors.C2,
             )
