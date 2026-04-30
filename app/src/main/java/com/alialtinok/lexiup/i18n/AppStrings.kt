@@ -105,6 +105,8 @@ data class AppStrings(
     val favoritesEmptyDesc: String,
     val unknownEmptyTitle: String,
     val unknownEmptyDesc: String,
+
+    val searchWords: String,
 ) {
     companion object {
         val EN = AppStrings(
@@ -207,6 +209,8 @@ data class AppStrings(
             favoritesEmptyDesc = "Tap the heart on any word to save it here.",
             unknownEmptyTitle = "All caught up",
             unknownEmptyDesc = "Words you mark as unknown during practice will appear here.",
+
+            searchWords = "Search words...",
         )
 
         val TR = AppStrings(
@@ -309,6 +313,8 @@ data class AppStrings(
             favoritesEmptyDesc = "Bir kelimeyi kaydetmek için kalp ikonuna dokun.",
             unknownEmptyTitle = "Hepsi tamam",
             unknownEmptyDesc = "Pratik sırasında bilmediğin kelimeler burada görünecek.",
+
+            searchWords = "Kelime ara...",
         )
 
         fun forLanguage(language: NativeLanguage): AppStrings =

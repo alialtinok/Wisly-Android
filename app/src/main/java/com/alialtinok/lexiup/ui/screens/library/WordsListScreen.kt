@@ -4,21 +4,29 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -33,6 +41,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
@@ -60,12 +69,18 @@ fun WordsListScreen(onBack: () -> Unit) {
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
 
     var selectedLevel by remember { mutableStateOf<String?>(null) }
+    var searchQuery by remember { mutableStateOf("") }
     var expandedId by remember { mutableStateOf<Int?>(null) }
     var showLevelPicker by remember { mutableStateOf(false) }
 
-    val filtered = remember(selectedLevel) {
-        if (selectedLevel == null) repo.allWords
-        else repo.allWords.filter { it.level == selectedLevel }
+    val filtered = remember(selectedLevel, searchQuery) {
+        val base = if (selectedLevel == null) repo.allWords
+                   else repo.allWords.filter { it.level == selectedLevel }
+        if (searchQuery.isBlank()) base
+        else base.filter {
+            it.word.contains(searchQuery, ignoreCase = true) ||
+            it.turkish.contains(searchQuery, ignoreCase = true)
+        }
     }
 
     SubScreenScaffold(
@@ -74,30 +89,67 @@ fun WordsListScreen(onBack: () -> Unit) {
         actions = {
             LevelChip(
                 level = selectedLevel,
+                levelPickerAll = s.levelPickerAll,
                 onClick = { showLevelPicker = true },
             )
         },
     ) {
-        LazyColumn(
-            modifier = Modifier.fillMaxSize(),
-            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
-        ) {
-            items(filtered, key = { it.id }) { word ->
-                WordItemCard(
-                    word = word,
-                    isExpanded = expandedId == word.id,
-                    onToggleExpand = {
-                        expandedId = if (expandedId == word.id) null else word.id
-                    },
-                    onSpeak = { tts.speak(word.word) },
-                    trailing = {
-                        FavoriteToggleButton(
-                            isFavorite = word.id in favoriteIds,
-                            onToggle = { scope.launch { repo.toggleFavorite(word.id) } },
-                        )
-                    },
-                )
+        Column(modifier = Modifier.fillMaxSize()) {
+            OutlinedTextField(
+                value = searchQuery,
+                onValueChange = {
+                    searchQuery = it
+                    expandedId = null
+                },
+                placeholder = { Text(s.searchWords, color = LexiColors.OnSurfaceMuted.copy(alpha = 0.6f)) },
+                leadingIcon = {
+                    Icon(Icons.Filled.Search, contentDescription = null, tint = LexiColors.OnSurfaceMuted)
+                },
+                trailingIcon = {
+                    if (searchQuery.isNotEmpty()) {
+                        IconButton(onClick = { searchQuery = "" }) {
+                            Icon(Icons.Filled.Close, contentDescription = null, tint = LexiColors.OnSurfaceMuted)
+                        }
+                    }
+                },
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp),
+                keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.None),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = LexiColors.Primary,
+                    unfocusedBorderColor = LexiColors.SurfaceBorder,
+                    focusedContainerColor = LexiColors.Surface,
+                    unfocusedContainerColor = LexiColors.Surface,
+                    focusedTextColor = Color.White,
+                    unfocusedTextColor = Color.White,
+                    cursorColor = LexiColors.Primary,
+                ),
+            )
+
+            LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 4.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                items(filtered, key = { it.id }) { word ->
+                    WordItemCard(
+                        word = word,
+                        isExpanded = expandedId == word.id,
+                        onToggleExpand = {
+                            expandedId = if (expandedId == word.id) null else word.id
+                        },
+                        onSpeak = { tts.speak(word.word) },
+                        trailing = {
+                            FavoriteToggleButton(
+                                isFavorite = word.id in favoriteIds,
+                                onToggle = { scope.launch { repo.toggleFavorite(word.id) } },
+                            )
+                        },
+                    )
+                }
             }
         }
     }
@@ -143,7 +195,7 @@ fun WordsListScreen(onBack: () -> Unit) {
 }
 
 @Composable
-private fun LevelChip(level: String?, onClick: () -> Unit) {
+private fun LevelChip(level: String?, levelPickerAll: String, onClick: () -> Unit) {
     val color = if (level == null) LexiColors.OnSurfaceMuted else colorForLevel(level)
     Row(
         modifier = Modifier
@@ -161,7 +213,7 @@ private fun LevelChip(level: String?, onClick: () -> Unit) {
         )
         Spacer(Modifier.width(6.dp))
         Text(
-            text = level ?: "All",
+            text = level ?: levelPickerAll,
             fontSize = 13.sp,
             fontWeight = FontWeight.SemiBold,
             color = color,
