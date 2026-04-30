@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.PhrasalVerb
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOptionState
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizProgressBar
@@ -107,7 +108,7 @@ fun PhrasalVerbQuizScreen(onBack: () -> Unit) {
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             TopBar(
-                title = "Phrasal Verbs",
+                title = LocalAppStrings.current.practicePhrasal,
                 onBack = onBack,
                 isTRtoEN = isTRtoEN,
                 onToggle = {
@@ -138,7 +139,7 @@ fun PhrasalVerbQuizScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "Need at least 4 phrasal verbs",
+                        text = LocalAppStrings.current.quizNeedPhrasal,
                         color = LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -199,7 +200,7 @@ private fun TopBar(
         IconButton(onClick = onBack) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = LocalAppStrings.current.back,
                 tint = Color.White,
             )
         }

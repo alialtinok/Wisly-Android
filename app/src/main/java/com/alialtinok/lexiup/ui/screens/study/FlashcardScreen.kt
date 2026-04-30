@@ -54,6 +54,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Word
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.study.components.FlashcardBack
 import com.alialtinok.lexiup.ui.screens.study.components.FlashcardFinished
 import com.alialtinok.lexiup.ui.screens.study.components.FlashcardFront
@@ -153,7 +154,7 @@ fun FlashcardScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "No words for this level",
+                        text = LocalAppStrings.current.flashcardNoWords,
                         color = LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -220,14 +221,15 @@ fun FlashcardScreen(onBack: () -> Unit) {
                         .padding(horizontal = 20.dp, vertical = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
+                    val s = LocalAppStrings.current
                     ActionButton(
-                        text = "✗  Don't know",
+                        text = "✗  ${s.flashcardActionDontKnow}",
                         color = LexiColors.AccentRed,
                         onClick = { advance(known = false) },
                         modifier = Modifier.weight(1f),
                     )
                     ActionButton(
-                        text = "✓  Know it",
+                        text = "✓  ${s.flashcardActionKnow}",
                         color = LexiColors.AccentGreen,
                         onClick = { advance(known = true) },
                         modifier = Modifier.weight(1f),
@@ -235,7 +237,7 @@ fun FlashcardScreen(onBack: () -> Unit) {
                 }
 
                 Text(
-                    text = "Swipe left/right to skip",
+                    text = LocalAppStrings.current.flashcardSwipeHint,
                     fontSize = 11.sp,
                     color = LexiColors.OnSurfaceMuted.copy(alpha = 0.7f),
                     modifier = Modifier
@@ -254,12 +256,13 @@ fun FlashcardScreen(onBack: () -> Unit) {
             sheetState = sheetState,
             containerColor = LexiColors.Background,
         ) {
+            val s = LocalAppStrings.current
             val options = buildList {
                 add(
                     LevelOption(
                         id = null,
-                        title = "All",
-                        subtitle = "${repo.allWords.size} words",
+                        title = s.levelPickerAll,
+                        subtitle = "${repo.allWords.size} ${s.countWordsLabel}",
                         color = LexiColors.Primary,
                     ),
                 )
@@ -269,7 +272,7 @@ fun FlashcardScreen(onBack: () -> Unit) {
                         LevelOption(
                             id = level,
                             title = level,
-                            subtitle = "$count words",
+                            subtitle = "$count ${s.countWordsLabel}",
                             color = colorForLevel(level),
                         ),
                     )
@@ -296,6 +299,7 @@ private fun FlashcardTopBar(
     selectedLevel: String?,
     onOpenLevelPicker: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -307,19 +311,19 @@ private fun FlashcardTopBar(
         IconButton(onClick = onBack) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = s.back,
                 tint = Color.White,
             )
         }
         IconButton(onClick = onToggleShuffle) {
             Icon(
                 imageVector = Icons.Filled.Shuffle,
-                contentDescription = "Shuffle",
+                contentDescription = s.flashcardShuffle,
                 tint = if (isShuffled) LexiColors.AccentGreen else LexiColors.OnSurfaceMuted,
             )
         }
         Text(
-            text = "Flashcards",
+            text = s.flashcardTitle,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
@@ -335,13 +339,13 @@ private fun FlashcardTopBar(
         ) {
             Icon(
                 imageVector = Icons.Filled.FilterList,
-                contentDescription = "Filter",
+                contentDescription = s.filterAction,
                 tint = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),
                 modifier = Modifier.size(20.dp),
             )
             Spacer(Modifier.width(6.dp))
             Text(
-                text = selectedLevel ?: "All",
+                text = selectedLevel ?: s.levelPickerAll,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),

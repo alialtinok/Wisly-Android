@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 data class LevelOption(
@@ -48,15 +49,16 @@ fun LevelPickerContent(
             .navigationBarsPadding(),
         verticalArrangement = Arrangement.spacedBy(10.dp),
     ) {
+        val s = LocalAppStrings.current
         Text(
-            text = "Choose Level",
+            text = s.levelPickerTitle,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
             modifier = Modifier.padding(vertical = 4.dp),
         )
         Text(
-            text = "Practice words at a specific CEFR level",
+            text = s.levelPickerDesc,
             fontSize = 13.sp,
             color = LexiColors.OnSurfaceMuted,
             modifier = Modifier.padding(bottom = 6.dp),

@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Idiom
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOptionState
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizProgressBar
@@ -107,7 +108,7 @@ fun IdiomQuizScreen(onBack: () -> Unit) {
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             TopBar(
-                title = "Idioms",
+                title = LocalAppStrings.current.practiceIdioms,
                 onBack = onBack,
                 isTRtoEN = isTRtoEN,
                 onToggle = {
@@ -138,7 +139,7 @@ fun IdiomQuizScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "Need at least 4 idioms",
+                        text = LocalAppStrings.current.quizNeedIdioms,
                         color = LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -199,7 +200,7 @@ private fun TopBar(
         IconButton(onClick = onBack) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = LocalAppStrings.current.back,
                 tint = Color.White,
             )
         }

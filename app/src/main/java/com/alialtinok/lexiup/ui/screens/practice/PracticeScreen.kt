@@ -31,6 +31,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -39,6 +40,7 @@ fun PracticeScreen(
     onNavigateToPhrasalQuiz: () -> Unit,
     onNavigateToIdiomQuiz: () -> Unit,
 ) {
+    val strings = LocalAppStrings.current
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -51,7 +53,7 @@ fun PracticeScreen(
         ) {
             item {
                 Text(
-                    text = "Practice",
+                    text = strings.practiceTitle,
                     fontSize = 38.sp,
                     fontWeight = FontWeight.ExtraBold,
                     color = Color.White,
@@ -62,8 +64,8 @@ fun PracticeScreen(
             }
             item {
                 PracticeCard(
-                    title = "Fill in the Blank",
-                    subtitle = "Complete the sentence",
+                    title = strings.practiceFillBlank,
+                    subtitle = strings.practiceFillBlankDesc,
                     icon = Icons.Filled.EditNote,
                     gradient = listOf(Color(0xFF1A3A6B), Color(0xFF0F2244)),
                     accent = LexiColors.Primary,
@@ -73,8 +75,8 @@ fun PracticeScreen(
             }
             item {
                 PracticeCard(
-                    title = "Phrasal Verbs",
-                    subtitle = "Multiple choice",
+                    title = strings.practicePhrasal,
+                    subtitle = strings.practicePhrasalDesc,
                     icon = Icons.Filled.Style,
                     gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
                     accent = LexiColors.AccentPurple,
@@ -84,8 +86,8 @@ fun PracticeScreen(
             }
             item {
                 PracticeCard(
-                    title = "Idioms",
-                    subtitle = "Test your idioms",
+                    title = strings.practiceIdioms,
+                    subtitle = strings.practiceIdiomsDesc,
                     icon = Icons.Filled.FormatQuote,
                     gradient = listOf(Color(0xFF5A3600), Color(0xFF3A2200)),
                     accent = LexiColors.AccentAmber,

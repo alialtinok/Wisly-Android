@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.CustomWord
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.EmptyState
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
 import com.alialtinok.lexiup.ui.theme.LexiColors
@@ -69,15 +70,16 @@ fun MyWordsScreen(onBack: () -> Unit) {
     val scope = rememberCoroutineScope()
 
     var showAddSheet by remember { mutableStateOf(false) }
+    val strings = LocalAppStrings.current
 
     SubScreenScaffold(
-        title = "My Words",
+        title = strings.myWordsScreenTitle,
         onBack = onBack,
         actions = {
             IconButton(onClick = { showAddSheet = true }) {
                 Icon(
                     imageVector = Icons.Filled.Add,
-                    contentDescription = "Add",
+                    contentDescription = strings.myWordsAdd,
                     tint = LexiColors.AccentGreen,
                 )
             }
@@ -85,8 +87,8 @@ fun MyWordsScreen(onBack: () -> Unit) {
     ) {
         if (myWords.isEmpty()) {
             EmptyState(
-                title = "No words yet",
-                message = "Tap the + button to add your first word.",
+                title = strings.myWordsEmptyTitle,
+                message = strings.myWordsEmptyDesc,
                 icon = Icons.Filled.NoteAdd,
                 iconTint = LexiColors.AccentGreen,
             )
@@ -180,7 +182,7 @@ private fun MyWordRow(word: CustomWord, onDelete: () -> Unit) {
         IconButton(onClick = onDelete) {
             Icon(
                 imageVector = Icons.Filled.Delete,
-                contentDescription = "Delete",
+                contentDescription = LocalAppStrings.current.myWordsDelete,
                 tint = LexiColors.AccentRed,
             )
         }
@@ -197,6 +199,7 @@ private fun AddWordForm(
     var exampleText by remember { mutableStateOf("") }
 
     val canSave = wordText.trim().isNotEmpty() && translationText.trim().isNotEmpty()
+    val s = LocalAppStrings.current
 
     Column(
         modifier = Modifier
@@ -207,32 +210,32 @@ private fun AddWordForm(
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         Text(
-            text = "Add Word",
+            text = s.myWordsAddDialogTitle,
             fontSize = 22.sp,
             fontWeight = FontWeight.Black,
             color = Color.White,
         )
 
-        FieldLabel("English")
+        FieldLabel(s.myWordsFieldEnglish)
         AppTextField(
             value = wordText,
             onValueChange = { wordText = it },
-            placeholder = "e.g. serendipity",
+            placeholder = s.myWordsEnglishPlaceholder,
         )
 
-        FieldLabel("Translation")
+        FieldLabel(s.myWordsFieldTranslation)
         AppTextField(
             value = translationText,
             onValueChange = { translationText = it },
-            placeholder = "translation in your language",
+            placeholder = s.myWordsTranslationPlaceholder,
             capitalization = KeyboardCapitalization.Sentences,
         )
 
-        FieldLabel("Example (optional)")
+        FieldLabel(s.myWordsFieldExample)
         AppTextField(
             value = exampleText,
             onValueChange = { exampleText = it },
-            placeholder = "Example sentence",
+            placeholder = s.myWordsExamplePlaceholder,
             capitalization = KeyboardCapitalization.Sentences,
         )
 
@@ -253,7 +256,7 @@ private fun AddWordForm(
             ),
         ) {
             Text(
-                text = "Add",
+                text = s.myWordsAdd,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
             )

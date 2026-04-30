@@ -31,6 +31,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.data.model.Word
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -55,7 +56,7 @@ fun FlashcardFront(
                 IconButton(onClick = onToggleFavorite) {
                     Icon(
                         imageVector = if (isFavorite) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
-                        contentDescription = "Favorite",
+                        contentDescription = LocalAppStrings.current.flashcardFavoriteCD,
                         tint = if (isFavorite) LexiColors.C2 else LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -108,7 +109,7 @@ fun FlashcardFront(
                 )
                 Spacer(Modifier.width(6.dp))
                 Text(
-                    text = "Tap for translation",
+                    text = LocalAppStrings.current.flashcardTapForTranslation,
                     fontSize = 12.sp,
                     color = LexiColors.OnSurfaceMuted,
                 )

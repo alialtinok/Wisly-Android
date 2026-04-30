@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -30,6 +31,7 @@ fun FlashcardFinished(
     onRestart: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -40,14 +42,14 @@ fun FlashcardFinished(
         Text(text = "🎉", fontSize = 64.sp)
         Spacer(Modifier.height(20.dp))
         Text(
-            text = "Congratulations!",
+            text = s.flashcardCongrats,
             fontSize = 30.sp,
             fontWeight = FontWeight.Black,
             color = Color.White,
         )
         Spacer(Modifier.height(8.dp))
         Text(
-            text = "Session done.",
+            text = s.flashcardSessionDone,
             fontSize = 14.sp,
             color = LexiColors.OnSurfaceMuted,
         )
@@ -58,13 +60,13 @@ fun FlashcardFinished(
         ) {
             StatBox(
                 number = known,
-                label = "Knew it",
+                label = s.flashcardKnewIt,
                 color = LexiColors.AccentGreen,
                 modifier = Modifier.weight(1f),
             )
             StatBox(
                 number = unknown,
-                label = "Didn't know",
+                label = s.flashcardDidntKnow,
                 color = LexiColors.AccentRed,
                 modifier = Modifier.weight(1f),
             )
@@ -77,7 +79,7 @@ fun FlashcardFinished(
                 .padding(horizontal = 40.dp, vertical = 16.dp),
         ) {
             Text(
-                text = "Restart",
+                text = s.quizRestart,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White,

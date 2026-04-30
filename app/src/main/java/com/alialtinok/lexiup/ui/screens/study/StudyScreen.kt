@@ -30,6 +30,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
@@ -37,6 +38,7 @@ fun StudyScreen(
     onNavigateToFlashcards: () -> Unit,
     onNavigateToQuiz: () -> Unit,
 ) {
+    val strings = LocalAppStrings.current
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -49,7 +51,7 @@ fun StudyScreen(
         ) {
             item {
                 Text(
-                    text = "Study",
+                    text = strings.studyTitle,
                     fontSize = 38.sp,
                     fontWeight = FontWeight.ExtraBold,
                     color = Color.White,
@@ -60,8 +62,8 @@ fun StudyScreen(
             }
             item {
                 StudyCard(
-                    title = "Flashcards",
-                    subtitle = "Swipe to learn",
+                    title = strings.studyFlashcards,
+                    subtitle = strings.studyFlashcardsDesc,
                     icon = Icons.Filled.Style,
                     gradient = listOf(Color(0xFF1A3A6B), Color(0xFF0F2244)),
                     accent = LexiColors.Primary,
@@ -71,8 +73,8 @@ fun StudyScreen(
             }
             item {
                 StudyCard(
-                    title = "Quiz",
-                    subtitle = "Test your vocabulary",
+                    title = strings.studyQuiz,
+                    subtitle = strings.studyQuizDesc,
                     icon = Icons.Filled.Quiz,
                     gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
                     accent = LexiColors.AccentPurple,

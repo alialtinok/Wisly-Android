@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Word
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOptionState
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizProgressBar
@@ -124,7 +125,7 @@ fun FillBlankScreen(onBack: () -> Unit) {
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             TopBar(
-                title = "Fill in the Blank",
+                title = LocalAppStrings.current.fillBlankTitle,
                 onBack = onBack,
                 selectedLevel = selectedLevel,
                 onOpenLevelPicker = { showLevelPicker = true },
@@ -152,7 +153,7 @@ fun FillBlankScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "Need at least 4 words with examples",
+                        text = LocalAppStrings.current.fillBlankNeed,
                         color = LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -201,12 +202,13 @@ fun FillBlankScreen(onBack: () -> Unit) {
             sheetState = sheetState,
             containerColor = LexiColors.Background,
         ) {
+            val s = LocalAppStrings.current
             val options = buildList {
                 add(
                     LevelOption(
                         id = null,
-                        title = "All",
-                        subtitle = "${repo.allWords.size} words",
+                        title = s.levelPickerAll,
+                        subtitle = "${repo.allWords.size} ${s.countWordsLabel}",
                         color = LexiColors.Primary,
                     ),
                 )
@@ -216,7 +218,7 @@ fun FillBlankScreen(onBack: () -> Unit) {
                         LevelOption(
                             id = level,
                             title = level,
-                            subtitle = "$count words",
+                            subtitle = "$count ${s.countWordsLabel}",
                             color = colorForLevel(level),
                         ),
                     )
@@ -242,6 +244,7 @@ private fun TopBar(
     selectedLevel: String?,
     onOpenLevelPicker: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -253,7 +256,7 @@ private fun TopBar(
         IconButton(onClick = onBack) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = s.back,
                 tint = Color.White,
             )
         }
@@ -274,13 +277,13 @@ private fun TopBar(
         ) {
             Icon(
                 imageVector = Icons.Filled.FilterList,
-                contentDescription = "Filter",
+                contentDescription = s.filterAction,
                 tint = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),
                 modifier = Modifier.size(20.dp),
             )
             Spacer(Modifier.width(6.dp))
             Text(
-                text = selectedLevel ?: "All",
+                text = selectedLevel ?: s.levelPickerAll,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),
@@ -304,7 +307,7 @@ private fun SentenceCard(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         Text(
-            text = "FILL IN THE BLANK",
+            text = LocalAppStrings.current.fillBlankHeading,
             fontSize = 11.sp,
             fontWeight = FontWeight.SemiBold,
             color = LexiColors.OnSurfaceMuted,

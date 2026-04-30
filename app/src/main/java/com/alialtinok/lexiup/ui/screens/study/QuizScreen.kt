@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alialtinok.lexiup.LexiUpApplication
 import com.alialtinok.lexiup.data.model.Word
+import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.study.components.LevelOption
 import com.alialtinok.lexiup.ui.screens.study.components.LevelPickerContent
 import com.alialtinok.lexiup.ui.theme.LexiColors
@@ -166,7 +167,7 @@ fun QuizScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "Need at least 4 words",
+                        text = LocalAppStrings.current.quizNeedWords,
                         color = LexiColors.OnSurfaceMuted,
                     )
                 }
@@ -223,12 +224,13 @@ fun QuizScreen(onBack: () -> Unit) {
             sheetState = sheetState,
             containerColor = LexiColors.Background,
         ) {
+            val s = LocalAppStrings.current
             val options = buildList {
                 add(
                     LevelOption(
                         id = null,
-                        title = "All",
-                        subtitle = "${repo.allWords.size} words",
+                        title = s.levelPickerAll,
+                        subtitle = "${repo.allWords.size} ${s.countWordsLabel}",
                         color = LexiColors.Primary,
                     ),
                 )
@@ -238,7 +240,7 @@ fun QuizScreen(onBack: () -> Unit) {
                         LevelOption(
                             id = level,
                             title = level,
-                            subtitle = "$count words",
+                            subtitle = "$count ${s.countWordsLabel}",
                             color = colorForLevel(level),
                         ),
                     )
@@ -286,6 +288,7 @@ private fun QuizTopBar(
     selectedLevel: String?,
     onOpenLevelPicker: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -297,7 +300,7 @@ private fun QuizTopBar(
         IconButton(onClick = onBack) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = s.back,
                 tint = Color.White,
             )
         }
@@ -323,7 +326,7 @@ private fun QuizTopBar(
             )
         }
         Text(
-            text = "Quiz",
+            text = s.quizTitle,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
@@ -339,13 +342,13 @@ private fun QuizTopBar(
         ) {
             Icon(
                 imageVector = Icons.Filled.FilterList,
-                contentDescription = "Filter",
+                contentDescription = s.filterAction,
                 tint = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),
                 modifier = Modifier.size(20.dp),
             )
             Spacer(Modifier.width(6.dp))
             Text(
-                text = selectedLevel ?: "All",
+                text = selectedLevel ?: s.levelPickerAll,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = if (selectedLevel == null) LexiColors.OnSurfaceMuted else colorForLevel(selectedLevel),
@@ -530,6 +533,7 @@ private fun QuizReviewContent(
     isTRtoEN: Boolean,
     onRestart: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -537,13 +541,13 @@ private fun QuizReviewContent(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         Text(
-            text = "Review",
+            text = s.quizReview,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
         )
         Text(
-            text = "${wrongWords.size} words to review",
+            text = "${wrongWords.size} ${s.countWordsLabel} ${s.quizReviewSuffix}",
             fontSize = 13.sp,
             color = LexiColors.OnSurfaceMuted,
             modifier = Modifier.padding(bottom = 4.dp),
@@ -567,7 +571,7 @@ private fun QuizReviewContent(
             contentAlignment = Alignment.Center,
         ) {
             Text(
-                text = "Restart",
+                text = s.quizRestart,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
