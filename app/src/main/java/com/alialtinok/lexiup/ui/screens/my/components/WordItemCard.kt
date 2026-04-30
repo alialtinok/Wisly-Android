@@ -15,6 +15,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -84,6 +86,12 @@ fun WordItemCard(
                 )
             }
             Box(modifier = Modifier.padding(start = 2.dp)) { trailing() }
+            Icon(
+                imageVector = if (isExpanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
+                contentDescription = null,
+                tint = LexiColors.OnSurfaceMuted,
+                modifier = Modifier.size(20.dp),
+            )
         }
 
         Text(

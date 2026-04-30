@@ -107,6 +107,7 @@ data class AppStrings(
     val unknownEmptyDesc: String,
 
     val searchWords: String,
+    val wordsShowing: String,
 ) {
     companion object {
         val EN = AppStrings(
@@ -211,6 +212,7 @@ data class AppStrings(
             unknownEmptyDesc = "Words you mark as unknown during practice will appear here.",
 
             searchWords = "Search words...",
+            wordsShowing = "words",
         )
 
         val TR = AppStrings(
@@ -315,6 +317,7 @@ data class AppStrings(
             unknownEmptyDesc = "Pratik sırasında bilmediğin kelimeler burada görünecek.",
 
             searchWords = "Kelime ara...",
+            wordsShowing = "kelime gösteriliyor",
         )
 
         fun forLanguage(language: NativeLanguage): AppStrings =
