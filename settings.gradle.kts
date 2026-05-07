@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LexiUp"
+rootProject.name = "Wisly"
 include(":app")
