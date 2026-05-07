@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -33,13 +34,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.rememberModalBottomSheetState
 import com.alialtinok.lexiup.WislyApplication
 import com.alialtinok.lexiup.data.model.Idiom
 import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOptionState
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizProgressBar
+import com.alialtinok.lexiup.ui.screens.practice.components.QuizReviewSheet
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizScoreRow
+import com.alialtinok.lexiup.ui.screens.practice.components.ReviewItem
 import com.alialtinok.lexiup.ui.theme.LexiColors
 import kotlinx.coroutines.delay
 
@@ -52,6 +58,7 @@ private data class IdiomQuestion(
     val options: List<String>,
 )
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun IdiomQuizScreen(onBack: () -> Unit) {
     val context = LocalContext.current
@@ -68,6 +75,8 @@ fun IdiomQuizScreen(onBack: () -> Unit) {
     var correct by remember(sessionKey) { mutableIntStateOf(0) }
     var wrong by remember(sessionKey) { mutableIntStateOf(0) }
     var qNumber by remember(sessionKey) { mutableIntStateOf(0) }
+    val wrongIdioms = remember(sessionKey) { mutableStateListOf<Idiom>() }
+    var showReview by remember(sessionKey) { mutableStateOf(false) }
 
     fun nextQuestion() {
         if (pool.size < 4) {
@@ -97,8 +106,11 @@ fun IdiomQuizScreen(onBack: () -> Unit) {
     LaunchedEffect(selected) {
         val s = selected ?: return@LaunchedEffect
         delay(900)
-        if (qNumber >= SessionSize) resetSession()
-        else nextQuestion()
+        if (qNumber >= SessionSize) {
+            if (wrongIdioms.isNotEmpty()) showReview = true else resetSession()
+        } else {
+            nextQuestion()
+        }
     }
 
     Box(
@@ -171,13 +183,39 @@ fun IdiomQuizScreen(onBack: () -> Unit) {
                             onClick = {
                                 if (selected != null) return@QuizOption
                                 selected = option
-                                if (option == q.correct) correct++ else wrong++
+                                if (option == q.correct) {
+                                    correct++
+                                } else {
+                                    wrong++
+                                    if (wrongIdioms.none { it.id == q.idiom.id }) wrongIdioms.add(q.idiom)
+                                }
                                 qNumber++
                             },
                         )
                     }
                 }
             }
+        }
+    }
+
+    if (showReview) {
+        val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            onDismissRequest = { showReview = false; resetSession() },
+            sheetState = sheetState,
+            containerColor = LexiColors.Background,
+        ) {
+            QuizReviewSheet(
+                items = wrongIdioms.map { i ->
+                    ReviewItem(
+                        front = if (isTRtoEN) i.turkish else i.idiom,
+                        back = if (isTRtoEN) i.idiom else i.turkish,
+                        example = i.example,
+                    )
+                },
+                accentColor = LexiColors.AccentAmber,
+                onRestart = { showReview = false; resetSession() },
+            )
         }
     }
 }

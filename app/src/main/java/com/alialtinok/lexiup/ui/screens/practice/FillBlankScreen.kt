@@ -28,6 +28,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -47,6 +48,8 @@ import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOptionState
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizProgressBar
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizScoreRow
+import com.alialtinok.lexiup.ui.screens.practice.components.QuizReviewSheet
+import com.alialtinok.lexiup.ui.screens.practice.components.ReviewItem
 import com.alialtinok.lexiup.ui.screens.study.components.LevelOption
 import com.alialtinok.lexiup.ui.screens.study.components.LevelPickerContent
 import com.alialtinok.lexiup.ui.theme.LexiColors
@@ -85,6 +88,8 @@ fun FillBlankScreen(onBack: () -> Unit) {
     var correct by remember(sessionKey) { mutableIntStateOf(0) }
     var wrong by remember(sessionKey) { mutableIntStateOf(0) }
     var qNumber by remember(sessionKey) { mutableIntStateOf(0) }
+    val wrongWords = remember(sessionKey) { mutableStateListOf<Word>() }
+    var showReview by remember(sessionKey) { mutableStateOf(false) }
 
     fun nextQuestion() {
         if (pool.size < 4) {
@@ -114,8 +119,11 @@ fun FillBlankScreen(onBack: () -> Unit) {
     LaunchedEffect(selected) {
         val s = selected ?: return@LaunchedEffect
         delay(900)
-        if (qNumber >= SessionSize) resetSession()
-        else nextQuestion()
+        if (qNumber >= SessionSize) {
+            if (wrongWords.isNotEmpty()) showReview = true else resetSession()
+        } else {
+            nextQuestion()
+        }
     }
 
     Box(
@@ -185,13 +193,33 @@ fun FillBlankScreen(onBack: () -> Unit) {
                             onClick = {
                                 if (selected != null) return@QuizOption
                                 selected = option
-                                if (option == q.correct) correct++ else wrong++
+                                if (option == q.correct) {
+                                    correct++
+                                } else {
+                                    wrong++
+                                    if (wrongWords.none { it.id == q.word.id }) wrongWords.add(q.word)
+                                }
                                 qNumber++
                             },
                         )
                     }
                 }
             }
+        }
+    }
+
+    if (showReview) {
+        val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            onDismissRequest = { showReview = false; resetSession() },
+            sheetState = sheetState,
+            containerColor = LexiColors.Background,
+        ) {
+            QuizReviewSheet(
+                items = wrongWords.map { w -> ReviewItem(front = w.turkish, back = w.word, example = w.example) },
+                accentColor = LexiColors.AccentGreen,
+                onRestart = { showReview = false; resetSession() },
+            )
         }
     }
 
