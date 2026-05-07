@@ -13,8 +13,9 @@ class UserSettingsRepository(context: Context) {
 
     private val ds = context.userPreferences
 
-    val nativeLanguage: Flow<NativeLanguage> = ds.data.map { prefs ->
-        NativeLanguage.find(prefs[Keys.nativeLanguage].orEmpty())
+    val nativeLanguage: Flow<NativeLanguage?> = ds.data.map { prefs ->
+        val id = prefs[Keys.nativeLanguage]
+        if (id.isNullOrEmpty()) null else NativeLanguage.find(id)
     }
 
     val hasCompletedOnboarding: Flow<Boolean> =

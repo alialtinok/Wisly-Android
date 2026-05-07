@@ -45,7 +45,7 @@ fun SettingsScreen(onBack: () -> Unit) {
     val scope = rememberCoroutineScope()
     val strings = LocalAppStrings.current
 
-    val current by settingsRepo.nativeLanguage.collectAsState(initial = NativeLanguage.Default)
+    val current by settingsRepo.nativeLanguage.collectAsState(initial = null)
 
     SubScreenScaffold(title = strings.settingsTitle, onBack = onBack) {
         LazyColumn(
@@ -65,7 +65,7 @@ fun SettingsScreen(onBack: () -> Unit) {
             items(NativeLanguage.all, key = { it.id }) { language ->
                 LanguageRow(
                     language = language,
-                    isSelected = language.id == current.id,
+                    isSelected = language.id == current?.id,
                     onClick = {
                         scope.launch { settingsRepo.setNativeLanguage(language) }
                     },

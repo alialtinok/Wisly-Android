@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
-import com.alialtinok.lexiup.data.model.NativeLanguage
 import com.alialtinok.lexiup.i18n.ProvideAppStrings
 import com.alialtinok.lexiup.ui.navigation.MainScreen
 import com.alialtinok.lexiup.ui.screens.onboarding.OnboardingScreen
@@ -33,7 +32,7 @@ private fun AppRoot() {
     val onboardingDone by container.userSettingsRepository.hasCompletedOnboarding
         .collectAsState(initial = null)
     val nativeLanguage by container.userSettingsRepository.nativeLanguage
-        .collectAsState(initial = NativeLanguage.Default)
+        .collectAsState(initial = null)
 
     ProvideAppStrings(language = nativeLanguage) {
         when (onboardingDone) {

@@ -34,7 +34,7 @@ import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
 fun LanguagePage(
-    selected: NativeLanguage,
+    selected: NativeLanguage?,
     onSelect: (NativeLanguage) -> Unit,
 ) {
     Column(
@@ -73,7 +73,7 @@ fun LanguagePage(
             items(NativeLanguage.all) { language ->
                 LanguageCard(
                     language = language,
-                    isSelected = language.id == selected.id,
+                    isSelected = language.id == selected?.id,
                     onClick = { onSelect(language) },
                 )
             }

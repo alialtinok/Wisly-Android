@@ -320,15 +320,15 @@ data class AppStrings(
             wordsShowing = "kelime gösteriliyor",
         )
 
-        fun forLanguage(language: NativeLanguage): AppStrings =
-            if (language.id == "tr") TR else EN
+        fun forLanguage(language: NativeLanguage?): AppStrings =
+            if (language?.id == "tr") TR else EN
     }
 }
 
 val LocalAppStrings = staticCompositionLocalOf { AppStrings.EN }
 
 @Composable
-fun ProvideAppStrings(language: NativeLanguage, content: @Composable () -> Unit) {
+fun ProvideAppStrings(language: NativeLanguage?, content: @Composable () -> Unit) {
     val strings = AppStrings.forLanguage(language)
     CompositionLocalProvider(LocalAppStrings provides strings, content = content)
 }

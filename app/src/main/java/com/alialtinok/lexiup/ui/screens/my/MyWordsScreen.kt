@@ -64,9 +64,7 @@ fun MyWordsScreen(onBack: () -> Unit) {
     val settings = container.userSettingsRepository
 
     val myWords by repo.myWords.collectAsState(initial = emptyList())
-    val nativeLanguage by settings.nativeLanguage.collectAsState(
-        initial = com.alialtinok.lexiup.data.model.NativeLanguage.Default,
-    )
+    val nativeLanguage by settings.nativeLanguage.collectAsState(initial = null)
     val scope = rememberCoroutineScope()
 
     var showAddSheet by remember { mutableStateOf(false) }
@@ -122,7 +120,7 @@ fun MyWordsScreen(onBack: () -> Unit) {
                             CustomWord(
                                 word = wordText.trim(),
                                 translation = translation.trim(),
-                                languageID = nativeLanguage.id,
+                                languageID = nativeLanguage?.id.orEmpty(),
                                 example = example.trim(),
                             ),
                         )

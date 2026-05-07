@@ -14,10 +14,10 @@ class OnboardingViewModel(
     private val settings: UserSettingsRepository,
 ) : ViewModel() {
 
-    val selectedLanguage: StateFlow<NativeLanguage> = settings.nativeLanguage.stateIn(
+    val selectedLanguage: StateFlow<NativeLanguage?> = settings.nativeLanguage.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5_000),
-        initialValue = NativeLanguage.Default,
+        initialValue = null,
     )
 
     fun selectLanguage(language: NativeLanguage) {
