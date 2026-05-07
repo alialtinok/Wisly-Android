@@ -19,6 +19,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.EditNote
 import androidx.compose.material.icons.filled.FormatQuote
+import androidx.compose.material.icons.filled.Quiz
 import androidx.compose.material.icons.filled.Style
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -36,6 +37,7 @@ import com.alialtinok.lexiup.ui.theme.LexiColors
 
 @Composable
 fun PracticeScreen(
+    onNavigateToQuiz: () -> Unit,
     onNavigateToFillBlank: () -> Unit,
     onNavigateToPhrasalQuiz: () -> Unit,
     onNavigateToIdiomQuiz: () -> Unit,
@@ -60,6 +62,17 @@ fun PracticeScreen(
                     modifier = Modifier
                         .statusBarsPadding()
                         .padding(horizontal = 20.dp, vertical = 8.dp),
+                )
+            }
+            item {
+                PracticeCard(
+                    title = strings.studyQuiz,
+                    subtitle = strings.studyQuizDesc,
+                    icon = Icons.Filled.Quiz,
+                    gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
+                    accent = LexiColors.AccentPurple,
+                    onClick = onNavigateToQuiz,
+                    modifier = Modifier.padding(horizontal = 20.dp),
                 )
             }
             item {

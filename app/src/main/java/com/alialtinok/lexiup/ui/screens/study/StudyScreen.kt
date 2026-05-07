@@ -17,7 +17,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.Quiz
+import androidx.compose.material.icons.filled.FormatQuote
 import androidx.compose.material.icons.filled.Style
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -36,7 +36,8 @@ import com.alialtinok.lexiup.ui.theme.LexiColors
 @Composable
 fun StudyScreen(
     onNavigateToFlashcards: () -> Unit,
-    onNavigateToQuiz: () -> Unit,
+    onNavigateToPhrasalFlashcards: () -> Unit,
+    onNavigateToIdiomFlashcards: () -> Unit,
 ) {
     val strings = LocalAppStrings.current
     Box(
@@ -73,12 +74,23 @@ fun StudyScreen(
             }
             item {
                 StudyCard(
-                    title = strings.studyQuiz,
-                    subtitle = strings.studyQuizDesc,
-                    icon = Icons.Filled.Quiz,
+                    title = strings.contentPhrasal,
+                    subtitle = strings.studyFlashcardsDesc,
+                    icon = Icons.Filled.Style,
                     gradient = listOf(Color(0xFF3A1A6B), Color(0xFF220F44)),
                     accent = LexiColors.AccentPurple,
-                    onClick = onNavigateToQuiz,
+                    onClick = onNavigateToPhrasalFlashcards,
+                    modifier = Modifier.padding(horizontal = 20.dp),
+                )
+            }
+            item {
+                StudyCard(
+                    title = strings.contentIdioms,
+                    subtitle = strings.studyFlashcardsDesc,
+                    icon = Icons.Filled.FormatQuote,
+                    gradient = listOf(Color(0xFF5A3600), Color(0xFF3A2200)),
+                    accent = LexiColors.AccentAmber,
+                    onClick = onNavigateToIdiomFlashcards,
                     modifier = Modifier.padding(horizontal = 20.dp),
                 )
             }
@@ -95,17 +107,13 @@ private fun StudyCard(
     accent: Color,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    enabled: Boolean = true,
 ) {
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .background(
-                brush = Brush.linearGradient(gradient),
-                shape = RoundedCornerShape(20.dp),
-            )
-            .border(1.dp, accent.copy(alpha = if (enabled) 0.25f else 0.10f), RoundedCornerShape(20.dp))
-            .let { if (enabled) it.clickable(onClick = onClick) else it }
+            .background(brush = Brush.linearGradient(gradient), shape = RoundedCornerShape(20.dp))
+            .border(1.dp, accent.copy(alpha = 0.25f), RoundedCornerShape(20.dp))
+            .clickable(onClick = onClick)
             .padding(20.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(16.dp),
@@ -113,16 +121,13 @@ private fun StudyCard(
         Box(
             modifier = Modifier
                 .size(56.dp)
-                .background(
-                    accent.copy(alpha = if (enabled) 0.20f else 0.10f),
-                    RoundedCornerShape(14.dp),
-                ),
+                .background(accent.copy(alpha = 0.20f), RoundedCornerShape(14.dp)),
             contentAlignment = Alignment.Center,
         ) {
             Icon(
                 imageVector = icon,
                 contentDescription = null,
-                tint = if (enabled) accent else accent.copy(alpha = 0.5f),
+                tint = accent,
                 modifier = Modifier.size(26.dp),
             )
         }
@@ -130,25 +135,14 @@ private fun StudyCard(
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            Text(
-                text = title,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold,
-                color = if (enabled) Color.White else Color.White.copy(alpha = 0.5f),
-            )
-            Text(
-                text = subtitle,
-                fontSize = 12.sp,
-                color = if (enabled) accent else accent.copy(alpha = 0.5f),
-            )
+            Text(text = title, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = Color.White)
+            Text(text = subtitle, fontSize = 12.sp, color = accent)
         }
-        if (enabled) {
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                contentDescription = null,
-                tint = Color.White.copy(alpha = 0.30f),
-                modifier = Modifier.size(22.dp),
-            )
-        }
+        Icon(
+            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            contentDescription = null,
+            tint = Color.White.copy(alpha = 0.30f),
+            modifier = Modifier.size(22.dp),
+        )
     }
 }

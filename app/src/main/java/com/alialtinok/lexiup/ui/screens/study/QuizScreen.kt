@@ -155,7 +155,7 @@ fun QuizScreen(onBack: () -> Unit) {
                 modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp),
             )
 
-            ProgressBar(
+            QuizProgressBar(
                 progress = qNumber / SessionSize.toFloat(),
                 modifier = Modifier.padding(horizontal = 20.dp, vertical = 12.dp),
             )
@@ -420,7 +420,7 @@ private fun ScoreRow(
 }
 
 @Composable
-private fun ProgressBar(progress: Float, modifier: Modifier = Modifier) {
+private fun QuizProgressBar(progress: Float, modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()

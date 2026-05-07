@@ -30,6 +30,8 @@ import com.alialtinok.lexiup.ui.screens.practice.IdiomQuizScreen
 import com.alialtinok.lexiup.ui.screens.practice.PhrasalVerbQuizScreen
 import com.alialtinok.lexiup.ui.screens.practice.PracticeScreen
 import com.alialtinok.lexiup.ui.screens.study.FlashcardScreen
+import com.alialtinok.lexiup.ui.screens.study.IdiomFlashcardScreen
+import com.alialtinok.lexiup.ui.screens.study.PhrasalFlashcardScreen
 import com.alialtinok.lexiup.ui.screens.study.QuizScreen
 import com.alialtinok.lexiup.ui.screens.study.StudyScreen
 
@@ -89,11 +91,13 @@ fun MainScreen() {
             composable(TopLevelRoute.Study.route) {
                 StudyScreen(
                     onNavigateToFlashcards = { navController.navigate(Routes.FLASHCARDS) },
-                    onNavigateToQuiz = { navController.navigate(Routes.QUIZ) },
+                    onNavigateToPhrasalFlashcards = { navController.navigate(Routes.PHRASAL_FLASHCARDS) },
+                    onNavigateToIdiomFlashcards = { navController.navigate(Routes.IDIOM_FLASHCARDS) },
                 )
             }
             composable(TopLevelRoute.Practice.route) {
                 PracticeScreen(
+                    onNavigateToQuiz = { navController.navigate(Routes.QUIZ) },
                     onNavigateToFillBlank = { navController.navigate(Routes.FILL_BLANK) },
                     onNavigateToPhrasalQuiz = { navController.navigate(Routes.PHRASAL_QUIZ) },
                     onNavigateToIdiomQuiz = { navController.navigate(Routes.IDIOM_QUIZ) },
@@ -118,6 +122,12 @@ fun MainScreen() {
             }
             composable(Routes.FLASHCARDS) {
                 FlashcardScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.PHRASAL_FLASHCARDS) {
+                PhrasalFlashcardScreen(onBack = { navController.popBackStack() })
+            }
+            composable(Routes.IDIOM_FLASHCARDS) {
+                IdiomFlashcardScreen(onBack = { navController.popBackStack() })
             }
             composable(Routes.QUIZ) {
                 QuizScreen(onBack = { navController.popBackStack() })

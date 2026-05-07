@@ -361,7 +361,7 @@ private fun FlashcardTopBar(
 }
 
 @Composable
-private fun ProgressBar(progress: Float, modifier: Modifier = Modifier) {
+internal fun ProgressBar(progress: Float, modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()
@@ -462,7 +462,7 @@ private fun FlashcardCard(
 }
 
 @Composable
-private fun ActionButton(
+internal fun ActionButton(
     text: String,
     color: Color,
     onClick: () -> Unit,
