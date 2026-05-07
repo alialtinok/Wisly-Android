@@ -18,7 +18,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.WislyApplication
 import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.my.components.EmptyState
 import com.alialtinok.lexiup.ui.screens.my.components.SubScreenScaffold
@@ -30,7 +30,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun UnknownWordsScreen(onBack: () -> Unit) {
     val context = LocalContext.current
-    val container = remember { (context.applicationContext as LexiUpApplication).container }
+    val container = remember { (context.applicationContext as WislyApplication).container }
     val repo = container.wordRepository
     val tts = container.ttsManager
     val s = LocalAppStrings.current

@@ -33,7 +33,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.WislyApplication
 import com.alialtinok.lexiup.data.model.PhrasalVerb
 import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.practice.components.QuizOption
@@ -55,7 +55,7 @@ private data class PhrasalQuestion(
 @Composable
 fun PhrasalVerbQuizScreen(onBack: () -> Unit) {
     val context = LocalContext.current
-    val container = remember { (context.applicationContext as LexiUpApplication).container }
+    val container = remember { (context.applicationContext as WislyApplication).container }
     val repo = container.wordRepository
 
     var isTRtoEN by remember { mutableStateOf(false) }

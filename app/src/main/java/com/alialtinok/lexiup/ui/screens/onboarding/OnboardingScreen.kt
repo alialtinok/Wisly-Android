@@ -35,7 +35,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.WislyApplication
 import com.alialtinok.lexiup.ui.theme.LexiColors
 import kotlinx.coroutines.launch
 
@@ -44,7 +44,7 @@ private const val PAGE_COUNT = 3
 @Composable
 fun OnboardingScreen() {
     val context = LocalContext.current
-    val container = (context.applicationContext as LexiUpApplication).container
+    val container = (context.applicationContext as WislyApplication).container
     val viewModel: OnboardingViewModel = viewModel(
         factory = OnboardingViewModel.Factory(container.userSettingsRepository),
     )

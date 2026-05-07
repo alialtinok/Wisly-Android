@@ -12,14 +12,14 @@ import com.alialtinok.lexiup.data.model.NativeLanguage
 import com.alialtinok.lexiup.i18n.ProvideAppStrings
 import com.alialtinok.lexiup.ui.navigation.MainScreen
 import com.alialtinok.lexiup.ui.screens.onboarding.OnboardingScreen
-import com.alialtinok.lexiup.ui.theme.LexiUpTheme
+import com.alialtinok.lexiup.ui.theme.WislyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            LexiUpTheme {
+            WislyTheme {
                 AppRoot()
             }
         }
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun AppRoot() {
     val context = LocalContext.current
-    val container = (context.applicationContext as LexiUpApplication).container
+    val container = (context.applicationContext as WislyApplication).container
     val onboardingDone by container.userSettingsRepository.hasCompletedOnboarding
         .collectAsState(initial = null)
     val nativeLanguage by container.userSettingsRepository.nativeLanguage

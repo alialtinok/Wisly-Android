@@ -9,7 +9,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-private val LexiUpDarkScheme = darkColorScheme(
+private val WislyDarkScheme = darkColorScheme(
     primary = LexiColors.Primary,
     onPrimary = Color.White,
     secondary = LexiColors.AccentPurple,
@@ -27,7 +27,7 @@ private val LexiUpDarkScheme = darkColorScheme(
 )
 
 @Composable
-fun LexiUpTheme(content: @Composable () -> Unit) {
+fun WislyTheme(content: @Composable () -> Unit) {
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
@@ -37,7 +37,7 @@ fun LexiUpTheme(content: @Composable () -> Unit) {
         }
     }
     MaterialTheme(
-        colorScheme = LexiUpDarkScheme,
+        colorScheme = WislyDarkScheme,
         typography = Typography,
         content = content,
     )

@@ -52,7 +52,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.alialtinok.lexiup.LexiUpApplication
+import com.alialtinok.lexiup.WislyApplication
 import com.alialtinok.lexiup.data.model.Word
 import com.alialtinok.lexiup.i18n.LocalAppStrings
 import com.alialtinok.lexiup.ui.screens.study.components.FlashcardBack
@@ -71,7 +71,7 @@ private val CefrLevels = listOf("A1", "A2", "B1", "B2", "C1")
 @Composable
 fun FlashcardScreen(onBack: () -> Unit) {
     val context = LocalContext.current
-    val container = remember { (context.applicationContext as LexiUpApplication).container }
+    val container = remember { (context.applicationContext as WislyApplication).container }
     val repo = container.wordRepository
     val scope = rememberCoroutineScope()
 

@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.alialtinok.lexiup"
+        applicationId = "com.alialtinok.wisly"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

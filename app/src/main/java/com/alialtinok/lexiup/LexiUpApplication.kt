@@ -6,7 +6,7 @@ import com.alialtinok.lexiup.data.repository.UserSettingsRepository
 import com.alialtinok.lexiup.data.repository.WordRepository
 import com.alialtinok.lexiup.tts.TtsManager
 
-class LexiUpApplication : Application() {
+class WislyApplication : Application() {
     lateinit var container: AppContainer
         private set
 

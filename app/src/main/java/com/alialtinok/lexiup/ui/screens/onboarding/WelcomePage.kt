@@ -46,13 +46,13 @@ fun WelcomePage() {
 
         Row(verticalAlignment = Alignment.Bottom) {
             Text(
-                text = "Lexi",
+                text = "Wis",
                 fontSize = 52.sp,
                 fontWeight = FontWeight.ExtraBold,
                 color = Color.White,
             )
             Text(
-                text = "Up",
+                text = "ly",
                 fontSize = 52.sp,
                 fontWeight = FontWeight.ExtraBold,
                 style = TextStyle(
