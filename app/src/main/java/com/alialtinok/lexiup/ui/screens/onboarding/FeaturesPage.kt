@@ -45,7 +45,7 @@ private val features = listOf(
     Feature(Icons.Filled.Bolt, LexiColors.AccentAmber, "Quiz & Practice", "Multiple choice, fill the blank, writing"),
     Feature(Icons.Filled.LocalFireDepartment, Color(0xFFFF6B00), "Daily Streaks", "Word of the day, track your progress"),
     Feature(Icons.Filled.Favorite, Color(0xFFF472B6), "Save Favorites", "Build your personal word list"),
-    Feature(Icons.Filled.AddCircle, LexiColors.AccentGreen, "My Words", "Add your own words or sync from LexiNews automatically"),
+    Feature(Icons.Filled.AddCircle, LexiColors.AccentGreen, "My Words", "Add your own words or sync from Wisly News automatically"),
 )
 
 @Composable
@@ -140,7 +140,7 @@ private fun SyncHighlight() {
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
             ) {
                 Text(
-                    text = "Syncs with LexiNews",
+                    text = "Syncs with Wisly News",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
@@ -159,7 +159,7 @@ private fun SyncHighlight() {
                 )
             }
             Text(
-                text = "Words you save in LexiNews appear in My Words automatically",
+                text = "Words you save in Wisly News appear in My Words automatically",
                 color = LexiColors.OnSurfaceMuted,
                 fontSize = 13.sp,
             )
