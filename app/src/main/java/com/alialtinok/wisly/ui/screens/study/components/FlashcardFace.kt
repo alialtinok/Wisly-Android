@@ -1,0 +1,214 @@
+package com.alialtinok.wisly.ui.screens.study.components
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.TouchApp
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.alialtinok.wisly.data.model.Word
+import com.alialtinok.wisly.i18n.LocalAppStrings
+import com.alialtinok.wisly.ui.theme.WislyColors
+
+@Composable
+fun FlashcardFront(
+    word: Word,
+    isFavorite: Boolean,
+    onToggleFavorite: () -> Unit,
+    onSpeak: () -> Unit,
+    swipeColor: Color,
+    modifier: Modifier = Modifier,
+) {
+    val levelColor = parseHex(word.cefrColor)
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(WislyColors.Surface, RoundedCornerShape(24.dp))
+            .background(swipeColor, RoundedCornerShape(24.dp))
+            .border(1.dp, WislyColors.SurfaceBorder, RoundedCornerShape(24.dp))
+            .padding(24.dp),
+    ) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                IconButton(onClick = onToggleFavorite) {
+                    Icon(
+                        imageVector = if (isFavorite) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
+                        contentDescription = LocalAppStrings.current.flashcardFavoriteCD,
+                        tint = if (isFavorite) WislyColors.C2 else WislyColors.OnSurfaceMuted,
+                    )
+                }
+                Spacer(Modifier.weight(1f))
+                IconButton(onClick = onSpeak) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.VolumeUp,
+                        contentDescription = LocalAppStrings.current.ttsSpeak,
+                        tint = WislyColors.OnSurfaceMuted,
+                    )
+                }
+                Text(
+                    text = word.level,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Black,
+                    color = levelColor,
+                    modifier = Modifier
+                        .background(levelColor.copy(alpha = 0.15f), CircleShape)
+                        .padding(horizontal = 10.dp, vertical = 5.dp),
+                )
+            }
+
+            Spacer(Modifier.weight(1f))
+
+            Text(
+                text = word.type.replaceFirstChar { it.uppercase() },
+                fontSize = 14.sp,
+                fontStyle = FontStyle.Italic,
+                color = WislyColors.OnSurfaceMuted,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 12.dp),
+                textAlign = TextAlign.Center,
+            )
+
+            Text(
+                text = word.word,
+                fontSize = 42.sp,
+                fontWeight = FontWeight.Black,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth(),
+            )
+
+            Spacer(Modifier.weight(1f))
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Icon(
+                    imageVector = Icons.Filled.TouchApp,
+                    contentDescription = null,
+                    tint = WislyColors.OnSurfaceMuted,
+                    modifier = Modifier.width(14.dp).height(14.dp),
+                )
+                Spacer(Modifier.width(6.dp))
+                Text(
+                    text = LocalAppStrings.current.flashcardTapForTranslation,
+                    fontSize = 12.sp,
+                    color = WislyColors.OnSurfaceMuted,
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun FlashcardBack(
+    word: Word,
+    translation: String?,
+    showExampleTranslation: Boolean,
+    onSpeak: () -> Unit,
+    swipeColor: Color,
+    modifier: Modifier = Modifier,
+) {
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFF1E2D4A), RoundedCornerShape(24.dp))
+            .background(swipeColor, RoundedCornerShape(24.dp))
+            .border(1.dp, WislyColors.Primary.copy(alpha = 0.4f), RoundedCornerShape(24.dp))
+            .padding(24.dp),
+    ) {
+        IconButton(
+            onClick = onSpeak,
+            modifier = Modifier.align(Alignment.TopEnd),
+        ) {
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.VolumeUp,
+                contentDescription = LocalAppStrings.current.ttsSpeak,
+                tint = WislyColors.OnSurfaceMuted,
+            )
+        }
+
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Spacer(Modifier.weight(1f))
+
+            Text(
+                text = translation ?: "…",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = if (translation != null) WislyColors.Primary else WislyColors.OnSurfaceMuted,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth(),
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            Box(
+                modifier = Modifier
+                    .width(40.dp)
+                    .height(2.dp)
+                    .background(WislyColors.SurfaceBorder),
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            Text(
+                text = "\u201C${word.example}\u201D",
+                fontSize = 14.sp,
+                fontStyle = FontStyle.Italic,
+                color = Color.White,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth(),
+            )
+
+            if (showExampleTranslation && word.exampleTr.isNotBlank()) {
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    text = word.exampleTr,
+                    fontSize = 12.sp,
+                    color = WislyColors.OnSurfaceMuted,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
+
+            Spacer(Modifier.weight(1f))
+        }
+    }
+}
+
+private fun parseHex(hex: String): Color {
+    val clean = hex.removePrefix("#")
+    val value = clean.toLong(16) or 0xFF000000
+    return Color(value)
+}
