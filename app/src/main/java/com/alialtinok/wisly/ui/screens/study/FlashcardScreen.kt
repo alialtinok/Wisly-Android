@@ -24,6 +24,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.material.icons.filled.Shuffle
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -43,8 +45,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
@@ -260,14 +265,16 @@ fun FlashcardScreen(onBack: () -> Unit) {
                 ) {
                     val s = LocalAppStrings.current
                     ActionButton(
-                        text = "✗  ${s.flashcardActionDontKnow}",
+                        text = s.flashcardActionDontKnow,
                         color = WislyColors.AccentRed,
+                        style = FlashcardActionStyle.Review,
                         onClick = { advance(known = false) },
                         modifier = Modifier.weight(1f),
                     )
                     ActionButton(
-                        text = "✓  ${s.flashcardActionKnow}",
+                        text = s.flashcardActionKnow,
                         color = WislyColors.AccentGreen,
+                        style = FlashcardActionStyle.Mastered,
                         onClick = { advance(known = true) },
                         modifier = Modifier.weight(1f),
                     )
@@ -495,26 +502,61 @@ private fun FlashcardCard(
     }
 }
 
+internal enum class FlashcardActionStyle {
+    Review,
+    Mastered,
+}
+
 @Composable
 internal fun ActionButton(
     text: String,
     color: Color,
+    style: FlashcardActionStyle,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Box(
+    val isPrimary = style == FlashcardActionStyle.Mastered
+    val shape = RoundedCornerShape(18.dp)
+    val icon: ImageVector = if (isPrimary) Icons.Filled.CheckCircle else Icons.Filled.Close
+    val foreground = if (isPrimary) Color(0xFF07140F) else color
+    val backgroundModifier = if (isPrimary) {
+        Modifier.background(
+            brush = Brush.linearGradient(
+                listOf(color, Color(0xFF6EE7B7)),
+            ),
+            shape = shape,
+        )
+    } else {
+        Modifier.background(color.copy(alpha = 0.08f), shape)
+    }
+
+    Row(
         modifier = modifier
-            .background(color.copy(alpha = 0.1f), RoundedCornerShape(16.dp))
-            .border(1.dp, color, RoundedCornerShape(16.dp))
+            .height(58.dp)
+            .then(if (isPrimary) Modifier.shadow(10.dp, shape, clip = false) else Modifier)
+            .then(backgroundModifier)
+            .border(
+                width = 1.dp,
+                color = if (isPrimary) Color.White.copy(alpha = 0.18f) else color.copy(alpha = 0.55f),
+                shape = shape,
+            )
             .clickable(onClick = onClick)
-            .padding(vertical = 16.dp),
-        contentAlignment = Alignment.Center,
+            .padding(horizontal = 14.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically,
     ) {
+        Icon(
+            imageVector = icon,
+            contentDescription = null,
+            tint = foreground,
+            modifier = Modifier.size(18.dp),
+        )
+        Spacer(Modifier.width(8.dp))
         Text(
             text = text,
-            fontSize = 16.sp,
-            fontWeight = FontWeight.Bold,
-            color = color,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.ExtraBold,
+            color = foreground,
         )
     }
 }

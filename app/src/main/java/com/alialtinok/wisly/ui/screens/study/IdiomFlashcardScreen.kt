@@ -288,8 +288,20 @@ fun IdiomFlashcardScreen(onBack: () -> Unit) {
                     modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
-                    ActionButton(text = s.flashcardActionDontKnow, color = WislyColors.AccentRed, onClick = { advance(false) }, modifier = Modifier.weight(1f))
-                    ActionButton(text = s.flashcardActionKnow, color = WislyColors.AccentGreen, onClick = { advance(true) }, modifier = Modifier.weight(1f))
+                    ActionButton(
+                        text = s.flashcardActionDontKnow,
+                        color = WislyColors.AccentRed,
+                        style = FlashcardActionStyle.Review,
+                        onClick = { advance(false) },
+                        modifier = Modifier.weight(1f),
+                    )
+                    ActionButton(
+                        text = s.flashcardActionKnow,
+                        color = WislyColors.AccentGreen,
+                        style = FlashcardActionStyle.Mastered,
+                        onClick = { advance(true) },
+                        modifier = Modifier.weight(1f),
+                    )
                 }
             }
         }
