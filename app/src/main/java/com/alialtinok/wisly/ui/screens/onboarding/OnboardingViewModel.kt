@@ -20,8 +20,18 @@ class OnboardingViewModel(
         initialValue = null,
     )
 
+    val selectedLevel: StateFlow<String?> = settings.preferredLevel.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5_000),
+        initialValue = null,
+    )
+
     fun selectLanguage(language: NativeLanguage) {
         viewModelScope.launch { settings.setNativeLanguage(language) }
+    }
+
+    fun selectLevel(level: String?) {
+        viewModelScope.launch { settings.setPreferredLevel(level) }
     }
 
     fun complete() {

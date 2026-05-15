@@ -39,7 +39,7 @@ import com.alialtinok.wisly.WislyApplication
 import com.alialtinok.wisly.ui.theme.WislyColors
 import kotlinx.coroutines.launch
 
-private const val PAGE_COUNT = 3
+private const val PAGE_COUNT = 4
 
 @Composable
 fun OnboardingScreen() {
@@ -49,6 +49,7 @@ fun OnboardingScreen() {
         factory = OnboardingViewModel.Factory(container.userSettingsRepository),
     )
     val selectedLanguage by viewModel.selectedLanguage.collectAsState()
+    val selectedLevel by viewModel.selectedLevel.collectAsState()
 
     val pagerState = rememberPagerState(pageCount = { PAGE_COUNT })
     val scope = rememberCoroutineScope()
@@ -68,7 +69,11 @@ fun OnboardingScreen() {
                 when (page) {
                     0 -> WelcomePage()
                     1 -> FeaturesPage()
-                    2 -> LanguagePage(
+                    2 -> LevelPage(
+                        selected = selectedLevel,
+                        onSelect = viewModel::selectLevel,
+                    )
+                    3 -> LanguagePage(
                         selected = selectedLanguage,
                         onSelect = viewModel::selectLanguage,
                     )

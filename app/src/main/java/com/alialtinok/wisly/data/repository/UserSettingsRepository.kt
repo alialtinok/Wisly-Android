@@ -21,8 +21,19 @@ class UserSettingsRepository(context: Context) {
     val hasCompletedOnboarding: Flow<Boolean> =
         ds.data.map { it[Keys.onboarding] ?: false }
 
+    val preferredLevel: Flow<String?> = ds.data.map { prefs ->
+        prefs[Keys.preferredLevel]?.takeIf { it.isNotBlank() }
+    }
+
     suspend fun setNativeLanguage(language: NativeLanguage) {
         ds.edit { it[Keys.nativeLanguage] = language.id }
+    }
+
+    suspend fun setPreferredLevel(level: String?) {
+        ds.edit {
+            if (level.isNullOrBlank()) it.remove(Keys.preferredLevel)
+            else it[Keys.preferredLevel] = level
+        }
     }
 
     suspend fun setOnboardingCompleted(done: Boolean) {
@@ -32,5 +43,6 @@ class UserSettingsRepository(context: Context) {
     private object Keys {
         val nativeLanguage = stringPreferencesKey("wisly.nativeLanguage")
         val onboarding = booleanPreferencesKey("wisly.onboardingDone")
+        val preferredLevel = stringPreferencesKey("wisly.preferredLevel")
     }
 }

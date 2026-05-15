@@ -32,6 +32,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -55,6 +56,7 @@ import com.alialtinok.wisly.ui.screens.study.components.LevelOption
 import com.alialtinok.wisly.ui.screens.study.components.LevelPickerContent
 import com.alialtinok.wisly.ui.theme.WislyColors
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 private const val SessionSize = 20
 private val CefrLevels = listOf("A1", "A2", "B1", "B2", "C1")
@@ -74,8 +76,10 @@ fun FillBlankScreen(onBack: () -> Unit) {
     val repo = container.wordRepository
     val translationRepo = container.translationRepository
     val nativeLanguage by container.userSettingsRepository.nativeLanguage.collectAsState(initial = null)
+    val preferredLevel by container.userSettingsRepository.preferredLevel.collectAsState(initial = null)
+    val scope = rememberCoroutineScope()
 
-    var selectedLevel by remember { mutableStateOf<String?>(null) }
+    var selectedLevel by remember(preferredLevel) { mutableStateOf(preferredLevel) }
     var sessionKey by remember { mutableIntStateOf(0) }
     var showLevelPicker by remember { mutableStateOf(false) }
 
@@ -280,6 +284,7 @@ fun FillBlankScreen(onBack: () -> Unit) {
                 selected = selectedLevel,
                 onSelect = { id ->
                     selectedLevel = id
+                    scope.launch { container.userSettingsRepository.setPreferredLevel(id) }
                     showLevelPicker = false
                     resetSession()
                 },

@@ -59,12 +59,18 @@ fun HomeScreen(
     val repo = container.wordRepository
     val translationRepo = container.translationRepository
     val nativeLanguage by container.userSettingsRepository.nativeLanguage.collectAsState(initial = null)
+    val preferredLevel by container.userSettingsRepository.preferredLevel.collectAsState(initial = null)
 
     val streak by repo.currentStreak.collectAsState(initial = 0)
     val favorites by repo.favoriteIds.collectAsState(initial = emptySet())
     val unknown by repo.unknownIds.collectAsState(initial = emptySet())
 
-    val word = remember { repo.wordOfTheDay }
+    val word = remember(preferredLevel) {
+        val preferred = preferredLevel?.let { level -> repo.allWords.filter { it.level == level } }
+        preferred?.takeIf { it.isNotEmpty() }?.let { words ->
+            words[java.util.Calendar.getInstance().get(java.util.Calendar.DAY_OF_YEAR) % words.size]
+        } ?: repo.wordOfTheDay
+    }
     var wordTranslation by remember { mutableStateOf<String?>(null) }
 
     LaunchedEffect(word, nativeLanguage) {

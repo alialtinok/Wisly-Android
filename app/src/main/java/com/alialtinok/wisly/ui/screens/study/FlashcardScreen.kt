@@ -77,9 +77,10 @@ fun FlashcardScreen(onBack: () -> Unit) {
 
     val translationRepo = container.translationRepository
     val nativeLanguage by container.userSettingsRepository.nativeLanguage.collectAsState(initial = null)
+    val preferredLevel by container.userSettingsRepository.preferredLevel.collectAsState(initial = null)
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
 
-    var selectedLevel by remember { mutableStateOf<String?>(null) }
+    var selectedLevel by remember(preferredLevel) { mutableStateOf(preferredLevel) }
     var isShuffled by remember { mutableStateOf(false) }
     var sessionKey by remember { mutableIntStateOf(0) }
     var showLevelPicker by remember { mutableStateOf(false) }
@@ -319,6 +320,7 @@ fun FlashcardScreen(onBack: () -> Unit) {
                 selected = selectedLevel,
                 onSelect = { id ->
                     selectedLevel = id
+                    scope.launch { container.userSettingsRepository.setPreferredLevel(id) }
                     showLevelPicker = false
                     resetSession()
                 },

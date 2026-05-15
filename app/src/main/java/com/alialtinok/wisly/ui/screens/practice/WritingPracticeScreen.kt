@@ -41,6 +41,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -57,6 +58,7 @@ import com.alialtinok.wisly.ui.screens.practice.components.QuizScoreRow
 import com.alialtinok.wisly.ui.screens.study.components.LevelOption
 import com.alialtinok.wisly.ui.screens.study.components.LevelPickerContent
 import com.alialtinok.wisly.ui.theme.WislyColors
+import kotlinx.coroutines.launch
 
 private val WritingLevels = listOf("A1", "A2", "B1", "B2", "C1")
 
@@ -75,9 +77,11 @@ fun WritingPracticeScreen(onBack: () -> Unit) {
     val repo = container.wordRepository
     val translationRepo = container.translationRepository
     val nativeLanguage by container.userSettingsRepository.nativeLanguage.collectAsState(initial = null)
+    val preferredLevel by container.userSettingsRepository.preferredLevel.collectAsState(initial = null)
+    val scope = rememberCoroutineScope()
     val s = LocalAppStrings.current
 
-    var selectedLevel by remember { mutableStateOf<String?>(null) }
+    var selectedLevel by remember(preferredLevel) { mutableStateOf(preferredLevel) }
     var showLevelPicker by remember { mutableStateOf(false) }
     var currentWord by remember { mutableStateOf<Word?>(null) }
     var translation by remember { mutableStateOf<String?>(null) }
@@ -305,6 +309,7 @@ fun WritingPracticeScreen(onBack: () -> Unit) {
                 selected = selectedLevel,
                 onSelect = { id ->
                     selectedLevel = id
+                    scope.launch { container.userSettingsRepository.setPreferredLevel(id) }
                     showLevelPicker = false
                     currentWord = null
                 },

@@ -20,6 +20,7 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -53,31 +54,45 @@ fun MyScreen(
 
     val favorites by repo.favoriteIds.collectAsState(initial = emptySet())
     val unknown by repo.unknownIds.collectAsState(initial = emptySet())
+    val unknownPhrasals by repo.unknownPhrasalIds.collectAsState(initial = emptySet())
+    val unknownIdioms by repo.unknownIdiomIds.collectAsState(initial = emptySet())
     val myWords by repo.myWords.collectAsState(initial = emptyList())
+    val streak by repo.currentStreak.collectAsState(initial = 0)
+
+    val reviewCount = unknown.size + unknownPhrasals.size + unknownIdioms.size
+    val savedCount = favorites.size + myWords.size
 
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
             .background(WislyColors.Background),
-        contentPadding = PaddingValues(horizontal = 20.dp, vertical = 16.dp),
-        verticalArrangement = Arrangement.spacedBy(10.dp),
+        contentPadding = PaddingValues(horizontal = 20.dp, vertical = 18.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         item {
-            Text(
-                text = strings.myTitle,
-                fontSize = 32.sp,
-                fontWeight = FontWeight.Black,
-                color = Color.White,
-                modifier = Modifier.padding(bottom = 8.dp),
+            YouHeader()
+        }
+        item {
+            ProfileSummaryCard(
+                streak = streak,
+                saved = savedCount,
+                review = reviewCount,
             )
         }
+        item {
+            MyWordsHeroRow(
+                count = myWords.size,
+                onClick = onNavigateToMyWords,
+            )
+        }
+        item { SectionLabel("LIBRARY") }
         item {
             MyRow(
                 icon = Icons.Filled.Favorite,
                 color = WislyColors.C2,
                 title = strings.myFavorites,
                 count = favorites.size,
-                subtitle = strings.myFavoritesDesc,
+                subtitle = "Saved words",
                 onClick = onNavigateToFavorites,
             )
         }
@@ -85,22 +100,13 @@ fun MyScreen(
             MyRow(
                 icon = Icons.Filled.ErrorOutline,
                 color = WislyColors.B2,
-                title = strings.myUnknown,
-                count = unknown.size,
-                subtitle = strings.myUnknownDesc,
+                title = "Review Queue",
+                count = reviewCount,
+                subtitle = "Words, phrasal verbs and idioms",
                 onClick = onNavigateToUnknown,
             )
         }
-        item {
-            MyRow(
-                icon = Icons.Filled.AddCircle,
-                color = WislyColors.AccentGreen,
-                title = strings.myWords,
-                count = myWords.size,
-                subtitle = strings.myWordsDesc,
-                onClick = onNavigateToMyWords,
-            )
-        }
+        item { SectionLabel(strings.settingsTitle.uppercase()) }
         item {
             MyRow(
                 icon = Icons.Filled.Settings,
@@ -109,6 +115,169 @@ fun MyScreen(
                 count = null,
                 subtitle = strings.mySettingsDesc,
                 onClick = onNavigateToSettings,
+            )
+        }
+    }
+}
+
+@Composable
+private fun YouHeader() {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Column(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(6.dp),
+        ) {
+            Text(
+                text = "You",
+                fontSize = 42.sp,
+                fontWeight = FontWeight.Black,
+                color = Color.White,
+            )
+            Text(
+                text = "Your words, progress and preferences",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = Color.White.copy(alpha = 0.54f),
+            )
+        }
+        Box(
+            modifier = Modifier
+                .size(54.dp)
+                .background(Color.White.copy(alpha = 0.06f), RoundedCornerShape(27.dp)),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = Icons.Filled.Person,
+                contentDescription = null,
+                tint = WislyColors.Primary,
+                modifier = Modifier.size(30.dp),
+            )
+        }
+    }
+}
+
+@Composable
+private fun ProfileSummaryCard(
+    streak: Int,
+    saved: Int,
+    review: Int,
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(WislyColors.Surface, RoundedCornerShape(24.dp))
+            .border(1.dp, WislyColors.Primary.copy(alpha = 0.18f), RoundedCornerShape(24.dp))
+            .padding(18.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(5.dp),
+            ) {
+                Text(
+                    text = "Your learning space",
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Black,
+                    color = Color.White,
+                )
+                Text(
+                    text = "Keep saved words and reviews close.",
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = Color.White.copy(alpha = 0.52f),
+                )
+            }
+            Icon(
+                imageVector = Icons.Filled.Person,
+                contentDescription = null,
+                tint = WislyColors.Primary,
+                modifier = Modifier.size(34.dp),
+            )
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            SummaryMetric(value = streak, label = "Streak", modifier = Modifier.weight(1f))
+            SummaryMetric(value = saved, label = "Saved", modifier = Modifier.weight(1f))
+            SummaryMetric(value = review, label = "Review", modifier = Modifier.weight(1f))
+        }
+    }
+}
+
+@Composable
+private fun SummaryMetric(
+    value: Int,
+    label: String,
+    modifier: Modifier = Modifier,
+) {
+    Column(
+        modifier = modifier
+            .background(Color.White.copy(alpha = 0.045f), RoundedCornerShape(14.dp))
+            .padding(vertical = 12.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Text(value.toString(), fontSize = 20.sp, fontWeight = FontWeight.Black, color = Color.White)
+        Text(label, fontSize = 11.sp, fontWeight = FontWeight.SemiBold, color = Color.White.copy(alpha = 0.45f))
+    }
+}
+
+@Composable
+private fun MyWordsHeroRow(
+    count: Int,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(WislyColors.Surface, RoundedCornerShape(24.dp))
+            .border(1.dp, WislyColors.AccentGreen.copy(alpha = 0.22f), RoundedCornerShape(24.dp))
+            .clickable(onClick = onClick)
+            .padding(16.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Box(
+            modifier = Modifier
+                .size(64.dp)
+                .background(WislyColors.AccentGreen.copy(alpha = 0.16f), RoundedCornerShape(18.dp)),
+            contentAlignment = Alignment.Center,
+        ) {
+            Icon(
+                imageVector = Icons.Filled.AddCircle,
+                contentDescription = null,
+                tint = WislyColors.AccentGreen,
+                modifier = Modifier.size(30.dp),
+            )
+        }
+        Column(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(5.dp),
+        ) {
+            Text(
+                text = "My Words",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Black,
+                color = Color.White,
+            )
+            Text(
+                text = "Add your own words or import from Wisly News",
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Medium,
+                color = Color.White.copy(alpha = 0.52f),
+                lineHeight = 18.sp,
+            )
+        }
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(count.toString(), fontSize = 20.sp, fontWeight = FontWeight.Black, color = WislyColors.AccentGreen)
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                contentDescription = null,
+                tint = Color.White.copy(alpha = 0.30f),
+                modifier = Modifier.size(18.dp),
             )
         }
     }

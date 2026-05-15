@@ -58,10 +58,11 @@ fun WordsListScreen(onBack: () -> Unit) {
     val tts = container.ttsManager
     val s = LocalAppStrings.current
     val scope = rememberCoroutineScope()
+    val preferredLevel by container.userSettingsRepository.preferredLevel.collectAsState(initial = null)
 
     val favoriteIds by repo.favoriteIds.collectAsState(initial = emptySet())
 
-    var selectedLevel by remember { mutableStateOf<String?>(null) }
+    var selectedLevel by remember(preferredLevel) { mutableStateOf(preferredLevel) }
     var searchQuery by remember { mutableStateOf("") }
     var expandedId by remember { mutableStateOf<Int?>(null) }
 
@@ -128,14 +129,22 @@ fun WordsListScreen(onBack: () -> Unit) {
                     label = s.levelPickerAll,
                     selected = selectedLevel == null,
                     color = WislyColors.Primary,
-                    onClick = { selectedLevel = null; expandedId = null },
+                    onClick = {
+                        selectedLevel = null
+                        expandedId = null
+                        scope.launch { container.userSettingsRepository.setPreferredLevel(null) }
+                    },
                 )
                 CefrLevels.forEach { level ->
                     LevelPill(
                         label = level,
                         selected = selectedLevel == level,
                         color = colorForLevel(level),
-                        onClick = { selectedLevel = level; expandedId = null },
+                        onClick = {
+                            selectedLevel = level
+                            expandedId = null
+                            scope.launch { container.userSettingsRepository.setPreferredLevel(level) }
+                        },
                     )
                 }
             }
