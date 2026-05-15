@@ -40,6 +40,15 @@ class WordRepository(private val context: Context) {
         get() = allWords.takeIf { it.isNotEmpty() }
             ?.let { it[Calendar.getInstance().get(Calendar.DAY_OF_YEAR) % it.size] }
 
+    fun wordOfTheDay(level: String?): Word? {
+        val words = level
+            ?.let { selected -> allWords.filter { it.level == selected } }
+            ?.takeIf { it.isNotEmpty() }
+            ?: allWords
+        return words.takeIf { it.isNotEmpty() }
+            ?.let { it[Calendar.getInstance().get(Calendar.DAY_OF_YEAR) % it.size] }
+    }
+
     suspend fun toggleFavorite(id: Int) =
         updateIdSet(Keys.favorites) { if (id in it) it - id else it + id }
 
